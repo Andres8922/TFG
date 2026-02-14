@@ -30,6 +30,11 @@ public class Cambiar_pantallas : MonoBehaviour //Como no lo deribe no me deja pa
         SceneManager.LoadScene("Dificultad");
     }
 
+    public void Pantalla_Heroe()
+    {
+        SceneManager.LoadScene("SeleccionHeroe");
+    }
+
     public void Cerrar()
     {
         Application.Quit();
