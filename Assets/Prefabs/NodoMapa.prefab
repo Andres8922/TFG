@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8387784716667407079}
   - component: {fileID: 9124889066976824321}
   - component: {fileID: 8429023031697126851}
+  - component: {fileID: 6584285105927511661}
   m_Layer: 0
   m_Name: NodoMapa
   m_TagString: Untagged
@@ -137,3 +138,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6584285105927511661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454783135541806402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30db2c8843528ef44b54d1d0735d7681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NodoMapa

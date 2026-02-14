@@ -2,47 +2,59 @@ using UnityEngine;
 
 public class GeneradorMapa : MonoBehaviour
 {
-    public GameObject nodoPrefab; // Aquí meteremos tu molde azul
-    public Transform contenedor;  // Una "carpeta" para que no se desperdiguen en la jerarquía
+    public GameObject nodoPrefab;
+    public Transform contenedor;
 
     void Start()
     {
-        // 1. Intentamos leer la dificultad. Si no existe el GameManager, usamos 0 (Fácil)
         int dificultad = 0;
-        if (GameManager.Instance != null)
-        {
-            dificultad = GameManager.Instance.dificultad;
-        }
+        if (GameManager.Instance != null) dificultad = GameManager.Instance.dificultad;
 
-        // 2. Decidimos cuántos pisos tiene la torre
-        int pisos = 5; // Por defecto fácil
-        if (dificultad == 1) pisos = 8;  // Medio
-        if (dificultad == 2) pisos = 12; // Difícil
+        // Pisos según dificultad
+        int pisos = 5;
+        if (dificultad == 1) pisos = 8;
+        if (dificultad == 2) pisos = 12;
 
-        // 3. ¡A construir!
         for (int i = 0; i < pisos; i++)
         {
-            GenerarPiso(i);
+            GenerarPiso(i, pisos);
         }
     }
 
-    void GenerarPiso(int numeroPiso)
+    void GenerarPiso(int pisoActual, int totalPisos)
     {
-        // Calculamos la posición: 
-        // Y = Empezamos abajo (-3) y subimos 1.5 metros por cada piso
-        float altura = -3f + (numeroPiso * 1.5f);
-
-        // X = Un poco de aleatoriedad izquierda/derecha (-1.5 a 1.5)
+        // 1. Posición
+        float altura = -3f + (pisoActual * 1.5f);
         float desvio = Random.Range(-1.5f, 1.5f);
-
-        // Z = 0 (¡VITAL! Para que esté delante del fondo que está en 100)
         Vector3 posicion = new Vector3(desvio, altura, 0);
 
-        // Creamos la copia
+        // 2. Crear
         GameObject nuevoNodo = Instantiate(nodoPrefab, posicion, Quaternion.identity);
-
-        // Lo guardamos en su carpeta
         nuevoNodo.transform.SetParent(contenedor);
-        nuevoNodo.name = "Nivel_" + numeroPiso;
+        nuevoNodo.name = "Piso_" + pisoActual;
+
+        // 3. Decidir QUÉ ES (La lógica del mapa)
+        NodoMapa scriptDelNodo = nuevoNodo.GetComponent<NodoMapa>();
+
+        if (pisoActual == totalPisos - 1)
+        {
+            // ¡El último siempre es el JEFE!
+            scriptDelNodo.ConfigurarNodo(NodoMapa.TipoNodo.Jefe);
+            // Lo ponemos en el centro para que quede épico
+            nuevoNodo.transform.position = new Vector3(0, altura, 0);
+        }
+        else if (pisoActual == 0)
+        {
+            // El primero siempre es un enemigo facilito
+            scriptDelNodo.ConfigurarNodo(NodoMapa.TipoNodo.Enemigo);
+        }
+        else
+        {
+            // Los de en medio: Azar (80% enemigo, 10% tienda, 10% tesoro)
+            float azar = Random.Range(0f, 100f);
+            if (azar < 80) scriptDelNodo.ConfigurarNodo(NodoMapa.TipoNodo.Enemigo);
+            else if (azar < 90) scriptDelNodo.ConfigurarNodo(NodoMapa.TipoNodo.Tienda);
+            else scriptDelNodo.ConfigurarNodo(NodoMapa.TipoNodo.Tesoro);
+        }
     }
 }
