@@ -6,23 +6,23 @@ public class Cambiar_pantallas : MonoBehaviour //Como no lo deribe no me deja pa
     
     public void VolverInicio()
     {
-        SceneManager.LoadScene("MenuPrincipal");
+        Transicion.Instance.CargarEscena("MenuPrincipal");
     }
 
 
     public void Pantalla_Ajustes()
     {
-        SceneManager.LoadScene("Ajustes");
+        Transicion.Instance.CargarEscena("Ajustes");
     }
 
     public void Pantalla_Perfil()
     {
-        SceneManager.LoadScene("Perfil");
+        Transicion.Instance.CargarEscena("Perfil");
     }
 
     public void Pantalla_Info()
     {
-        SceneManager.LoadScene("Info");
+        Transicion.Instance.CargarEscena("Info");
     }
 
     public void Pantalla_Dificultad() 
@@ -32,7 +32,7 @@ public class Cambiar_pantallas : MonoBehaviour //Como no lo deribe no me deja pa
 
     public void Pantalla_Heroe()
     {
-        SceneManager.LoadScene("SeleccionHeroe");
+        Transicion.Instance.CargarEscena("SeleccionHeroe");
     }
 
     public void Cerrar()

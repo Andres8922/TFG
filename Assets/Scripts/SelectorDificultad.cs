@@ -15,6 +15,6 @@ public class SelectorDificultad : MonoBehaviour
 
         // 2. Cargamos la siguiente pantalla: La Selección de Héroe
         // Asegúrate de que tu escena se llame exactamente así (o como la hayas nombrado)
-        SceneManager.LoadScene("SeleccionHeroe");
+        Transicion.Instance.CargarEscena("SeleccionHeroe");
     }
 }
