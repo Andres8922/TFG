@@ -19,6 +19,9 @@ public class CombatManager : MonoBehaviour
     public TMP_Text textoVidaHeroe;   // ✅ BIEN (Usa mayúsculas TMP_Text)
     public TMP_Text textoManaHeroe;   // ✅ BIEN
     public TMP_Text textoVidaEnemigo; // ✅ BIEN
+    public TMP_Text textoTurnos;
+
+    private int numeroTurno = 0;
 
     [HideInInspector] public UnidadCombate unidadHeroe;
     [HideInInspector] public UnidadCombate unidadEnemigo;
@@ -66,14 +69,23 @@ public class CombatManager : MonoBehaviour
         {
             if (textoVidaEnemigo != null) textoVidaEnemigo.text = "HP: " + unidadEnemigo.vidaActual;
         }
+
+        // ACTUALIZAR CONTADOR DE TURNOS
+        if (textoTurnos != null)
+        {
+            textoTurnos.text = "TURNO: " + numeroTurno;
+        }
     }
 
     void EmpezarTurnoJugador()
     {
+        numeroTurno++; // <--- SUMAMOS 1 AL TURNO
         estado = EstadoCombate.TURNO_JUGADOR;
+
         unidadHeroe.RegenerarManaTurno();
-        ActualizarUI(); // <--- Actualizamos por si subió el maná
-        Debug.Log("¡Tu turno!");
+        ActualizarUI(); // Esto actualizará el texto en pantalla
+
+        Debug.Log("¡Tu turno! Turno número: " + numeroTurno);
     }
 
     public void BotonAtacar()
