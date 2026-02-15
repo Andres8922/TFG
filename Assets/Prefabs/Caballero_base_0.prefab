@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6916298105034540936}
   - component: {fileID: 4673128916804679229}
+  - component: {fileID: -5586805131525812184}
   m_Layer: 0
   m_Name: Caballero_base_0
   m_TagString: Untagged
@@ -90,3 +91,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-5586805131525812184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8671961397958709658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aab861dee3acbc499eac518a844f762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnidadCombate
+  nombreUnidad: Caballero
+  "da\xF1oBase": 15
+  vidaMax: 100
+  vidaActual: 0
+  manaMax: 50
+  manaActual: 0
+  manaPorTurno: 10
