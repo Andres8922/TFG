@@ -16,15 +16,18 @@ public class CombatManager : MonoBehaviour
     public Transform puntoEnemigo;
 
     [Header("UI (Arrastra los textos aquí)")]
-    public TMP_Text textoVidaHeroe;   // ✅ BIEN (Usa mayúsculas TMP_Text)
-    public TMP_Text textoManaHeroe;   // ✅ BIEN
-    public TMP_Text textoVidaEnemigo; // ✅ BIEN
+    public TMP_Text textoVidaHeroe;
+    public TMP_Text textoManaHeroe;
+    public TMP_Text textoVidaEnemigo;
     public TMP_Text textoTurnos;
 
     private int numeroTurno = 0;
 
     [HideInInspector] public UnidadCombate unidadHeroe;
     [HideInInspector] public UnidadCombate unidadEnemigo;
+
+    private Animator animatorHeroe;
+    private Animator animatorEnemigo; // ✅ Referencia para el monstruo
 
     void Awake() { Instance = this; }
 
@@ -42,35 +45,32 @@ public class CombatManager : MonoBehaviour
 
         GameObject heroeGO = Instantiate(listaHeroes[indice], puntoHeroe.position, Quaternion.identity);
         unidadHeroe = heroeGO.GetComponent<UnidadCombate>();
+        animatorHeroe = heroeGO.GetComponent<Animator>();
 
         // 2. Crear Enemigo
         GameObject enemigoGO = Instantiate(enemigoPrefab, puntoEnemigo.position, Quaternion.identity);
         unidadEnemigo = enemigoGO.GetComponent<UnidadCombate>();
+        animatorEnemigo = enemigoGO.GetComponent<Animator>(); // ✅ Capturamos el animator del monstruo
 
-        // ACTUALIZAR LA UI AL EMPEZAR
         ActualizarUI();
 
         yield return new WaitForSeconds(1f);
         EmpezarTurnoJugador();
     }
 
-    // FUNCIÓN NUEVA PARA PINTAR LOS TEXTOS
     void ActualizarUI()
     {
-        // 1. Comprobamos si el Héroe y sus textos existen antes de escribir
         if (unidadHeroe != null)
         {
             if (textoVidaHeroe != null) textoVidaHeroe.text = "HP: " + unidadHeroe.vidaActual;
             if (textoManaHeroe != null) textoManaHeroe.text = "MP: " + unidadHeroe.manaActual;
         }
 
-        // 2. Comprobamos si el Enemigo y su texto existen
         if (unidadEnemigo != null)
         {
             if (textoVidaEnemigo != null) textoVidaEnemigo.text = "HP: " + unidadEnemigo.vidaActual;
         }
 
-        // ACTUALIZAR CONTADOR DE TURNOS
         if (textoTurnos != null)
         {
             textoTurnos.text = "TURNO: " + numeroTurno;
@@ -79,12 +79,10 @@ public class CombatManager : MonoBehaviour
 
     void EmpezarTurnoJugador()
     {
-        numeroTurno++; // <--- SUMAMOS 1 AL TURNO
+        numeroTurno++;
         estado = EstadoCombate.TURNO_JUGADOR;
-
         unidadHeroe.RegenerarManaTurno();
-        ActualizarUI(); // Esto actualizará el texto en pantalla
-
+        ActualizarUI();
         Debug.Log("¡Tu turno! Turno número: " + numeroTurno);
     }
 
@@ -96,40 +94,32 @@ public class CombatManager : MonoBehaviour
 
     public void BotonHabilidad()
     {
-        // 1. ¿Es mi turno?
         if (estado != EstadoCombate.TURNO_JUGADOR) return;
 
-        // 2. ¿Tengo maná suficiente? (Digamos que cuesta 10)
         int coste = 10;
-
         if (unidadHeroe.manaActual >= coste)
         {
-            // ¡SÍ PUEDO!
-            unidadHeroe.GastarMana(coste); // Restamos el maná
-            StartCoroutine(UsarHabilidadEspecial()); // Lanzamos el ataque
+            unidadHeroe.GastarMana(coste);
+            StartCoroutine(UsarHabilidadEspecial());
         }
         else
         {
-            Debug.Log("¡No tienes suficiente maná! Necesitas " + coste);
-            // Aquí luego podríamos poner un sonido de error
+            Debug.Log("¡No tienes suficiente maná!");
         }
     }
 
     IEnumerator UsarHabilidadEspecial()
     {
-        estado = EstadoCombate.START; // Bloqueamos botones
-
-        // Actualizamos la UI inmediatamente para ver que bajó el maná
+        estado = EstadoCombate.START;
         ActualizarUI();
 
-        Debug.Log("¡Lanzando Habilidad Especial! ⚡");
-        yield return new WaitForSeconds(1f); // Pequeña pausa dramática
+        if (animatorHeroe != null) animatorHeroe.SetTrigger("Atacar");
 
-        // Hacemos EL DOBLE de daño que un ataque normal
+        yield return new WaitForSeconds(1f);
+
         int dañoEspecial = unidadHeroe.dañoBase * 2;
-
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(dañoEspecial);
-        ActualizarUI(); // Actualizamos la vida del enemigo
+        ActualizarUI();
 
         yield return new WaitForSeconds(1f);
 
@@ -147,11 +137,17 @@ public class CombatManager : MonoBehaviour
 
     IEnumerator AtacarEnemigo()
     {
-        estado = EstadoCombate.START; // Bloqueamos para que no pulses 2 veces
+        estado = EstadoCombate.START;
 
-        // Daño
+        if (animatorHeroe != null)
+        {
+            animatorHeroe.SetTrigger("Atacar");
+        }
+
+        yield return new WaitForSeconds(0.5f); // Pausa breve para que se vea el golpe
+
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(unidadHeroe.dañoBase);
-        ActualizarUI(); // <--- ¡Actualizamos la vida del enemigo en pantalla!
+        ActualizarUI();
 
         yield return new WaitForSeconds(1f);
 
@@ -171,8 +167,16 @@ public class CombatManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
 
+        // ✅ ¡EL MONSTRUO ATACA!
+        if (animatorEnemigo != null)
+        {
+            animatorEnemigo.SetTrigger("AtacarEnemigo"); // Asegúrate de que el trigger en el Animator se llame así
+        }
+
+        yield return new WaitForSeconds(0.5f); // Esperamos a que el monstruo lance el golpe
+
         bool heroeMuerto = unidadHeroe.RecibirDaño(unidadEnemigo.dañoBase);
-        ActualizarUI(); // <--- ¡Actualizamos nuestra vida en pantalla!
+        ActualizarUI();
 
         if (heroeMuerto)
         {
@@ -187,7 +191,7 @@ public class CombatManager : MonoBehaviour
 
     void FinalizarCombate(bool victoria)
     {
-        if (victoria) Debug.Log("¡GANASTE!"); // Aquí luego pondremos volver al mapa
+        if (victoria) Debug.Log("¡GANASTE!");
         else Debug.Log("¡PERDISTE!");
     }
 }
