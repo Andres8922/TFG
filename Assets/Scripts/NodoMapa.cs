@@ -16,7 +16,7 @@ public class NodoMapa : MonoBehaviour
         // GameManager.Instance.tipoEncuentro = tipoDeEsteNodo; <--- Lo descomentaremos luego
 
         // Cargamos la escena de peleas
-        SceneManager.LoadScene("Combate");
+        Transicion.Instance.CargarEscena("Combate");
     }
 
     public void ConfigurarNodo(TipoNodo nuevoTipo)
