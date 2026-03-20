@@ -15,6 +15,9 @@ public class UnidadCombate : MonoBehaviour
     public int manaActual;
     public int manaPorTurno = 10; // Cuánto recupera al empezar su ronda
 
+    public int vidaMaxima = 100; // Pon aquí el número máximo de vida
+    public int manaMaximo = 50;  // Pon aquí el número máximo de maná
+
     void Awake()
     {
         // Al empezar, rellenamos vida y maná a tope (o a 0 el maná si prefieres)

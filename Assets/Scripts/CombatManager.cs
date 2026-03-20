@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 
@@ -15,10 +16,17 @@ public class CombatManager : MonoBehaviour
     public GameObject enemigoPrefab;
     public Transform puntoEnemigo;
 
-    [Header("UI (Arrastra los textos aquí)")]
-    public TMP_Text textoVidaHeroe;
-    public TMP_Text textoManaHeroe;
-    public TMP_Text textoVidaEnemigo;
+    [Header("UI - Barras de Estado (Arrastra los RELLENOS)")]
+    public Image imagenVidaHeroe;
+    public Image imagenManaHeroe;
+    public Image imagenVidaEnemigo;
+
+    [Header("UI - Textos de Números (Arrastra los TEXTOS)")]
+    public TMP_Text textoNumerosVidaHeroe;
+    public TMP_Text textoNumerosManaHeroe;
+    public TMP_Text textoNumerosVidaEnemigo;
+
+    [Header("UI - Textos Generales")]
     public TMP_Text textoTurnos;
 
     private int numeroTurno = 0;
@@ -27,7 +35,7 @@ public class CombatManager : MonoBehaviour
     [HideInInspector] public UnidadCombate unidadEnemigo;
 
     private Animator animatorHeroe;
-    private Animator animatorEnemigo; // ✅ Referencia para el monstruo
+    private Animator animatorEnemigo; 
 
     void Awake() { Instance = this; }
 
@@ -39,7 +47,6 @@ public class CombatManager : MonoBehaviour
 
     IEnumerator ConfigurarCombate()
     {
-        // 1. Crear Héroe
         int indice = 0;
         if (GameManager.Instance != null) indice = GameManager.Instance.heroeSeleccionado;
 
@@ -47,10 +54,9 @@ public class CombatManager : MonoBehaviour
         unidadHeroe = heroeGO.GetComponent<UnidadCombate>();
         animatorHeroe = heroeGO.GetComponent<Animator>();
 
-        // 2. Crear Enemigo
         GameObject enemigoGO = Instantiate(enemigoPrefab, puntoEnemigo.position, Quaternion.identity);
         unidadEnemigo = enemigoGO.GetComponent<UnidadCombate>();
-        animatorEnemigo = enemigoGO.GetComponent<Animator>(); // ✅ Capturamos el animator del monstruo
+        animatorEnemigo = enemigoGO.GetComponent<Animator>(); 
 
         ActualizarUI();
 
@@ -60,17 +66,45 @@ public class CombatManager : MonoBehaviour
 
     void ActualizarUI()
     {
+        // --- UI DEL HÉROE ---
         if (unidadHeroe != null)
         {
-            if (textoVidaHeroe != null) textoVidaHeroe.text = "HP: " + unidadHeroe.vidaActual;
-            if (textoManaHeroe != null) textoManaHeroe.text = "MP: " + unidadHeroe.manaActual;
+            if (imagenVidaHeroe != null)
+            {
+                float porcentajeVida = (float)unidadHeroe.vidaActual / unidadHeroe.vidaMaxima;
+                imagenVidaHeroe.fillAmount = porcentajeVida;
+            }
+            if (textoNumerosVidaHeroe != null)
+            {
+                textoNumerosVidaHeroe.text = unidadHeroe.vidaActual + " / " + unidadHeroe.vidaMaxima;
+            }
+
+            if (imagenManaHeroe != null)
+            {
+                float porcentajeMana = (float)unidadHeroe.manaActual / unidadHeroe.manaMaximo; 
+                imagenManaHeroe.fillAmount = porcentajeMana;
+            }
+            if (textoNumerosManaHeroe != null)
+            {
+                textoNumerosManaHeroe.text = unidadHeroe.manaActual + " / " + unidadHeroe.manaMaximo;
+            }
         }
 
+        // --- UI DEL ENEMIGO ---
         if (unidadEnemigo != null)
         {
-            if (textoVidaEnemigo != null) textoVidaEnemigo.text = "HP: " + unidadEnemigo.vidaActual;
+            if (imagenVidaEnemigo != null)
+            {
+                float porcentajeEnemigo = (float)unidadEnemigo.vidaActual / unidadEnemigo.vidaMaxima;
+                imagenVidaEnemigo.fillAmount = porcentajeEnemigo;
+            }
+            if (textoNumerosVidaEnemigo != null)
+            {
+                textoNumerosVidaEnemigo.text = unidadEnemigo.vidaActual + " / " + unidadEnemigo.vidaMaxima;
+            }
         }
 
+        // --- TURNOS ---
         if (textoTurnos != null)
         {
             textoTurnos.text = "TURNO: " + numeroTurno;
@@ -144,7 +178,7 @@ public class CombatManager : MonoBehaviour
             animatorHeroe.SetTrigger("Atacar");
         }
 
-        yield return new WaitForSeconds(0.5f); // Pausa breve para que se vea el golpe
+        yield return new WaitForSeconds(0.5f); 
 
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(unidadHeroe.dañoBase);
         ActualizarUI();
@@ -167,13 +201,12 @@ public class CombatManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
 
-        // ✅ ¡EL MONSTRUO ATACA!
         if (animatorEnemigo != null)
         {
-            animatorEnemigo.SetTrigger("AtacarEnemigo"); // Asegúrate de que el trigger en el Animator se llame así
+            animatorEnemigo.SetTrigger("AtacarEnemigo"); 
         }
 
-        yield return new WaitForSeconds(0.5f); // Esperamos a que el monstruo lance el golpe
+        yield return new WaitForSeconds(0.5f); 
 
         bool heroeMuerto = unidadHeroe.RecibirDaño(unidadEnemigo.dañoBase);
         ActualizarUI();
