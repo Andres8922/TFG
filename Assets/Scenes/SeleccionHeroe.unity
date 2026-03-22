@@ -157,7 +157,7 @@ VideoPlayer:
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 0
+  m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
@@ -1220,6 +1220,7 @@ MonoBehaviour:
   reproductorVideo: {fileID: 92502523}
   clipCaballero: {fileID: 32900000, guid: bacf9530a807144378c0460bf41585b0, type: 3}
   clipMago: {fileID: 32900000, guid: bacf9530a807144378c0460bf41585b0, type: 3}
+  musicaDeFondo: {fileID: 0}
 --- !u!4 &2019609518
 Transform:
   m_ObjectHideFlags: 0
