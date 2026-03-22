@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: c5605dc2b72ce49138a7f5f2b4de4305
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9177747274654939792
+    second: sprites_final_batalla_0
+  - first:
+      213: 250805568328832208
+    second: sprites_final_batalla_1
+  - first:
+      213: 6002675861358505487
+    second: sprites_final_batalla_2
+  - first:
+      213: 4000562674285413775
+    second: sprites_final_batalla_3
+  - first:
+      213: 5033458130220036089
+    second: sprites_final_batalla_4
+  - first:
+      213: -8267519366034934236
+    second: sprites_final_batalla_5
+  - first:
+      213: 1763901432315212043
+    second: sprites_final_batalla_6
+  - first:
+      213: -463406049123894774
+    second: sprites_final_batalla_7
+  - first:
+      213: -1853353387862173033
+    second: sprites_final_batalla_8
+  - first:
+      213: 8805125991342027801
+    second: sprites_final_batalla_9
+  - first:
+      213: 1249530741856273986
+    second: sprites_final_batalla_10
+  - first:
+      213: 3039435242221616117
+    second: sprites_final_batalla_11
+  - first:
+      213: -4200990718666753486
+    second: sprites_final_batalla_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprites_final_batalla_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 170
+        width: 320
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09afd104588ed5f70800000000000000
+      internalID: 9177747274654939792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_final_batalla_1
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 171
+        width: 311
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d41ee7e55a0b7300800000000000000
+      internalID: 250805568328832208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_final_batalla_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 85
+        width: 296
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ee51274e9cd4350800000000000000
+      internalID: 6002675861358505487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_final_batalla_3
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 95
+        width: 169
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85087e6e8ad48730800000000000000
+      internalID: 4000562674285413775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_final_batalla_4
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 96
+        width: 123
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff2193408f6ad540800000000000000
+      internalID: 5033458130220036089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_final_batalla_5
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 101
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42633d590fed34d80800000000000000
+      internalID: -8267519366034934236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_final_batalla_6
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 68
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0173f3d103aa7810800000000000000
+      internalID: 1763901432315212043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_final_batalla_7
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 68
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0af33f47a6a199f0800000000000000
+      internalID: -463406049123894774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_final_batalla_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 12
+        width: 157
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a5539c9e09746e0800000000000000
+      internalID: -1853353387862173033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_final_batalla_9
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 12
+        width: 157
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91430840077123a70800000000000000
+      internalID: 8805125991342027801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_final_batalla_10
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 12
+        width: 171
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2460644e699375110800000000000000
+      internalID: 1249530741856273986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_final_batalla_11
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 49
+        width: 87
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb3c6acf3e3e2a20800000000000000
+      internalID: 3039435242221616117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_final_batalla_12
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 29
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ab72df23513b5c0800000000000000
+      internalID: -4200990718666753486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 941ec9af51e574c3d80083d5f0f20556
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprites_final_batalla_0: 9177747274654939792
+      sprites_final_batalla_1: 250805568328832208
+      sprites_final_batalla_10: 1249530741856273986
+      sprites_final_batalla_11: 3039435242221616117
+      sprites_final_batalla_12: -4200990718666753486
+      sprites_final_batalla_2: 6002675861358505487
+      sprites_final_batalla_3: 4000562674285413775
+      sprites_final_batalla_4: 5033458130220036089
+      sprites_final_batalla_5: -8267519366034934236
+      sprites_final_batalla_6: 1763901432315212043
+      sprites_final_batalla_7: -463406049123894774
+      sprites_final_batalla_8: -1853353387862173033
+      sprites_final_batalla_9: 8805125991342027801
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

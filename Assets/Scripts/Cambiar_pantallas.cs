@@ -1,14 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Cambiar_pantallas : MonoBehaviour //Como no lo deribe no me deja pasar de una carpeta a otra el script
+public class Cambiar_pantallas : MonoBehaviour 
 {
-    
     public void VolverInicio()
     {
         Transicion.Instance.CargarEscena("MenuPrincipal");
     }
-
 
     public void Pantalla_Ajustes()
     {
@@ -19,7 +17,7 @@ public class Cambiar_pantallas : MonoBehaviour //Como no lo deribe no me deja pa
     {
         Transicion.Instance.CargarEscena("Perfil");
     }
-
+    
     public void Pantalla_Info()
     {
         Transicion.Instance.CargarEscena("Info");
@@ -35,6 +33,11 @@ public class Cambiar_pantallas : MonoBehaviour //Como no lo deribe no me deja pa
         Transicion.Instance.CargarEscena("SeleccionHeroe");
     }
 
+    public void Pantalla_Mapa()
+    {
+        Transicion.Instance.CargarEscena("Mapa"); 
+    }
+
     public void Cerrar()
     {
         Application.Quit();
@@ -43,5 +46,4 @@ public class Cambiar_pantallas : MonoBehaviour //Como no lo deribe no me deja pa
         UnityEditor.EditorApplication.isPlaying = false;
         #endif
     }
-
 }

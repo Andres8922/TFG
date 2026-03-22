@@ -78,8 +78,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 198954749
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 2460532211164355792, guid: b3363cc1be108dc46b438c92f222bbbd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -111,6 +111,8 @@ MonoBehaviour:
   manaMax: 50
   manaActual: 0
   manaPorTurno: 10
+  vidaMaxima: 100
+  manaMaximo: 50
 --- !u!95 &6682533470949384239
 Animator:
   serializedVersion: 7
