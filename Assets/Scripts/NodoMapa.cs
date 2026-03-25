@@ -1,34 +1,31 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Necesario para viajar
+using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
-public class NodoMapa : MonoBehaviour
+public enum TipoNodo { Inicio, CombateFácil, CombateDifícil, Evento, Tienda, Jefe }
+
+public class NodoMapa : MonoBehaviour, IPointerClickHandler
 {
-    // Definimos los tipos de casillas que existen
-    public enum TipoNodo { Enemigo, Jefe, Tienda, Tesoro }
-    public TipoNodo tipoDeEsteNodo;
+    public int piso;
+    public int indiceHorizontal;
+    public TipoNodo tipoDeNodo;
 
-    private void OnMouseDown()
+    public List<NodoMapa> conexionesSalientes = new List<NodoMapa>();
+
+    // Aquí está la función completa, sin puntos suspensivos que rompan nada
+    public void AnadirConexion(NodoMapa nodoDestino)
     {
-        Debug.Log("Viajando al combate...");
-
-        // Guardamos en el cerebro (GameManager) qué tipo de pelea toca
-        // (Esto lo usaremos luego para saber si spawneamos un goblin o un dragón)
-        // GameManager.Instance.tipoEncuentro = tipoDeEsteNodo; <--- Lo descomentaremos luego
-
-        // Cargamos la escena de peleas
-        Transicion.Instance.CargarEscena("Combate");
+        if (!conexionesSalientes.Contains(nodoDestino))
+        {
+            conexionesSalientes.Add(nodoDestino);
+        }
     }
 
-    public void ConfigurarNodo(TipoNodo nuevoTipo)
+    public void OnPointerClick(PointerEventData eventData)
     {
-        tipoDeEsteNodo = nuevoTipo;
+        Debug.Log("Hiciste clic en un nodo de tipo: " + tipoDeNodo);
 
-        // Cambiamos el color según el tipo para saber qué es
-        SpriteRenderer dibujo = GetComponent<SpriteRenderer>();
-
-        if (nuevoTipo == TipoNodo.Enemigo) dibujo.color = Color.red;       // Rojo = Enemigo
-        if (nuevoTipo == TipoNodo.Jefe) dibujo.color = Color.black;     // Negro = Jefe Final
-        if (nuevoTipo == TipoNodo.Tienda) dibujo.color = Color.yellow;    // Amarillo = Tienda
-        if (nuevoTipo == TipoNodo.Tesoro) dibujo.color = Color.cyan;      // Azul = Tesoro
+        // Descomenta esta línea quitando las dos barras (//) cuando hayas podido poner el SceneLoader en la escena
+        SceneLoader.Instance.CargarNivel(tipoDeNodo);
     }
 }
