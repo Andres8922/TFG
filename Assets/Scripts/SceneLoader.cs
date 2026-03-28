@@ -21,8 +21,8 @@ public class SceneLoader : MonoBehaviour
             case TipoNodo.Inicio:
                 // No hacemos nada, el inicio no carga nivel
                 break;
-            case TipoNodo.CombateFácil:
-            case TipoNodo.CombateDifícil:
+            case TipoNodo.CombateFacil:
+            case TipoNodo.CombateDificil:
                 // Cargamos la escena "Combate" que ya existe
                 SceneManager.LoadScene("Combate");
                 break;

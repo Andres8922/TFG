@@ -1,31 +1,22 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
-using System.Collections.Generic;
+using System.Collections.Generic; // Esto es vital para usar Listas
 
-public enum TipoNodo { Inicio, CombateFácil, CombateDifícil, Evento, Tienda, Jefe }
+public enum TipoNodo { Inicio, CombateFacil, CombateDificil, Tienda, Evento, Jefe, Vacio }
 
-public class NodoMapa : MonoBehaviour, IPointerClickHandler
+public class NodoMapa : MonoBehaviour
 {
-    public int piso;
-    public int indiceHorizontal;
+    public int pisoIndex;
+    public int nodoIndex;
     public TipoNodo tipoDeNodo;
 
-    public List<NodoMapa> conexionesSalientes = new List<NodoMapa>();
+    // Aquí es donde el Generador anota si hay línea o no
+    public List<NodoMapa> nodosConectados = new List<NodoMapa>();
 
-    // Aquí está la función completa, sin puntos suspensivos que rompan nada
-    public void AnadirConexion(NodoMapa nodoDestino)
+    void OnMouseDown()
     {
-        if (!conexionesSalientes.Contains(nodoDestino))
+        if (GeneradorMapa.Instance != null)
         {
-            conexionesSalientes.Add(nodoDestino);
+            GeneradorMapa.Instance.IntentarMoverJugador(this);
         }
-    }
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        Debug.Log("Hiciste clic en un nodo de tipo: " + tipoDeNodo);
-
-        // Descomenta esta línea quitando las dos barras (//) cuando hayas podido poner el SceneLoader en la escena
-        SceneLoader.Instance.CargarNivel(tipoDeNodo);
     }
 }
