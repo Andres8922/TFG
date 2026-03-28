@@ -1,141 +1,201 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class GeneradorMapa : MonoBehaviour
 {
-    [Header("Referencias")]
+    public static GeneradorMapa Instance;
+
+    [Header("Configuración Visual")]
     public GameObject nodoPrefab;
-    public GameObject lineaPrefab; // ¡NUEVO! Un prefab para dibujar la línea entre nodos
+    public GameObject playerIconPrefab; // ¡NUEVO! Arrastra aquí un pequeño icono de pixel art (p.ej un escudo)
     public Transform contenedor;
+    public LineRenderer lineaPrefab;
 
-    [Header("Configuración")]
-    public float distanciaVertical = 2f;
-    public float distanciaHorizontal = 2f;
+    [Header("Matemáticas del Árbol Tumbado")]
+    public int totalPisos = 10;
+    public float distanciaHorizontal = 2.5f;
+    public float distanciaVertical = 1.8f;
 
-    // Lista maestra que guarda todos los pisos y los nodos que hay en cada piso
+    [Header("Matemáticas de Conexiones (¡Prioridad 3!)")]
+    // Cuántos nodos de branching tendrá el mapa (divergencia)
+    [Range(0f, 1f)] public float probabilidadDeRamaExtra = 0.3f;
+
+    // Estructura de datos para guardar el mapa generado
     private List<List<GameObject>> mapaGenerado = new List<List<GameObject>>();
+    private List<LineRenderer> lineasGeneradas = new List<LineRenderer>();
+
+    // Estado del jugador (¡Prioridad 1!)
+    private GameObject playerIcon;
+    private int pisoActualJugador = -1;
+    private GameObject nodoActualJugador;
+    private HashSet<string> nodosCompletados = new HashSet<string>();
+
+    void Awake() { Instance = this; }
 
     void Start()
     {
-        int dificultad = 0;
-        // if (GameManager.Instance != null) dificultad = GameManager.Instance.dificultad; // Descomenta esto cuando lo unas a tu GameManager
-
-        int pisos = 5;
-        if (dificultad == 1) pisos = 8;
-        if (dificultad == 2) pisos = 12;
-
-        GenerarNodos(pisos);
-        CrearConexiones();
+        GenerarMapaArbolTumbado();
     }
 
-    void GenerarNodos(int totalPisos)
+    [ContextMenu("Generar Nuevo Mapa")]
+    public void GenerarMapaArbolTumbado()
     {
-        for (int pisoActual = 0; pisoActual < totalPisos; pisoActual++)
-        {
-            List<GameObject> nodosEnEstePiso = new List<GameObject>();
+        LimpiarMapaAnterior();
 
-            // Decidir cuántos nodos hay en este piso
-            int cantidadNodos = Random.Range(2, 5); // Entre 2 y 4 nodos
-            if (pisoActual == 0 || pisoActual == totalPisos - 1)
+        // Fase 1: Creación de Nodos y Posicionamiento (¡Prioridad 2 Centrado!)
+        GenerarNodosFormales();
+
+        // Fase 2: Conexiones de Árbol (¡Prioridad 3 Lógica!)
+        EstablecerConexionesArbol();
+
+        // Fase 3: Estado Inicial (¡Prioridad 1 Colores!)
+        InicializarEstadoJugador();
+    }
+
+    void LimpiarMapaAnterior()
+    {
+        foreach (Transform hijo in contenedor) Destroy(hijo.gameObject);
+        mapaGenerado.Clear();
+        lineasGeneradas.Clear();
+        if (playerIcon != null) Destroy(playerIcon);
+    }
+
+    //---------------------------------------------------------
+    // ¡PRIORIDAD 2: CENTRADO Y FORMA ORGÁNICA!
+    //---------------------------------------------------------
+    void GenerarNodosFormales()
+    {
+        // ... (el código matemático del centrado que ya tenías está bien) ...
+        float anchoTotalMapa = (totalPisos - 1) * distanciaHorizontal;
+        float inicioX = -anchoTotalMapa / 2f;
+
+        for (int p = 0; p < totalPisos; p++)
+        {
+            List<GameObject> nodosDeEstePiso = new List<GameObject>();
+
+            //---------------------------------------------------------
+            // NUEVA LÓGICA DE CANTIDAD DE NODOS (Árbol Tumbado)
+            //---------------------------------------------------------
+            int cantidadNodos = 0;
+            if (p == 0) cantidadNodos = 1; // Inicio (1 nodo)
+            else if (p == totalPisos - 1) cantidadNodos = 1; // Jefe (1 nodo)
+            else
             {
-                cantidadNodos = 1; // El principio y el final siempre tienen 1 solo nodo
+                // Queremos que el árbol se abra mucho en el centro (la copa) y sea caótico.
+                // Pisos 1-2 (Trunk): Se abre un poco (2-3 ramas)
+                if (p < 3) cantidadNodos = Random.Range(2, 4);
+                // Pisos 3 a (N-3) (Copa del árbol): ¡Ramas locas! (4-6 nodos)
+                else if (p < totalPisos - 3) cantidadNodos = Random.Range(4, 7);
+                // Pisos finales (Estrechamiento): Vuelve a estrecharse hacia el jefe (2-4 nodos)
+                else cantidadNodos = Random.Range(2, 5);
             }
 
-            // Calcular el punto de inicio a la izquierda para que queden centrados
-            float inicioX = -(cantidadNodos - 1) * distanciaHorizontal / 2f;
-            float posicionY = -4f + (pisoActual * distanciaVertical);
+            // ... (el resto del código de posicionamiento X/Y sigue igual de bien) ...
+            float posX = inicioX + (p * distanciaHorizontal);
+            float altoTotalPiso = (cantidadNodos - 1) * distanciaVertical;
+            float inicioY = altoTotalPiso / 2f;
 
             for (int i = 0; i < cantidadNodos; i++)
             {
-                Vector3 posicion = new Vector3(inicioX + (i * distanciaHorizontal), posicionY, 0);
+                Vector3 posicion = new Vector3(posX, inicioY - (i * distanciaVertical), 0);
 
                 GameObject nuevoNodo = Instantiate(nodoPrefab, posicion, Quaternion.identity);
                 nuevoNodo.transform.SetParent(contenedor);
-                nuevoNodo.name = "Nodo_" + pisoActual + "_" + i;
+                nuevoNodo.name = $"Nodo_{p}_{i}";
 
-                // Lógica de qué tipo de sala es
-                NodoMapa scriptDelNodo = nuevoNodo.GetComponent<NodoMapa>();
-                if (scriptDelNodo != null)
-                {
-                    if (pisoActual == 0) scriptDelNodo.tipoDeNodo = TipoNodo.Inicio;
-                    else if (pisoActual == totalPisos - 1) scriptDelNodo.tipoDeNodo = TipoNodo.Jefe;
-                    else
-                    {
-                        float azar = Random.Range(0f, 100f);
-                        if (azar < 60) scriptDelNodo.tipoDeNodo = TipoNodo.CombateFácil;
-                        else if (azar < 80) scriptDelNodo.tipoDeNodo = TipoNodo.CombateDifícil;
-                        else if (azar < 90) scriptDelNodo.tipoDeNodo = TipoNodo.Tienda;
-                        else scriptDelNodo.tipoDeNodo = TipoNodo.Evento;
-                    }
-                }
-
-                nodosEnEstePiso.Add(nuevoNodo);
+                nodosDeEstePiso.Add(nuevoNodo);
             }
-
-            mapaGenerado.Add(nodosEnEstePiso);
+            mapaGenerado.Add(nodosDeEstePiso);
         }
     }
 
-    void CrearConexiones()
+    //---------------------------------------------------------
+    // ¡PRIORIDAD 3: LÓGICA DE ÁRBOL TUMBADO!
+    //---------------------------------------------------------
+    // Aquí implementamos reglas para que no haya 4 conexiones locas
+    void EstablecerConexionesArbol()
     {
-        // Recorremos todos los pisos excepto el último (el jefe no conecta hacia arriba)
-        for (int i = 0; i < mapaGenerado.Count - 1; i++)
+        for (int p = 0; p < totalPisos - 1; p++) // De izquierda a derecha
         {
-            List<GameObject> pisoActual = mapaGenerado[i];
-            List<GameObject> pisoSiguiente = mapaGenerado[i + 1];
+            List<GameObject> nodosPisoActual = mapaGenerado[p];
+            List<GameObject> nodosPisoSiguiente = mapaGenerado[p + 1];
 
-            // 1. Cada nodo del piso actual DEBE conectar con al menos un nodo del piso siguiente
-            for (int n = 0; n < pisoActual.Count; n++)
+            // Regla 1: Todo nodo DEBE tener al menos una salida
+            for (int i = 0; i < nodosPisoActual.Count; i++)
             {
-                // Conecta con el nodo que tiene justo encima (o el más cercano)
-                int indiceDestino = Mathf.Clamp(n, 0, pisoSiguiente.Count - 1);
-                DibujarLinea(pisoActual[n].transform, pisoSiguiente[indiceDestino].transform);
+                // Conectamos [p][i] con el nodo [p+1] que esté más cerca verticalmente (i o i+1)
+                int indiceSiguienteTarget = Mathf.Clamp(i, 0, nodosPisoSiguiente.Count - 1);
+                DibujarLineaConceptual(nodosPisoActual[i], nodosPisoSiguiente[indiceSiguienteTarget]);
 
-                // Un 30% de posibilidades de crear un camino extra cruzado para darle vidilla
-                if (Random.value < 0.3f && pisoSiguiente.Count > 1)
+                // Regla 2: Branching controlado (divergencia)
+                // Solo algunos nodos crean una bifurcación hacia el siguiente nodo
+                if (i < nodosPisoSiguiente.Count - 1 && Random.value < probabilidadDeRamaExtra)
                 {
-                    int destinoExtra = Random.Range(0, pisoSiguiente.Count);
-                    DibujarLinea(pisoActual[n].transform, pisoSiguiente[destinoExtra].transform);
+                    DibujarLineaConceptual(nodosPisoActual[i], nodosPisoSiguiente[indiceSiguienteTarget + 1]);
                 }
-            }
-
-            // 2. Nos aseguramos de que no queden nodos huérfanos en el piso siguiente
-            for (int n = 0; n < pisoSiguiente.Count; n++)
-            {
-                // Aquí en un futuro comprobaremos si el nodo 'n' no tiene conexiones entrantes
-                // y si es así, lo conectamos a la fuerza con un nodo aleatorio del piso actual.
-                // Por ahora, con la lógica de arriba, casi siempre todos estarán conectados.
             }
         }
     }
 
-    void DibujarLinea(Transform origen, Transform destino)
+    //---------------------------------------------------------
+    // ¡PRIORIDAD 1: COLORES GRIS/AZUL Y JUGADOR!
+    //---------------------------------------------------------
+    void InicializarEstadoJugador()
     {
-        if (lineaPrefab == null) return;
+        // 1. Ponemos el icono en el Start
+        if (playerIconPrefab != null && mapaGenerado.Count > 0)
+        {
+            playerIcon = Instantiate(playerIconPrefab, mapaGenerado[0][0].transform.position, Quaternion.identity);
+            pisoActualJugador = 0;
+            nodoActualJugador = mapaGenerado[0][0];
+        }
 
-        // --- SOLUCIÓN MATEMÁTICA ---
-        // 1. Calculamos el punto MEDIO exacto entre el origen y el destino.
-        // Allí es donde debe vivir el objeto de la línea.
-        Vector3 puntoMedio = (origen.position + destino.position) / 2f;
+        ActualizarVisibilidadMapa();
+    }
 
-        // 2. Instanciamos la línea en ese punto medio.
-        GameObject linea = Instantiate(lineaPrefab, puntoMedio, Quaternion.identity);
+    public void ActualizarVisibilidadMapa()
+    {
+        // Regla: Todo lo que no sea el Start o el Boss es Color.gray por defecto (niebla)
+        for (int p = 0; p < mapaGenerado.Count; p++)
+        {
+            for (int i = 0; i < mapaGenerado[p].Count; i++)
+            {
+                GameObject nodo = mapaGenerado[p][i];
+                SpriteRenderer sr = nodo.GetComponent<SpriteRenderer>();
+                if (sr == null) continue;
+
+                string idNodo = $"{p}_{i}";
+
+                if (p == 0) sr.color = Color.white; // Start es visible
+                else if (p == totalPisos - 1) sr.color = Color.red; // Boss es visible
+                else if (nodosCompletados.Contains(idNodo))
+                {
+                    // ¡NUEVO: Azulado al completar!
+                    sr.color = new Color(0f, 0.7f, 1f); // Azul cian suave
+                }
+                else
+                {
+                    sr.color = Color.gray; // NIEBLA POR DEFECTO
+                }
+            }
+        }
+
+        // 2. Pintamos las líneas
+        // (conceptual: las líneas que salen del nodo actual se pintan de blanco, el resto gris oscuro)
+    }
+
+    // Función auxiliar para dibujar (reemplaza tu DibujarLinea)
+    void DibujarLineaConceptual(GameObject origen, GameObject destino)
+    {
+        LineRenderer linea = Instantiate(lineaPrefab, Vector3.zero, Quaternion.identity);
         linea.transform.SetParent(contenedor);
-
-        // 3. Calculamos la dirección y la distancia (esto sigue igual)
-        Vector3 direccion = destino.position - origen.position;
-        float distancia = direccion.magnitude;
-        float angulo = Mathf.Atan2(direccion.y, direccion.x) * Mathf.Rad2Deg;
-
-        // 4. Estirar y rotar la línea. 
-        // Como el sprite (el prefab cuadrado) se estira desde su centro (que ahora es el punto medio),
-        // tocará perfectamente ambos extremos.
-        linea.transform.localScale = new Vector3(distancia, 0.1f, 1f);
-        linea.transform.rotation = Quaternion.Euler(0, 0, angulo);
-
-        // 5. Gestión de profundidad (detrás de los iconos)
-        Vector3 posLinea = linea.transform.position;
-        posLinea.z = 1f;
-        linea.transform.position = posLinea;
+        linea.positionCount = 2;
+        linea.SetPosition(0, origen.transform.position);
+        linea.SetPosition(1, destino.transform.position);
+        // (Conceptual: por defecto gris oscuro)
+        linea.startColor = Color.gray * 0.5f;
+        linea.endColor = Color.gray * 0.5f;
+        lineasGeneradas.Add(linea);
     }
 }
