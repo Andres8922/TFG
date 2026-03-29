@@ -12,7 +12,7 @@ public class GeneradorMapa : MonoBehaviour
     public Transform contenedor;
     public LineRenderer lineaPrefab;
 
-    [Header("Iconos de los Nodos (¡NUEVO!)")]
+    [Header("Iconos de los Nodos")]
     public Sprite iconoInicio;
     public Sprite iconoCombateFacil;
     public Sprite iconoCombateDificil;
@@ -28,20 +28,27 @@ public class GeneradorMapa : MonoBehaviour
     [Header("Matemáticas de Conexiones")]
     [Range(0f, 1f)] public float probabilidadDeRamaExtra = 0.3f;
 
-    // Estructura de datos para guardar el mapa generado
     private List<List<GameObject>> mapaGenerado = new List<List<GameObject>>();
     private List<LineRenderer> lineasGeneradas = new List<LineRenderer>();
 
-    // Estado del jugador
     private GameObject playerIcon;
-    private int pisoActualJugador = -1;
     private GameObject nodoActualJugador;
-    private HashSet<string> nodosCompletados = new HashSet<string>();
 
     void Awake() { Instance = this; }
 
     void Start()
     {
+        // ¡LA MAGIA DE LA PERSISTENCIA ESTÁ AQUÍ!
+        if (!DatosGlobales.hayPartidaGuardada)
+        {
+            // Primera vez: inventamos una semilla aleatoria
+            DatosGlobales.semillaMapa = Random.Range(0, 999999);
+            DatosGlobales.hayPartidaGuardada = true;
+        }
+
+        // Obligamos a Unity a usar esa semilla. Así el mapa se construirá IGUAL que la última vez.
+        Random.InitState(DatosGlobales.semillaMapa);
+
         GenerarMapaArbolTumbado();
     }
 
@@ -62,9 +69,6 @@ public class GeneradorMapa : MonoBehaviour
         if (playerIcon != null) Destroy(playerIcon);
     }
 
-    //---------------------------------------------------------
-    // ¡PRIORIDAD 2: CENTRADO, FORMA Y AZAR!
-    //---------------------------------------------------------
     void GenerarNodosFormales()
     {
         float anchoTotalMapa = (totalPisos - 1) * distanciaHorizontal;
@@ -102,21 +106,18 @@ public class GeneradorMapa : MonoBehaviour
                     scriptNodo.pisoIndex = p;
                     scriptNodo.nodoIndex = i;
 
-                    // 1. ASIGNAMOS EL TIPO ALEATORIAMENTE
                     if (p == 0) scriptNodo.tipoDeNodo = TipoNodo.Inicio;
                     else if (p == totalPisos - 1) scriptNodo.tipoDeNodo = TipoNodo.Jefe;
                     else
                     {
-                        // Ruleta de probabilidades
-                        float probabilidad = Random.value; // Saca un número del 0.0 al 1.0
+                        float probabilidad = Random.value;
 
-                        if (probabilidad < 0.45f) scriptNodo.tipoDeNodo = TipoNodo.CombateFacil; // 45%
-                        else if (probabilidad < 0.65f) scriptNodo.tipoDeNodo = TipoNodo.CombateDificil; // 20%
-                        else if (probabilidad < 0.85f) scriptNodo.tipoDeNodo = TipoNodo.Evento; // 20%
-                        else scriptNodo.tipoDeNodo = TipoNodo.Tienda; // 15%
+                        if (probabilidad < 0.45f) scriptNodo.tipoDeNodo = TipoNodo.CombateFacil;
+                        else if (probabilidad < 0.65f) scriptNodo.tipoDeNodo = TipoNodo.CombateDificil;
+                        else if (probabilidad < 0.85f) scriptNodo.tipoDeNodo = TipoNodo.Evento;
+                        else scriptNodo.tipoDeNodo = TipoNodo.Tienda;
                     }
 
-                    // 2. LE PONEMOS SU DIBUJO CORRESPONDIENTE
                     SpriteRenderer sr = nuevoNodo.GetComponent<SpriteRenderer>();
                     switch (scriptNodo.tipoDeNodo)
                     {
@@ -135,9 +136,6 @@ public class GeneradorMapa : MonoBehaviour
         }
     }
 
-    //---------------------------------------------------------
-    // ¡PRIORIDAD 3: LÓGICA DE ÁRBOL TUMBADO CON MEMORIA!
-    //---------------------------------------------------------
     void EstablecerConexionesArbol()
     {
         for (int p = 0; p < totalPisos - 1; p++)
@@ -166,16 +164,16 @@ public class GeneradorMapa : MonoBehaviour
         }
     }
 
-    //---------------------------------------------------------
-    // ¡PRIORIDAD 1: COLORES GRIS/AZUL Y ESTADO!
-    //---------------------------------------------------------
     void InicializarEstadoJugador()
     {
         if (playerIconPrefab != null && mapaGenerado.Count > 0)
         {
-            playerIcon = Instantiate(playerIconPrefab, mapaGenerado[0][0].transform.position, Quaternion.identity);
-            pisoActualJugador = 0;
-            nodoActualJugador = mapaGenerado[0][0];
+            // Colocamos al jugador donde diga la Tarjeta de Memoria
+            int p = DatosGlobales.pisoActualJugador;
+            int i = DatosGlobales.nodoActualJugador;
+
+            nodoActualJugador = mapaGenerado[p][i];
+            playerIcon = Instantiate(playerIconPrefab, nodoActualJugador.transform.position, Quaternion.identity);
         }
 
         ActualizarVisibilidadMapa();
@@ -195,7 +193,7 @@ public class GeneradorMapa : MonoBehaviour
 
                 if (p == 0) sr.color = Color.white;
                 else if (p == totalPisos - 1) sr.color = Color.red;
-                else if (nodosCompletados.Contains(idNodo))
+                else if (DatosGlobales.nodosCompletados.Contains(idNodo)) // Lee la memoria global
                 {
                     sr.color = new Color(0f, 0.7f, 1f);
                 }
@@ -219,16 +217,15 @@ public class GeneradorMapa : MonoBehaviour
         lineasGeneradas.Add(linea);
     }
 
-    //---------------------------------------------------------
-    // ¡INTERACCIÓN DEL JUGADOR Y ESCENAS CON VALIDACIÓN!
-    //---------------------------------------------------------
     public void IntentarMoverJugador(NodoMapa nodoDestino)
     {
         string idNodoDestino = $"{nodoDestino.pisoIndex}_{nodoDestino.nodoIndex}";
 
-        if (nodosCompletados.Contains(idNodoDestino) || (nodoDestino.pisoIndex == 0 && nodoDestino.nodoIndex == 0))
+        // Comprobamos en la memoria global si ya completamos esto
+        if (DatosGlobales.nodosCompletados.Contains(idNodoDestino) || (nodoDestino.pisoIndex == 0 && nodoDestino.nodoIndex == 0))
         {
-            pisoActualJugador = nodoDestino.pisoIndex;
+            DatosGlobales.pisoActualJugador = nodoDestino.pisoIndex;
+            DatosGlobales.nodoActualJugador = nodoDestino.nodoIndex;
             nodoActualJugador = nodoDestino.gameObject;
             playerIcon.transform.position = nodoActualJugador.transform.position;
 
@@ -240,10 +237,13 @@ public class GeneradorMapa : MonoBehaviour
 
         if (scriptNodoActual.nodosConectados.Contains(nodoDestino))
         {
-            string idNodoActual = $"{pisoActualJugador}_{scriptNodoActual.nodoIndex}";
-            nodosCompletados.Add(idNodoActual);
+            // Guardamos el progreso en la memoria global antes de irnos
+            string idNodoActual = $"{DatosGlobales.pisoActualJugador}_{scriptNodoActual.nodoIndex}";
+            DatosGlobales.nodosCompletados.Add(idNodoActual);
 
-            pisoActualJugador = nodoDestino.pisoIndex;
+            DatosGlobales.pisoActualJugador = nodoDestino.pisoIndex;
+            DatosGlobales.nodoActualJugador = nodoDestino.nodoIndex;
+
             nodoActualJugador = nodoDestino.gameObject;
             playerIcon.transform.position = nodoActualJugador.transform.position;
 
@@ -262,7 +262,6 @@ public class GeneradorMapa : MonoBehaviour
 
         if (SceneLoader.Instance != null)
         {
-            // Llamamos exactamente a tu función "CargarNivel" y le pasamos el TipoNodo
             SceneLoader.Instance.CargarNivel(nodo.tipoDeNodo);
         }
         else

@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: fad46e3eef62f4849a941ec0d5cdac61
+guid: 23bfb8cdfff49f347acc9535050562d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2489992817334662906
-    second: sprites_onOff_0
+      213: 4473142664917742187
+    second: sprites_mercado_salud_0
   - first:
-      213: -186537747115035840
-    second: sprites_onOff_1
+      213: 3898126990275586727
+    second: sprites_mercado_salud_1
+  - first:
+      213: -2639858430777697940
+    second: sprites_mercado_salud_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,19 +90,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -114,6 +104,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -155,45 +158,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprites_onOff_0
+      name: sprites_mercado_salud_0
       rect:
         serializedVersion: 2
-        x: 426
-        y: 132
-        width: 94
-        height: 110
+        x: 16
+        y: 16
+        width: 207
+        height: 335
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af6b18a564b3e8220800000000000000
-      internalID: 2489992817334662906
+      spriteID: b62f014dd8bc31e30800000000000000
+      internalID: 4473142664917742187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprites_onOff_1
+      name: sprites_mercado_salud_1
       rect:
         serializedVersion: 2
-        x: 141
-        y: 131
-        width: 100
-        height: 111
+        x: 234
+        y: 16
+        width: 208
+        height: 335
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 043b10648e8496df0800000000000000
-      internalID: -186537747115035840
+      spriteID: 7aa2db038dde81630800000000000000
+      internalID: 3898126990275586727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_mercado_salud_2
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 16
+        width: 207
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69dc286eb65d5bd0800000000000000
+      internalID: -2639858430777697940
       vertices: []
       indices: 
       edges: []
@@ -202,7 +227,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f54d5b60a12e94a7b83cd50cc39e022a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -212,8 +237,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sprites_onOff_0: 2489992817334662906
-      sprites_onOff_1: -186537747115035840
+      sprites_mercado_salud_0: 4473142664917742187
+      sprites_mercado_salud_1: 3898126990275586727
+      sprites_mercado_salud_2: -2639858430777697940
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -412,9 +412,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GeneradorMapa
   nodoPrefab: {fileID: 1454783135541806402, guid: 96e93060b708a3f4f99b4dd6a593275e, type: 3}
-  playerIconPrefab: {fileID: 5237192301169171914, guid: 1e6cd66013160ae49a8a5d945cf48929, type: 3}
+  playerIconPrefab: {fileID: 1305577046426405028, guid: b93629a790d39da499b80e241a3f9293, type: 3}
   contenedor: {fileID: 1119639536}
   lineaPrefab: {fileID: -4734527637899964262, guid: 2d4188c17adf9214f9f59f4b28421c19, type: 3}
+  iconoInicio: {fileID: 0}
+  iconoCombateFacil: {fileID: 0}
+  iconoCombateDificil: {fileID: 0}
+  iconoEvento: {fileID: 0}
+  iconoTienda: {fileID: -1905080754318965337, guid: ae408732a3529894d81f926158f7ed2e, type: 3}
+  iconoJefe: {fileID: 0}
   totalPisos: 6
   distanciaHorizontal: 2
   distanciaVertical: 2

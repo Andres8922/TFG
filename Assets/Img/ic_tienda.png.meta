@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: fad46e3eef62f4849a941ec0d5cdac61
+guid: ae408732a3529894d81f926158f7ed2e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2489992817334662906
-    second: sprites_onOff_0
+      213: -1905080754318965337
+    second: ic_tienda_0
   - first:
-      213: -186537747115035840
-    second: sprites_onOff_1
+      213: 5310439793954660943
+    second: ic_tienda_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,19 +87,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -114,6 +101,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -155,45 +155,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprites_onOff_0
+      name: ic_tienda_0
       rect:
         serializedVersion: 2
-        x: 426
-        y: 132
-        width: 94
-        height: 110
+        x: 241
+        y: 52
+        width: 195
+        height: 246
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af6b18a564b3e8220800000000000000
-      internalID: 2489992817334662906
+      spriteID: 7a58262c52bcf85e0800000000000000
+      internalID: -1905080754318965337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprites_onOff_1
+      name: ic_tienda_1
       rect:
         serializedVersion: 2
-        x: 141
-        y: 131
-        width: 100
-        height: 111
+        x: 327
+        y: 286
+        width: 13
+        height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 043b10648e8496df0800000000000000
-      internalID: -186537747115035840
+      spriteID: f4224cf4bd872b940800000000000000
+      internalID: 5310439793954660943
       vertices: []
       indices: 
       edges: []
@@ -202,7 +202,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f54d5b60a12e94a7b83cd50cc39e022a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -212,8 +212,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sprites_onOff_0: 2489992817334662906
-      sprites_onOff_1: -186537747115035840
+      ic_tienda_0: -1905080754318965337
+      ic_tienda_1: 5310439793954660943
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

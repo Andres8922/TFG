@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 5803815011000459186}
   - component: {fileID: 1947117351654622621}
   - component: {fileID: 5442061380306382256}
+  - component: {fileID: -3446882946824118136}
   m_Layer: 0
   m_Name: sprite_dragon_0
   m_TagString: Untagged
@@ -202,6 +203,27 @@ MonoBehaviour:
     m_Extent: {x: 2.7366886, y: 1.9947364, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+--- !u!114 &-3446882946824118136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4536950133996291661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aab861dee3acbc499eac518a844f762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnidadCombate
+  nombreUnidad: "Jefe Drag\xF3n"
+  "da\xF1oBase": 10
+  vidaMax: 100
+  vidaActual: 10
+  manaMax: 50
+  manaActual: 0
+  manaPorTurno: 10
+  vidaMaxima: 100
+  manaMaximo: 50
 --- !u!1 &5502568507899055004
 GameObject:
   m_ObjectHideFlags: 0

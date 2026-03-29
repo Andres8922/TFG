@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: fad46e3eef62f4849a941ec0d5cdac61
+guid: edd522f60efa4e24c9df5306e56e42e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2489992817334662906
-    second: sprites_onOff_0
+      213: 5296575781804032947
+    second: sprites_mercado_ataque_0
   - first:
-      213: -186537747115035840
-    second: sprites_onOff_1
+      213: -6300853694725916261
+    second: sprites_mercado_ataque_1
+  - first:
+      213: -3292890498182437978
+    second: sprites_mercado_ataque_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,19 +90,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -114,6 +104,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -155,45 +158,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprites_onOff_0
+      name: sprites_mercado_ataque_0
       rect:
         serializedVersion: 2
-        x: 426
-        y: 132
-        width: 94
-        height: 110
+        x: 17
+        y: 16
+        width: 206
+        height: 335
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af6b18a564b3e8220800000000000000
-      internalID: 2489992817334662906
+      spriteID: 3b3cd507c97318940800000000000000
+      internalID: 5296575781804032947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprites_onOff_1
+      name: sprites_mercado_ataque_1
       rect:
         serializedVersion: 2
-        x: 141
-        y: 131
-        width: 100
-        height: 111
+        x: 234
+        y: 16
+        width: 208
+        height: 335
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 043b10648e8496df0800000000000000
-      internalID: -186537747115035840
+      spriteID: b997720b2fede88a0800000000000000
+      internalID: -6300853694725916261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_mercado_ataque_2
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 16
+        width: 206
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3a393d98d4d42d0800000000000000
+      internalID: -3292890498182437978
       vertices: []
       indices: 
       edges: []
@@ -202,7 +227,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f54d5b60a12e94a7b83cd50cc39e022a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -212,8 +237,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sprites_onOff_0: 2489992817334662906
-      sprites_onOff_1: -186537747115035840
+      sprites_mercado_ataque_0: 5296575781804032947
+      sprites_mercado_ataque_1: -6300853694725916261
+      sprites_mercado_ataque_2: -3292890498182437978
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
