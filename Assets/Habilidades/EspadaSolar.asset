@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281bf151db29e774a9c3815c17451131, type: 3}
+  m_Name: EspadaSolar
+  m_EditorClassIdentifier: Assembly-CSharp::Habilidad
+  nombreHabilidad: Espada Solar
+  costeMana: 50
+  iconoHabilidad: {fileID: 8279143286843893357, guid: c0873598c510ead499114b23b1c9e8f4, type: 3}
+  descripcion: "Embulle la esp\xE1da con m\xE1gia de luz con el que atacar\xE1 al
+    enemigo"

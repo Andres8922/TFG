@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281bf151db29e774a9c3815c17451131, type: 3}
+  m_Name: Venganza
+  m_EditorClassIdentifier: Assembly-CSharp::Habilidad
+  nombreHabilidad: Venganza
+  costeMana: 0
+  iconoHabilidad: {fileID: 8431263886620731216, guid: c0873598c510ead499114b23b1c9e8f4, type: 3}
+  descripcion: "El enemigo recibir\xE1 da\xF1o en caso de atacar al h\xE9roe cuando
+    este tenga un 25% o menos de vida"
