@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 45eb718b88644f7478adf7eb751ddb66
+guid: ddef5680dd541f145837b9d0203980fe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8305204981166737429
-    second: sprite_base_caballero_0
+      213: 4254362626535760560
+    second: sprites_opciones_combate_0
+  - first:
+      213: -4015138982638259166
+    second: sprites_opciones_combate_1
+  - first:
+      213: -5242574325588084024
+    second: sprites_opciones_combate_2
+  - first:
+      213: 5789034855209117081
+    second: sprites_opciones_combate_3
+  - first:
+      213: -5374548911822373485
+    second: sprites_opciones_combate_4
+  - first:
+      213: 1442231675587623285
+    second: sprites_opciones_combate_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -152,13 +167,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_base_caballero_0
+      name: sprites_opciones_combate_0
       rect:
         serializedVersion: 2
-        x: 77
-        y: 6
-        width: 71
-        height: 110
+        x: 4
+        y: 73
+        width: 336
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +182,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5188f317de3024370800000000000000
-      internalID: 8305204981166737429
+      spriteID: 0b2ac5ca4488a0b30800000000000000
+      internalID: 4254362626535760560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_opciones_combate_1
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 74
+        width: 319
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224f5005e5c5748c0800000000000000
+      internalID: -4015138982638259166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_opciones_combate_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 241
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca3dbe5d62ae37b0800000000000000
+      internalID: -5242574325588084024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_opciones_combate_3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1
+        width: 245
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99528197788c65050800000000000000
+      internalID: 5789034855209117081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_opciones_combate_4
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1
+        width: 245
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d7dd28d34c965b0800000000000000
+      internalID: -5374548911822373485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_opciones_combate_5
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1
+        width: 244
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57977335116d30410800000000000000
+      internalID: 1442231675587623285
       vertices: []
       indices: 
       edges: []
@@ -177,7 +302,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -187,7 +312,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sprite_base_caballero_0: 8305204981166737429
+      sprites_opciones_combate_0: 4254362626535760560
+      sprites_opciones_combate_1: -4015138982638259166
+      sprites_opciones_combate_2: -5242574325588084024
+      sprites_opciones_combate_3: 5789034855209117081
+      sprites_opciones_combate_4: -5374548911822373485
+      sprites_opciones_combate_5: 1442231675587623285
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

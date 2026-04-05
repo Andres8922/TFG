@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 45eb718b88644f7478adf7eb751ddb66
+guid: 876c120a6f16ef447b33c1125e073292
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8305204981166737429
-    second: sprite_base_caballero_0
+      213: -8632444169025083454
+    second: sprite_prueba_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_base_caballero_0
+      name: sprite_prueba_0
       rect:
         serializedVersion: 2
-        x: 77
-        y: 6
-        width: 71
-        height: 110
+        x: 0
+        y: 0
+        width: 1024
+        height: 188
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5188f317de3024370800000000000000
-      internalID: 8305204981166737429
+      spriteID: 2c72ed1d3c5633880800000000000000
+      internalID: -8632444169025083454
       vertices: []
       indices: 
       edges: []
@@ -177,7 +177,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sprite_base_caballero_0: 8305204981166737429
+      sprite_prueba_0: -8632444169025083454
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

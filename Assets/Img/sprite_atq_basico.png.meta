@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 45eb718b88644f7478adf7eb751ddb66
+guid: aa6e4d513497bfa4ab106e925eae5447
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8305204981166737429
-    second: sprite_base_caballero_0
+      213: -6377561268967057501
+    second: sprite_atq_basico_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_base_caballero_0
+      name: sprite_atq_basico_0
       rect:
         serializedVersion: 2
-        x: 77
-        y: 6
-        width: 71
-        height: 110
+        x: 167
+        y: 18
+        width: 342
+        height: 331
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5188f317de3024370800000000000000
-      internalID: 8305204981166737429
+      spriteID: 3a7ddedc0d95e77a0800000000000000
+      internalID: -6377561268967057501
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sprite_base_caballero_0: 8305204981166737429
+      sprite_atq_basico_0: -6377561268967057501
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
