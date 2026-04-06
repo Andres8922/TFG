@@ -1,10 +1,52 @@
 fileFormatVersion: 2
-guid: 58b609a730a3d814a8f6bc561e00b169
+guid: bfddf799ab530b044ba4df1bd82f8091
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8667119159632986958
-    second: bt_salir2_0
+      213: 4255909681104506342
+    second: sprites_iniciales_heroes_selec_0
+  - first:
+      213: 4313217232784570471
+    second: sprites_iniciales_heroes_selec_1
+  - first:
+      213: 5790308019787653823
+    second: sprites_iniciales_heroes_selec_2
+  - first:
+      213: 6136780252705276310
+    second: sprites_iniciales_heroes_selec_3
+  - first:
+      213: -6460265066652155719
+    second: sprites_iniciales_heroes_selec_4
+  - first:
+      213: 8534010749239755396
+    second: sprites_iniciales_heroes_selec_5
+  - first:
+      213: 29981506494554316
+    second: sprites_iniciales_heroes_selec_6
+  - first:
+      213: 4492230564634695307
+    second: sprites_iniciales_heroes_selec_7
+  - first:
+      213: 1819099420952484747
+    second: sprites_iniciales_heroes_selec_8
+  - first:
+      213: 1811563755680286900
+    second: sprites_iniciales_heroes_selec_9
+  - first:
+      213: 1221990688833972320
+    second: sprites_iniciales_heroes_selec_10
+  - first:
+      213: -1061784063619680130
+    second: sprites_iniciales_heroes_selec_11
+  - first:
+      213: -6624470043740640138
+    second: sprites_iniciales_heroes_selec_12
+  - first:
+      213: 3069040377575257101
+    second: sprites_iniciales_heroes_selec_13
+  - first:
+      213: 2023252797795608763
+    second: sprites_iniciales_heroes_selec_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +117,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -152,23 +194,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bt_salir2_0
+      name: sprites_iniciales_heroes_selec_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1032
-        height: 492
+        x: 224
+        y: 148
+        width: 96
+        height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2bcf7107b0538b780800000000000000
-      internalID: -8667119159632986958
+      spriteID: 6ed41626e47001b30800000000000000
+      internalID: 4255909681104506342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_iniciales_heroes_selec_1
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 152
+        width: 94
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768b7378830abdb30800000000000000
+      internalID: 4313217232784570471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_iniciales_heroes_selec_6
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 32
+        width: 121
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0607475048a6000800000000000000
+      internalID: 29981506494554316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_iniciales_heroes_selec_7
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 32
+        width: 138
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86143ec5eb975e30800000000000000
+      internalID: 4492230564634695307
       vertices: []
       indices: 
       edges: []
@@ -177,7 +285,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b389960819bce3d4884c76eb73c69160
     internalID: 0
     vertices: []
     indices: 
@@ -187,7 +295,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bt_salir2_0: -8667119159632986958
+      sprites_iniciales_heroes_selec_0: 4255909681104506342
+      sprites_iniciales_heroes_selec_1: 4313217232784570471
+      sprites_iniciales_heroes_selec_10: 1221990688833972320
+      sprites_iniciales_heroes_selec_11: -1061784063619680130
+      sprites_iniciales_heroes_selec_12: -6624470043740640138
+      sprites_iniciales_heroes_selec_13: 3069040377575257101
+      sprites_iniciales_heroes_selec_14: 2023252797795608763
+      sprites_iniciales_heroes_selec_2: 5790308019787653823
+      sprites_iniciales_heroes_selec_3: 6136780252705276310
+      sprites_iniciales_heroes_selec_4: -6460265066652155719
+      sprites_iniciales_heroes_selec_5: 8534010749239755396
+      sprites_iniciales_heroes_selec_6: 29981506494554316
+      sprites_iniciales_heroes_selec_7: 4492230564634695307
+      sprites_iniciales_heroes_selec_8: 1819099420952484747
+      sprites_iniciales_heroes_selec_9: 1811563755680286900
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

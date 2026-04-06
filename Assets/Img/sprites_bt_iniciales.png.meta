@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: b297b8be06b958f4fba1ee43efdbe026
+guid: d612566e3e4dfee4ca412af4110260ee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8478142672047307351
-    second: bt_ajustes2_0
+      213: 6354408960445165129
+    second: sprites_bt_iniciales_0
+  - first:
+      213: -375399100009286923
+    second: sprites_bt_iniciales_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -152,23 +155,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bt_ajustes2_0
+      name: sprites_bt_iniciales_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 592
-        height: 201
+        x: 27
+        y: 232
+        width: 307
+        height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a50a8da826975a80800000000000000
-      internalID: -8478142672047307351
+      spriteID: 94ea4ec48456f2850800000000000000
+      internalID: 6354408960445165129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_bt_iniciales_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 32
+        width: 284
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2f1fae1805acaf0800000000000000
+      internalID: -375399100009286923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_bt_iniciales_2
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 135
+        width: 312
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893732d67f98df34ebeff8be09115f4c
+      internalID: 1100232713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_bt_iniciales_3
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 232
+        width: 296
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df8dbfa823fef747bf6a0dc110dcfc3
+      internalID: -2066030345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_bt_iniciales_4
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 31
+        width: 274
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26108a84240f3504a8ee81a404479584
+      internalID: 1857027306
       vertices: []
       indices: 
       edges: []
@@ -177,7 +268,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: db89c76059b3ebb4585272073764c459
     internalID: 0
     vertices: []
     indices: 
@@ -187,7 +278,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bt_ajustes2_0: -8478142672047307351
+      sprites_bt_iniciales_0: 6354408960445165129
+      sprites_bt_iniciales_1: -375399100009286923
+      sprites_bt_iniciales_2: 1100232713
+      sprites_bt_iniciales_3: -2066030345
+      sprites_bt_iniciales_4: 1857027306
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
