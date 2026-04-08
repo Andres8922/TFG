@@ -12,6 +12,9 @@ public class ObjetoTienda : ScriptableObject
     [TextArea(2, 3)]
     public string descripcion;
 
+    [Header("Inventario y Combate")]
+    public int cantidadEnInventario; // <--- ¡Esta es la clave para la mochila de combate!
+
     [Header("Efectos del Objeto")]
     public TipoEfectoTienda tipoEfecto;
     public int valorEfecto; // Ej: Si es cura, ¿cuánto cura? Si es fuerza, ¿cuánta suma?

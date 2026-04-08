@@ -16,5 +16,6 @@ MonoBehaviour:
   precio: 10
   iconoObjeto: {fileID: -2598142897621501522, guid: 889ac7370d3b73844bd86a99ea4561cf, type: 3}
   descripcion: "Pocion de vida peque\xF1a"
+  cantidadEnInventario: 3
   tipoEfecto: 0
   valorEfecto: 20

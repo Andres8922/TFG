@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f7b113a0d742634cb0225195d098ae5, type: 3}
-  m_Name: PocionVidaGrande
+  m_Name: PocionManaMediana
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoTienda
-  nombreObjeto: + 100 de salud
-  precio: 30
-  iconoObjeto: {fileID: 969439523629653586, guid: 889ac7370d3b73844bd86a99ea4561cf, type: 3}
-  descripcion: Pocion de vida grande
+  nombreObjeto: "+ 25 de man\xE1"
+  precio: 50
+  iconoObjeto: {fileID: -490807768459687275, guid: 81aa737f1cb5ef14396d35ffdbccac05, type: 3}
+  descripcion: "Otorga 25 puntos de man\xE1 al h\xE9roe"
   cantidadEnInventario: 5
-  tipoEfecto: 0
-  valorEfecto: 100
+  tipoEfecto: 1
+  valorEfecto: 25

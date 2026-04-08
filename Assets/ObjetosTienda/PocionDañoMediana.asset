@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f7b113a0d742634cb0225195d098ae5, type: 3}
-  m_Name: PocionVidaGrande
+  m_Name: "PocionDa\xF1oMediana"
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoTienda
-  nombreObjeto: + 100 de salud
-  precio: 30
-  iconoObjeto: {fileID: 969439523629653586, guid: 889ac7370d3b73844bd86a99ea4561cf, type: 3}
-  descripcion: Pocion de vida grande
+  nombreObjeto: + 50 de ataque
+  precio: 50
+  iconoObjeto: {fileID: 5579944404040481351, guid: 5da961912b84f0c458caead00a5493a5, type: 3}
+  descripcion: "El siguiente ataque del h\xE9roe contar\xE1 con un da\xF1o extra
+    de 50 puntos"
   cantidadEnInventario: 5
-  tipoEfecto: 0
-  valorEfecto: 100
+  tipoEfecto: 3
+  valorEfecto: 50

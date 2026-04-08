@@ -29,17 +29,24 @@ public class CombatManager : MonoBehaviour
     [Header("UI - Estandarte de Turnos")]
     public TMP_Text textoNumeroTurnoEstandarte;
 
+    [Header("UI - Menú Pociones")]
+    public Button[] botonesPociones;
+    public TMP_Text[] textosCantidadPociones;
+
+    [Header("Inventario de Combate")]
+    public ObjetoTienda[] mochilaPociones = new ObjetoTienda[5];
+
     [Header("UI - Pantalla Fin de Combate (Arrastra los objetos)")]
     [Tooltip("El objeto padre 'PantallaFinCombate' que lo contiene todo.")]
-    public GameObject panelFinCombate; 
-    
-    [Tooltip("El objeto de imagen completo para VICTORIA (Cartel_Victoria).")]
-    public GameObject objetoCartelVictoria; 
-    
-    [Tooltip("El objeto de imagen completo para DERROTA (Cartel_Derrota).")]
-    public GameObject objetoCartelDerrota; 
+    public GameObject panelFinCombate;
 
-    public TMP_Text textoResumenTurnos; 
+    [Tooltip("El objeto de imagen completo para VICTORIA (Cartel_Victoria).")]
+    public GameObject objetoCartelVictoria;
+
+    [Tooltip("El objeto de imagen completo para DERROTA (Cartel_Derrota).")]
+    public GameObject objetoCartelDerrota;
+
+    public TMP_Text textoResumenTurnos;
     public TMP_Text textoResumenOro;
 
     private int numeroTurno = 0;
@@ -48,7 +55,7 @@ public class CombatManager : MonoBehaviour
     [HideInInspector] public UnidadCombate unidadEnemigo;
 
     private Animator animatorHeroe;
-    private Animator animatorEnemigo; 
+    private Animator animatorEnemigo;
 
     void Awake() { Instance = this; }
 
@@ -56,6 +63,7 @@ public class CombatManager : MonoBehaviour
     {
         estado = EstadoCombate.START;
         if (panelFinCombate != null) panelFinCombate.SetActive(false);
+        ActualizarMenuPociones();
         StartCoroutine(ConfigurarCombate());
     }
 
@@ -70,7 +78,7 @@ public class CombatManager : MonoBehaviour
 
         GameObject enemigoGO = Instantiate(enemigoPrefab, puntoEnemigo.position, Quaternion.identity);
         unidadEnemigo = enemigoGO.GetComponent<UnidadCombate>();
-        animatorEnemigo = enemigoGO.GetComponent<Animator>(); 
+        animatorEnemigo = enemigoGO.GetComponent<Animator>();
 
         ActualizarUI();
 
@@ -107,7 +115,6 @@ public class CombatManager : MonoBehaviour
 
     public void BotonAtacar() { if (estado == EstadoCombate.TURNO_JUGADOR) StartCoroutine(AtacarEnemigo()); }
 
-    // --- ¡AQUÍ ESTÁ LA FUNCIÓN RESTAURADA! ---
     public void BotonHabilidad()
     {
         if (estado != EstadoCombate.TURNO_JUGADOR) return;
@@ -124,17 +131,91 @@ public class CombatManager : MonoBehaviour
         }
     }
 
-    // --- ¡AQUÍ ESTÁ LA CORRUTINA RESTAURADA! ---
+    public void ActualizarMenuPociones()
+    {
+        for (int i = 0; i < botonesPociones.Length; i++)
+        {
+            if (i < mochilaPociones.Length && mochilaPociones[i] != null && mochilaPociones[i].cantidadEnInventario > 0)
+            {
+                botonesPociones[i].gameObject.SetActive(true);
+                botonesPociones[i].GetComponent<Image>().sprite = mochilaPociones[i].iconoObjeto;
+                textosCantidadPociones[i].text = "x" + mochilaPociones[i].cantidadEnInventario;
+            }
+            else
+            {
+                botonesPociones[i].gameObject.SetActive(false);
+            }
+        }
+    }
+
+    // --- NUEVA LÓGICA DE POCIONES ---
+    public void UsarPocionDesdeHueco(int indiceHueco)
+    {
+        if (estado != EstadoCombate.TURNO_JUGADOR) return;
+
+        ObjetoTienda pocion = mochilaPociones[indiceHueco];
+
+        if (pocion != null && pocion.cantidadEnInventario > 0)
+        {
+            pocion.cantidadEnInventario--; // Restamos 1 a la mochila
+            StartCoroutine(SecuenciaUsarPocion(pocion));
+        }
+    }
+
+    IEnumerator SecuenciaUsarPocion(ObjetoTienda pocion)
+    {
+        estado = EstadoCombate.START; // Bloquea los botones
+
+        // Cierra el menú visualmente (busca el mánager en la escena)
+        MenuAccionesManager menuManager = FindFirstObjectByType<MenuAccionesManager>();
+        if (menuManager != null) menuManager.VolverAlInicio();
+
+        // Aplicamos el efecto según el tipo
+        AplicarEfectoPocion(pocion);
+
+        // Refrescamos toda la UI
+        ActualizarUI();
+        ActualizarMenuPociones();
+
+        yield return new WaitForSeconds(1f); // Pausa para que el jugador asimile la curación
+
+        // Le toca al enemigo
+        estado = EstadoCombate.TURNO_ENEMIGO;
+        StartCoroutine(TurnoEnemigo());
+    }
+
+    void AplicarEfectoPocion(ObjetoTienda pocion)
+    {
+        switch (pocion.tipoEfecto)
+        {
+            case TipoEfectoTienda.Curacion:
+                unidadHeroe.vidaActual += pocion.valorEfecto;
+                if (unidadHeroe.vidaActual > unidadHeroe.vidaMaxima) unidadHeroe.vidaActual = unidadHeroe.vidaMaxima;
+                break;
+
+            case TipoEfectoTienda.Mana:
+                unidadHeroe.manaActual += pocion.valorEfecto;
+                if (unidadHeroe.manaActual > unidadHeroe.manaMaximo) unidadHeroe.manaActual = unidadHeroe.manaMaximo;
+                break;
+
+            // Más adelante configuraremos DefensaExtra, FuerzaExtra, etc.
+            default:
+                Debug.Log("Este efecto aún no está programado: " + pocion.tipoEfecto);
+                break;
+        }
+    }
+    // --------------------------------
+
     IEnumerator UsarHabilidadEspecial()
     {
-        estado = EstadoCombate.START; // Bloquea botones
+        estado = EstadoCombate.START;
         ActualizarUI();
 
-        if (animatorHeroe != null) animatorHeroe.SetTrigger("Atacar"); // Si tienes animación de habilidad, cámbiala aquí
+        if (animatorHeroe != null) animatorHeroe.SetTrigger("Atacar");
 
         yield return new WaitForSeconds(1f);
 
-        int dañoEspecial = unidadHeroe.dañoBase * 2; // Hace el doble de daño
+        int dañoEspecial = unidadHeroe.dañoBase * 2;
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(dañoEspecial);
         ActualizarUI();
 
@@ -152,7 +233,7 @@ public class CombatManager : MonoBehaviour
     {
         estado = EstadoCombate.START;
         if (animatorHeroe != null) animatorHeroe.SetTrigger("Atacar");
-        yield return new WaitForSeconds(0.5f); 
+        yield return new WaitForSeconds(0.5f);
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(unidadHeroe.dañoBase);
         ActualizarUI();
         yield return new WaitForSeconds(1f);
@@ -164,8 +245,8 @@ public class CombatManager : MonoBehaviour
     IEnumerator TurnoEnemigo()
     {
         yield return new WaitForSeconds(1f);
-        if (animatorEnemigo != null) animatorEnemigo.SetTrigger("AtacarEnemigo"); 
-        yield return new WaitForSeconds(0.5f); 
+        if (animatorEnemigo != null) animatorEnemigo.SetTrigger("AtacarEnemigo");
+        yield return new WaitForSeconds(0.5f);
         bool heroeMuerto = unidadHeroe.RecibirDaño(unidadEnemigo.dañoBase);
         ActualizarUI();
 
@@ -175,8 +256,8 @@ public class CombatManager : MonoBehaviour
 
     void FinalizarCombate(bool victoria)
     {
-        StopAllCoroutines(); 
-        estado = EstadoCombate.START; 
+        StopAllCoroutines();
+        estado = EstadoCombate.START;
 
         if (panelFinCombate != null) panelFinCombate.SetActive(true);
 
@@ -185,9 +266,9 @@ public class CombatManager : MonoBehaviour
             estado = EstadoCombate.VICTORIA;
             if (objetoCartelVictoria != null) objetoCartelVictoria.SetActive(true);
             if (objetoCartelDerrota != null) objetoCartelDerrota.SetActive(false);
-            
+
             if (textoResumenTurnos != null) textoResumenTurnos.text = numeroTurno.ToString("00");
-            int oroGanado = Mathf.Max(100, 500 - (numeroTurno * 20)); 
+            int oroGanado = Mathf.Max(100, 500 - (numeroTurno * 20));
             if (textoResumenOro != null) textoResumenOro.text = oroGanado.ToString("000");
         }
         else
@@ -195,9 +276,9 @@ public class CombatManager : MonoBehaviour
             estado = EstadoCombate.DERROTA;
             if (objetoCartelVictoria != null) objetoCartelVictoria.SetActive(false);
             if (objetoCartelDerrota != null) objetoCartelDerrota.SetActive(true);
-            
+
             if (textoResumenTurnos != null) textoResumenTurnos.text = numeroTurno.ToString("00");
-            if (textoResumenOro != null) textoResumenOro.text = "000"; 
+            if (textoResumenOro != null) textoResumenOro.text = "000";
         }
     }
 }

@@ -16,5 +16,6 @@ MonoBehaviour:
   precio: 20
   iconoObjeto: {fileID: 6694889884263246030, guid: 889ac7370d3b73844bd86a99ea4561cf, type: 3}
   descripcion: Pocion de vida mediana
+  cantidadEnInventario: 5
   tipoEfecto: 0
   valorEfecto: 50
