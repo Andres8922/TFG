@@ -1,25 +1,40 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
-    // Esta instancia permite acceder al GameManager desde cualquier script
     public static GameManager Instance;
 
-    // Aquí guardamos los datos importantes
-    public int heroeSeleccionado; // 0 = Mago, 1 = Caballero
-    public int dificultad;        // 0 = Fácil, 1 = Medio, 2 = Difícil
+    [Header("Datos de Configuración")]
+    public int heroeSeleccionado;
+    public int dificultad;
+
+    [Header("Memoria de Partida (Inventario Global)")]
+    public int oroTotal = 0;
+
+    public List<ObjetoTienda> pocionesGlobales = new List<ObjetoTienda>();
+
+    // Ahora esta lista guarda TODAS las habilidades (tanto pasivas como ataques activos)
+    public List<Habilidad> habilidadesGlobales = new List<Habilidad>();
 
     private void Awake()
     {
-        // El patrón SINGLETON: asegura que solo haya un GameManager y no se borre
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // ¡ESTA ES LA MAGIA! No se destruye al cargar escena
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(gameObject); // Si ya existe uno, borra este para no duplicar
+            Destroy(gameObject);
         }
+    }
+
+    public void ResetearPartida()
+    {
+        oroTotal = 0;
+        pocionesGlobales.Clear();
+        habilidadesGlobales.Clear();
+        Debug.Log("Partida reseteada. Todo el inventario global vuelve a cero.");
     }
 }

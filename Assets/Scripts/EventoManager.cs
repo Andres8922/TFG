@@ -8,7 +8,6 @@ using UnityEngine.EventSystems; // Vital para detectar el ratón
 public class HuecoHabilidad
 {
     public Button botonElegir;
-    // Quitamos textoNombre de aquí porque ya no cabe en la carta
     public TextMeshProUGUI textoMana;
     public Image icono;
     [HideInInspector] public Habilidad habilidadAsignada;
@@ -65,15 +64,14 @@ public class EventoManager : MonoBehaviour
         }
     }
 
-    // Funciones que llamará el ratón al entrar y salir
     public void MostrarTooltip(int indice)
     {
-        if (habilidadElegida || panelTooltip == null) return; // Si ya elegimos carta, no enseñamos nada
+        if (habilidadElegida || panelTooltip == null) return;
 
         Habilidad hab = huecosHabilidad[indice].habilidadAsignada;
 
         textoTooltipNombre.text = hab.nombreHabilidad;
-        textoTooltipInfo.text = hab.descripcion; // Lee la caja de texto que rellenaste en el ScriptableObject
+        textoTooltipInfo.text = hab.descripcion;
 
         panelTooltip.SetActive(true);
     }
@@ -90,8 +88,16 @@ public class EventoManager : MonoBehaviour
         Habilidad hab = huecosHabilidad[indice].habilidadAsignada;
         Debug.Log("¡Has aprendido la habilidad: " + hab.nombreHabilidad + "!");
 
-        // ¡LA GUARDAMOS EN LA MOCHILA GLOBAL!
-        DatosGlobales.habilidadesJugador.Add(hab);
+        // --- CONEXIÓN CON EL CEREBRO GLOBAL ---
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.habilidadesGlobales.Add(hab);
+            Debug.Log("Habilidad guardada en el GameManager.");
+        }
+        else
+        {
+            Debug.LogWarning("¡Falta el GameManager! Dale al Play desde el Menú Principal para guardar la habilidad.");
+        }
 
         habilidadElegida = true;
         OcultarTooltip();
@@ -129,13 +135,11 @@ public class BotonHoverCarta : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        // Cuando el ratón ENTRA en el botón
         if (manager != null) manager.MostrarTooltip(indiceHueco);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        // Cuando el ratón SALE del botón
         if (manager != null) manager.OcultarTooltip();
     }
 }

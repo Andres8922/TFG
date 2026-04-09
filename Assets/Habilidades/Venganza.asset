@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: Venganza
   m_EditorClassIdentifier: Assembly-CSharp::Habilidad
   nombreHabilidad: Venganza
-  costeMana: 0
   iconoHabilidad: {fileID: 8431263886620731216, guid: c0873598c510ead499114b23b1c9e8f4, type: 3}
   descripcion: "El enemigo recibir\xE1 da\xF1o en caso de atacar al h\xE9roe cuando
     este tenga un 25% o menos de vida"
+  esPasiva: 1
+  costeMana: 0
+  "multiplicadorDa\xF1o": 0
+  tipoPasiva: 1
+  valorPasiva: 5

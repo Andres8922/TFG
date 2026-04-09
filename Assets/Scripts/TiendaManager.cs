@@ -55,13 +55,24 @@ public class TiendaManager : MonoBehaviour
     {
         ObjetoTienda objeto = huecosTienda[indiceHueco].objetoAsignado;
 
-        // ¡AHORA COMPROBAMOS EL ORO GLOBAL!
-        if (DatosGlobales.oroJugador >= objeto.precio)
+        // 1. Evitamos errores si pruebas la escena sin pasar por el Menú Principal
+        if (GameManager.Instance == null)
         {
-            DatosGlobales.oroJugador -= objeto.precio;
+            Debug.LogWarning("¡Falta el GameManager! Dale al Play desde la escena del Menú Principal.");
+            return;
+        }
+
+        // 2. Comprobamos si tienes suficiente oro en tu "Cerebro Global"
+        if (GameManager.Instance.oroTotal >= objeto.precio)
+        {
+            // Cobramos
+            GameManager.Instance.oroTotal -= objeto.precio;
             ActualizarUIOro();
+
+            // Entregamos el objeto en la mochila global
             AplicarEfecto(objeto);
 
+            // Efecto visual de "Agotado" en la tienda
             huecosTienda[indiceHueco].botonComprar.interactable = false;
             huecosTienda[indiceHueco].textoNombre.text = "AGOTADO";
             huecosTienda[indiceHueco].icono.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
@@ -75,14 +86,30 @@ public class TiendaManager : MonoBehaviour
     void AplicarEfecto(ObjetoTienda objeto)
     {
         Debug.Log("Has comprado: " + objeto.nombreObjeto);
-        // (Aquí mantienes el switch de efectos que tenías)
+
+        if (GameManager.Instance != null)
+        {
+            // Si ya tenías esta poción en la mochila, solo te sumamos 1 frasco más
+            if (GameManager.Instance.pocionesGlobales.Contains(objeto))
+            {
+                objeto.cantidadEnInventario++;
+            }
+            // Si es un objeto nuevo, lo guardamos en la lista y le ponemos cantidad 1
+            else
+            {
+                objeto.cantidadEnInventario = 1;
+                GameManager.Instance.pocionesGlobales.Add(objeto);
+            }
+        }
     }
 
     void ActualizarUIOro()
     {
         if (textoOro != null)
         {
-            textoOro.text = "Oro: " + DatosGlobales.oroJugador; // Actualiza con el oro global
+            // Mostramos el oro real, o 0 si estás probando la escena suelta
+            int oroActual = (GameManager.Instance != null) ? GameManager.Instance.oroTotal : 0;
+            textoOro.text = "Oro: " + oroActual;
         }
     }
 }
