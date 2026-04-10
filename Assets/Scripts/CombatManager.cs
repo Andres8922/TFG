@@ -518,13 +518,19 @@ public class CombatManager : MonoBehaviour
             if (objetoCartelDerrota != null) objetoCartelDerrota.SetActive(false);
 
             if (textoResumenTurnos != null) textoResumenTurnos.text = numeroTurno.ToString("00");
+
             int oroGanado = Mathf.Max(100, 500 - (numeroTurno * 20));
             if (textoResumenOro != null) textoResumenOro.text = oroGanado.ToString("000");
+
+            // --- NUEVO: CÁLCULO DE EXPERIENCIA ---
+            // Damos 50 de XP base, más un bonus si lo matas rápido (en pocos turnos)
+            int expGanada = Mathf.Max(20, 100 - (numeroTurno * 5));
 
             if (GameManager.Instance != null)
             {
                 GameManager.Instance.oroTotal += oroGanado;
-                Debug.Log("Oro guardado en GameManager. Oro Total: " + GameManager.Instance.oroTotal);
+                GameManager.Instance.GanarExperiencia(expGanada); // Mandamos la XP al cerebro
+                Debug.Log("Oro y XP guardados en el GameManager.");
             }
         }
         else
@@ -535,6 +541,9 @@ public class CombatManager : MonoBehaviour
 
             if (textoResumenTurnos != null) textoResumenTurnos.text = numeroTurno.ToString("00");
             if (textoResumenOro != null) textoResumenOro.text = "000";
+
+            // Opcional: Podrías darle un poquito de XP al jugador (ej: 10 XP) aunque pierda, 
+            // como premio de consolación. Lo dejo a tu elección como diseñador.
         }
     }
 
