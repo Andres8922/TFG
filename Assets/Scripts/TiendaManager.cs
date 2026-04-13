@@ -109,7 +109,7 @@ public class TiendaManager : MonoBehaviour
         {
             // Mostramos el oro real, o 0 si estás probando la escena suelta
             int oroActual = (GameManager.Instance != null) ? GameManager.Instance.oroTotal : 0;
-            textoOro.text = "Oro: " + oroActual;
+            textoOro.text = "" + oroActual;
         }
     }
 }

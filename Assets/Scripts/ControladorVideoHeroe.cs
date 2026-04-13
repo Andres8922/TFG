@@ -1,6 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI; // Necesario para la Imagen
-using TMPro; // Necesario para los textos
+using TMPro;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
@@ -14,9 +13,9 @@ public class ControladorVideoHeroe : MonoBehaviour
     public GameObject panelVideoUI;
     public GameObject botonJugarUI;
 
-    [Header("UI - Visualización (Derecha)")]
-    public Image imagenVisualizacion;
-    public TMP_Text textoNombre;
+    [Header("Visualización Animada (Derecha)")]
+    [Tooltip("El punto vacío en la escena donde aparecerá el héroe animado")]
+    public Transform puntoVisualizacion;
     public TMP_Text textoVida;
     public TMP_Text textoMana;
     public TMP_Text textoFuerza;
@@ -34,14 +33,15 @@ public class ControladorVideoHeroe : MonoBehaviour
 
     private VideoClip clipSeleccionadoParaJugar;
 
+    // Variable para recordar qué héroe 2D hemos creado y borrarlo si seleccionas otro
+    private GameObject heroeInstanciadoActual;
+
     void Start()
     {
         if (panelVideoUI != null) panelVideoUI.SetActive(false);
         if (botonJugarUI != null) botonJugarUI.SetActive(false);
 
-        // Vaciamos la previsualización al empezar
-        if (imagenVisualizacion != null) imagenVisualizacion.gameObject.SetActive(false);
-        if (textoNombre != null) textoNombre.text = "Selecciona un héroe";
+        // Vaciamos los textos al empezar
         if (textoVida != null) textoVida.text = "";
         if (textoMana != null) textoMana.text = "";
         if (textoFuerza != null) textoFuerza.text = "";
@@ -52,7 +52,7 @@ public class ControladorVideoHeroe : MonoBehaviour
         }
     }
 
-    // Función centralizada que prepara el vídeo, guarda el héroe y actualiza la UI
+    // Función centralizada que prepara el vídeo, guarda el héroe e invoca el modelo 3D/2D
     private void PrepararSeleccion(VideoClip clip, int indiceHeroe)
     {
         if (clip != null && botonJugarUI != null)
@@ -66,28 +66,32 @@ public class ControladorVideoHeroe : MonoBehaviour
                 GameManager.Instance.heroeSeleccionado = indiceHeroe;
             }
 
-            // 2. Extraemos los datos del prefab del héroe elegido
-            if (listaHeroesPrefab != null && indiceHeroe < listaHeroesPrefab.Length)
+            // 2. Si ya había un héroe en pantalla mirándonos, lo destruimos
+            if (heroeInstanciadoActual != null)
             {
-                GameObject heroePrefab = listaHeroesPrefab[indiceHeroe];
-                UnidadCombate stats = heroePrefab.GetComponent<UnidadCombate>();
-                SpriteRenderer spriteHeroe = heroePrefab.GetComponentInChildren<SpriteRenderer>();
-
-                // 3. Pintamos la información en el panel derecho
-                if (imagenVisualizacion != null && spriteHeroe != null)
-                {
-                    imagenVisualizacion.gameObject.SetActive(true);
-                    imagenVisualizacion.sprite = spriteHeroe.sprite;
-                    imagenVisualizacion.preserveAspect = true;
-                }
-
-                if (textoNombre != null) textoNombre.text = heroePrefab.name.ToUpper();
-                if (textoVida != null && stats != null) textoVida.text = "Vida: " + stats.vidaMaxima;
-                if (textoMana != null && stats != null) textoMana.text = "Maná: " + stats.manaMaximo;
-                if (textoFuerza != null && stats != null) textoFuerza.text = "Fuerza: " + stats.dañoBase;
+                Destroy(heroeInstanciadoActual);
             }
 
-            Debug.Log("Héroe seleccionado. Clip y UI preparados. Pulsa 'Jugar' para empezar.");
+            // 3. Invocamos al nuevo héroe "vivo" en el punto exacto y sacamos sus stats
+            if (listaHeroesPrefab != null && indiceHeroe < listaHeroesPrefab.Length && puntoVisualizacion != null)
+            {
+                GameObject prefabElegido = listaHeroesPrefab[indiceHeroe];
+
+                // Instanciamos el clon animado
+                heroeInstanciadoActual = Instantiate(prefabElegido, puntoVisualizacion.position, Quaternion.identity);
+
+                // Leemos las estadísticas del componente UnidadCombate de ese clon
+                UnidadCombate stats = heroeInstanciadoActual.GetComponent<UnidadCombate>();
+
+                if (stats != null)
+                {
+                    if (textoVida != null) textoVida.text = "" + stats.vidaMaxima;
+                    if (textoMana != null) textoMana.text = "" + stats.manaMaximo;
+                    if (textoFuerza != null) textoFuerza.text = "" + stats.dañoBase;
+                }
+            }
+
+            Debug.Log("Héroe animado invocado. Clip preparado. Pulsa 'Jugar' para empezar.");
         }
     }
 
@@ -99,9 +103,15 @@ public class ControladorVideoHeroe : MonoBehaviour
     {
         if (reproductorVideo != null && clipSeleccionadoParaJugar != null && panelVideoUI != null && botonJugarUI != null)
         {
-            // 1. Apagamos el botón y encendemos la pantalla de vídeo
+            // Apagamos el botón y encendemos la pantalla de vídeo
             botonJugarUI.SetActive(false);
             panelVideoUI.SetActive(true);
+
+            // IMPORTANTE: Borramos al héroe de la pantalla para que no se quede ahí flotando durante el vídeo
+            if (heroeInstanciadoActual != null)
+            {
+                Destroy(heroeInstanciadoActual);
+            }
 
             // Buscamos TODOS los altavoces que existan y los pausamos
             AudioSource[] todosLosAudios = FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
@@ -110,7 +120,7 @@ public class ControladorVideoHeroe : MonoBehaviour
                 audio.Pause();
             }
 
-            // 2. Cargamos el clip y le damos al Play
+            // Cargamos el clip y le damos al Play
             reproductorVideo.clip = clipSeleccionadoParaJugar;
             reproductorVideo.time = 0;
             reproductorVideo.Play();
