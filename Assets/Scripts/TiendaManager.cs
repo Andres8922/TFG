@@ -22,11 +22,42 @@ public class TiendaManager : MonoBehaviour
     public HuecoTienda[] huecosTienda;
     public TextMeshProUGUI textoOro;
 
+    // --- NUEVAS VARIABLES PARA EL HÉROE ---
+    [Header("Visualización del Héroe")]
+    [Tooltip("El punto vacío donde aparecerá el héroe")]
+    public Transform posicionHeroe;
+    [Tooltip("Arrastra aquí tus prefabs animados (0=Caballero, 1=Mago...) en el mismo orden que en la selección")]
+    public GameObject[] listaHeroesPrefab;
+    // --------------------------------------
+
     void Start()
     {
         ActualizarUIOro();
         RellenarEscaparate();
+        InvocarHeroeEnTienda(); // Llamamos a la nueva función al entrar a la tienda
     }
+
+    // --- NUEVA FUNCIÓN AÑADIDA ---
+    void InvocarHeroeEnTienda()
+    {
+        // Comprobamos que el GameManager existe y que has rellenado los huecos en el Inspector
+        if (GameManager.Instance != null && listaHeroesPrefab != null && listaHeroesPrefab.Length > 0 && posicionHeroe != null)
+        {
+            int indiceElegido = GameManager.Instance.heroeSeleccionado;
+
+            // Nos aseguramos de que el índice coincide con los prefabs que has puesto
+            if (indiceElegido >= 0 && indiceElegido < listaHeroesPrefab.Length)
+            {
+                // Invocamos al prefab animado en la posición de la tienda
+                Instantiate(listaHeroesPrefab[indiceElegido], posicionHeroe.position, Quaternion.identity);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Falta asignar los Prefabs de los héroes o la Posición en el TiendaManager.");
+        }
+    }
+    // -----------------------------
 
     void RellenarEscaparate()
     {

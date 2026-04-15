@@ -20,6 +20,10 @@ public class ControladorVideoHeroe : MonoBehaviour
     public TMP_Text textoMana;
     public TMP_Text textoFuerza;
 
+    // --- NUEVO: ARRAY PARA LOS ICONOS ---
+    [Tooltip("Arrastra aquí las imágenes del corazón, la gota y el puño")]
+    public GameObject[] iconosEstadisticas;
+
     [Header("Reproductor")]
     public VideoPlayer reproductorVideo;
 
@@ -45,6 +49,9 @@ public class ControladorVideoHeroe : MonoBehaviour
         if (textoVida != null) textoVida.text = "";
         if (textoMana != null) textoMana.text = "";
         if (textoFuerza != null) textoFuerza.text = "";
+
+        // --- NUEVO: APAGAMOS LOS ICONOS AL EMPEZAR ---
+        ActivarIconos(false);
 
         if (reproductorVideo != null)
         {
@@ -88,6 +95,9 @@ public class ControladorVideoHeroe : MonoBehaviour
                     if (textoVida != null) textoVida.text = "" + stats.vidaMaxima;
                     if (textoMana != null) textoMana.text = "" + stats.manaMaximo;
                     if (textoFuerza != null) textoFuerza.text = "" + stats.dañoBase;
+
+                    // --- NUEVO: ENCENDEMOS LOS ICONOS AL SELECCIONAR HÉROE ---
+                    ActivarIconos(true);
                 }
             }
 
@@ -112,6 +122,9 @@ public class ControladorVideoHeroe : MonoBehaviour
             {
                 Destroy(heroeInstanciadoActual);
             }
+
+            // --- NUEVO: APAGAMOS LOS ICONOS PARA QUE NO PISEN EL VÍDEO ---
+            ActivarIconos(false);
 
             // Buscamos TODOS los altavoces que existan y los pausamos
             AudioSource[] todosLosAudios = FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
@@ -140,6 +153,21 @@ public class ControladorVideoHeroe : MonoBehaviour
         else
         {
             SceneManager.LoadScene("Mapa");
+        }
+    }
+
+    // --- NUEVA FUNCIÓN AUXILIAR PARA CONTROLAR LOS ICONOS ---
+    private void ActivarIconos(bool estado)
+    {
+        if (iconosEstadisticas != null)
+        {
+            foreach (GameObject icono in iconosEstadisticas)
+            {
+                if (icono != null)
+                {
+                    icono.SetActive(estado);
+                }
+            }
         }
     }
 }

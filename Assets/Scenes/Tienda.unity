@@ -676,6 +676,9 @@ MonoBehaviour:
     icono: {fileID: 1355963432}
     objetoAsignado: {fileID: 0}
   textoOro: {fileID: 1382442878}
+  posicionHeroe: {fileID: 1705600320}
+  listaHeroesPrefab:
+  - {fileID: 5561927536040280902, guid: 0e4375b00113b514d95acb01dd61b132, type: 3}
 --- !u!4 &372904361
 Transform:
   m_ObjectHideFlags: 0
