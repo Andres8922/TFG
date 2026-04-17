@@ -43,13 +43,13 @@ public class CombatManager : MonoBehaviour
     public Button[] botonesPasivas;
 
     [Header("UI - Menú Habilidades (Activas)")]
-    public Button[] botonesHabilidades; // ¡AQUÍ ARRASTRARÁS TUS BOTONES Habilidad1, 2 y 3!
+    public Button[] botonesHabilidades;
 
     [Header("UI - Feedback Visual (Buffs)")]
     public GameObject iconoBuffFuerza;
     public GameObject iconoBuffDefensa;
 
-    [Header("Inventarios de Combate (Deja huecos llenos para testear)")]
+    [Header("Inventarios de Combate")]
     public ObjetoTienda[] mochilaPociones = new ObjetoTienda[5];
     public Habilidad[] mochilaPasivas = new Habilidad[5];
     public Habilidad[] mochilaHabilidades = new Habilidad[3];
@@ -87,7 +87,7 @@ public class CombatManager : MonoBehaviour
 
         ActualizarMenuPociones();
         ActualizarMenuPasivas();
-        ActualizarMenuHabilidades(); // Inicializamos los botones de las habilidades
+        ActualizarMenuHabilidades();
 
         StartCoroutine(ConfigurarCombate());
     }
@@ -196,7 +196,6 @@ public class CombatManager : MonoBehaviour
         }
     }
 
-    // --- NUEVA LÓGICA: MENÚ HABILIDADES ACTIVAS ---
     public void ActualizarMenuHabilidades()
     {
         for (int i = 0; i < botonesHabilidades.Length; i++)
@@ -206,7 +205,6 @@ public class CombatManager : MonoBehaviour
                 botonesHabilidades[i].gameObject.SetActive(true);
                 botonesHabilidades[i].GetComponent<Image>().sprite = mochilaHabilidades[i].iconoHabilidad;
 
-                // Conectamos el botón para que ejecute esta habilidad en concreto
                 int indiceHueco = i;
                 botonesHabilidades[i].onClick.RemoveAllListeners();
                 botonesHabilidades[i].onClick.AddListener(() => UsarHabilidadDesdeHueco(indiceHueco));
@@ -242,16 +240,16 @@ public class CombatManager : MonoBehaviour
     {
         estado = EstadoCombate.START;
 
-        // Cierra el menú visualmente
         MenuAccionesManager menuManager = FindFirstObjectByType<MenuAccionesManager>();
         if (menuManager != null) menuManager.VolverAlInicio();
 
         ActualizarUI();
-        if (animatorHeroe != null) animatorHeroe.SetTrigger("Atacar");
+
+        // --- CAMBIO: Dispara el gatillo del Ataque Fuerte ---
+        if (animatorHeroe != null) animatorHeroe.SetTrigger("AtqFuerte");
 
         yield return new WaitForSeconds(1f);
 
-        // Calculamos el daño usando el multiplicador de tu ScriptableObject
         int dañoEspecial = unidadHeroe.dañoBase * hab.multiplicadorDaño;
 
         if (buffFuerzaActivo)
@@ -273,7 +271,6 @@ public class CombatManager : MonoBehaviour
             StartCoroutine(TurnoEnemigo());
         }
     }
-    // ----------------------------------------------
 
     void ComprobarPasivasDeInicio()
     {
@@ -331,7 +328,6 @@ public class CombatManager : MonoBehaviour
 
     public void BotonAtacar() { if (estado == EstadoCombate.TURNO_JUGADOR) StartCoroutine(AtacarEnemigo()); }
 
-    // Ataque Fuerte Estándar (El que ya tenías)
     public void BotonHabilidad()
     {
         if (estado != EstadoCombate.TURNO_JUGADOR) return;
@@ -430,7 +426,8 @@ public class CombatManager : MonoBehaviour
         estado = EstadoCombate.START;
         ActualizarUI();
 
-        if (animatorHeroe != null) animatorHeroe.SetTrigger("Atacar");
+        // --- CAMBIO: Dispara el gatillo del Ataque Fuerte ---
+        if (animatorHeroe != null) animatorHeroe.SetTrigger("AtqFuerte");
 
         yield return new WaitForSeconds(1f);
 
@@ -459,8 +456,11 @@ public class CombatManager : MonoBehaviour
     IEnumerator AtacarEnemigo()
     {
         estado = EstadoCombate.START;
-        if (animatorHeroe != null) animatorHeroe.SetTrigger("Atacar");
-        yield return new WaitForSeconds(0.5f);
+
+        // --- CAMBIO: Dispara el gatillo del Ataque Básico ---
+        if (animatorHeroe != null) animatorHeroe.SetTrigger("AtqBasico");
+
+        yield return new WaitForSeconds(0.8f);
 
         int dañoFinal = unidadHeroe.dañoBase;
 
@@ -522,14 +522,12 @@ public class CombatManager : MonoBehaviour
             int oroGanado = Mathf.Max(100, 500 - (numeroTurno * 20));
             if (textoResumenOro != null) textoResumenOro.text = oroGanado.ToString("000");
 
-            // --- NUEVO: CÁLCULO DE EXPERIENCIA ---
-            // Damos 50 de XP base, más un bonus si lo matas rápido (en pocos turnos)
             int expGanada = Mathf.Max(20, 100 - (numeroTurno * 5));
 
             if (GameManager.Instance != null)
             {
                 GameManager.Instance.oroTotal += oroGanado;
-                GameManager.Instance.GanarExperiencia(expGanada); // Mandamos la XP al cerebro
+                GameManager.Instance.GanarExperiencia(expGanada);
                 Debug.Log("Oro y XP guardados en el GameManager.");
             }
         }
@@ -541,9 +539,6 @@ public class CombatManager : MonoBehaviour
 
             if (textoResumenTurnos != null) textoResumenTurnos.text = numeroTurno.ToString("00");
             if (textoResumenOro != null) textoResumenOro.text = "000";
-
-            // Opcional: Podrías darle un poquito de XP al jugador (ej: 10 XP) aunque pierda, 
-            // como premio de consolación. Lo dejo a tu elección como diseñador.
         }
     }
 

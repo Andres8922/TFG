@@ -5226,7 +5226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CombatManager
   estado: 0
   listaHeroes:
-  - {fileID: 8671961397958709658, guid: 8c52ea15af3315943816fe12c2920463, type: 3}
+  - {fileID: 3857189693735011150, guid: d023fafd28c250b48918f63ef7b8f830, type: 3}
   puntoHeroe: {fileID: 1654218819}
   enemigoPrefab: {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
   puntoEnemigo: {fileID: 629385620}
@@ -5690,7 +5690,7 @@ Transform:
   m_GameObject: {fileID: 1654218818}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: -1.5, z: 0}
+  m_LocalPosition: {x: -5, y: -1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
