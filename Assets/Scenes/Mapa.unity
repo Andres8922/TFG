@@ -319,7 +319,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 110418792}
         m_TargetAssemblyTypeName: Cambiar_pantallas, Assembly-CSharp
-        m_MethodName: VolverInicio
+        m_MethodName: AbandonarPartida
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

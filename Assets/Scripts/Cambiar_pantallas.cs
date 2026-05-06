@@ -8,6 +8,14 @@ public class Cambiar_pantallas : MonoBehaviour
         Transicion.Instance.CargarEscena("MenuPrincipal");
     }
 
+    public void AbandonarPartida()
+    {
+        if (GameManager.Instance != null)
+            GameManager.Instance.ResetearPartida();
+
+        Transicion.Instance.CargarEscena("MenuPrincipal");
+    }
+
     public void Pantalla_Ajustes()
     {
         Transicion.Instance.CargarEscena("Ajustes");

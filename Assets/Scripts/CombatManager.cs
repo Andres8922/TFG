@@ -560,6 +560,8 @@ public class CombatManager : MonoBehaviour
         else if (estado == EstadoCombate.DERROTA)
         {
             Debug.Log("¡Derrota! Volviendo al menú principal...");
+            if (GameManager.Instance != null)
+                GameManager.Instance.ResetearPartida();
             SceneManager.LoadScene(nombreEscenaMenu);
         }
     }

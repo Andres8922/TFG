@@ -30,6 +30,8 @@ public class ControladorVideoHeroe : MonoBehaviour
     [Header("Clips de Vídeo de los Héroes")]
     public VideoClip clipCaballero;
     public VideoClip clipMago;
+    public VideoClip clipElfaArquera;
+    public VideoClip clipEnano;
 
     [Header("Audio")]
     [Tooltip("Arrastra aquí el objeto que reproduce la música de fondo (AudioSource)")]
@@ -106,8 +108,10 @@ public class ControladorVideoHeroe : MonoBehaviour
     }
 
     // Funciones asignadas a los botones de retrato
-    public void SeleccionarCaballero() { PrepararSeleccion(clipCaballero, 0); }
-    public void SeleccionarMago() { PrepararSeleccion(clipMago, 1); }
+    public void SeleccionarCaballero()   { PrepararSeleccion(clipCaballero,    0); }
+    public void SeleccionarMago()        { PrepararSeleccion(clipMago,         1); }
+    public void SeleccionarElfaArquera() { PrepararSeleccion(clipElfaArquera,  2); }
+    public void SeleccionarEnano()       { PrepararSeleccion(clipEnano,        3); }
 
     public void BotonJugarPresionado()
     {
