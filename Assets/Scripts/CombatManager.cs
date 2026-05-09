@@ -145,6 +145,12 @@ public class CombatManager : MonoBehaviour
         int indice = 0;
         if (GameManager.Instance != null) indice = GameManager.Instance.heroeSeleccionado;
 
+        if (indice < 0 || indice >= listaHeroes.Length || listaHeroes[indice] == null)
+        {
+            Debug.LogError($"CombatManager: no hay prefab asignado en listaHeroes[{indice}]. Asigna los 4 héroes en el Inspector.");
+            yield break;
+        }
+
         GameObject heroeGO = Instantiate(listaHeroes[indice], puntoHeroe.position, Quaternion.identity);
         unidadHeroe = heroeGO.GetComponent<UnidadCombate>();
         animatorHeroe = heroeGO.GetComponent<Animator>();

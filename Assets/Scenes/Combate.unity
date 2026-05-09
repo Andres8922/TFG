@@ -5227,6 +5227,9 @@ MonoBehaviour:
   estado: 0
   listaHeroes:
   - {fileID: 3857189693735011150, guid: d023fafd28c250b48918f63ef7b8f830, type: 3}
+  - {fileID: 1337314670845311719, guid: 4d099be34795c4c4e90f7d72c3ffc6f5, type: 3}
+  - {fileID: 4518804301548433938, guid: c400492a642f48d4d91e2f60b4923463, type: 3}
+  - {fileID: 1726234428297180940, guid: 28616d29c99f45542b9fa478b3037a13, type: 3}
   puntoHeroe: {fileID: 1654218819}
   enemigoPrefab: {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
   puntoEnemigo: {fileID: 629385620}
