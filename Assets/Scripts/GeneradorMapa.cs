@@ -6,7 +6,7 @@ public class GeneradorMapa : MonoBehaviour
 {
     public static GeneradorMapa Instance;
 
-    [Header("Configuración Visual")]
+    [Header("Configuraciï¿½n Visual")]
     public GameObject nodoPrefab;
     public GameObject playerIconPrefab;
     public Transform contenedor;
@@ -20,12 +20,17 @@ public class GeneradorMapa : MonoBehaviour
     public Sprite iconoTienda;
     public Sprite iconoJefe;
 
-    [Header("Matemáticas del Árbol Tumbado")]
+    [Header("Matemï¿½ticas del ï¿½rbol Tumbado")]
     public int totalPisos = 10;
-    public float distanciaHorizontal = 2.5f;
     public float distanciaVertical = 1.8f;
 
-    [Header("Matemáticas de Conexiones")]
+    [Header("Lï¿½mites del Fondo del Mapa")]
+    public float anchoMaximoMapa = 13.8f;
+    public float margenHorizontal = 0.6f;
+    public float altoMaximoMapa = 6.44f;
+    public float margenVertical = 0.5f;
+
+    [Header("Matemï¿½ticas de Conexiones")]
     [Range(0f, 1f)] public float probabilidadDeRamaExtra = 0.3f;
 
     private List<List<GameObject>> mapaGenerado = new List<List<GameObject>>();
@@ -38,18 +43,28 @@ public class GeneradorMapa : MonoBehaviour
 
     void Start()
     {
-        // ¡LA MAGIA DE LA PERSISTENCIA ESTÁ AQUÍ!
         if (!DatosGlobales.hayPartidaGuardada)
         {
-            // Primera vez: inventamos una semilla aleatoria
+            AjustarPisosPorDificultad();
             DatosGlobales.semillaMapa = Random.Range(0, 999999);
             DatosGlobales.hayPartidaGuardada = true;
         }
 
-        // Obligamos a Unity a usar esa semilla. Así el mapa se construirá IGUAL que la última vez.
         Random.InitState(DatosGlobales.semillaMapa);
 
         GenerarMapaArbolTumbado();
+    }
+
+    void AjustarPisosPorDificultad()
+    {
+        if (GameManager.Instance == null) return;
+
+        switch (GameManager.Instance.dificultad)
+        {
+            case 0: totalPisos = 5;  break;
+            case 1: totalPisos = 7;  break;
+            case 2: totalPisos = 10; break;
+        }
     }
 
     [ContextMenu("Generar Nuevo Mapa")]
@@ -71,8 +86,12 @@ public class GeneradorMapa : MonoBehaviour
 
     void GenerarNodosFormales()
     {
-        float anchoTotalMapa = (totalPisos - 1) * distanciaHorizontal;
-        float inicioX = -anchoTotalMapa / 2f;
+        float anchoUtil = anchoMaximoMapa - (margenHorizontal * 2f);
+        float distanciaHorizontal = anchoUtil / Mathf.Max(1, totalPisos - 1);
+        float inicioX = -anchoUtil / 2f;
+
+        float altoUtil = altoMaximoMapa - (margenVertical * 2f);
+        float distanciaVertical = altoUtil / 2f; // mÃ¡ximo 3 nodos â†’ 2 espacios entre ellos
 
         for (int p = 0; p < totalPisos; p++)
         {
@@ -81,12 +100,7 @@ public class GeneradorMapa : MonoBehaviour
             int cantidadNodos = 0;
             if (p == 0) cantidadNodos = 1;
             else if (p == totalPisos - 1) cantidadNodos = 1;
-            else
-            {
-                if (p < 3) cantidadNodos = Random.Range(2, 4);
-                else if (p < totalPisos - 3) cantidadNodos = Random.Range(4, 7);
-                else cantidadNodos = Random.Range(2, 5);
-            }
+            else cantidadNodos = Random.Range(1, 3);
 
             float posX = inicioX + (p * distanciaHorizontal);
             float altoTotalPiso = (cantidadNodos - 1) * distanciaVertical;
@@ -252,13 +266,13 @@ public class GeneradorMapa : MonoBehaviour
         }
         else
         {
-            Debug.Log("Movimiento inválido: No hay un camino directo hacia ese punto.");
+            Debug.Log("Movimiento invï¿½lido: No hay un camino directo hacia ese punto.");
         }
     }
 
     void EjecutarEscenaDelNodo(NodoMapa nodo)
     {
-        Debug.Log($"¡Avisando al SceneLoader para cargar nivel tipo: {nodo.tipoDeNodo}!");
+        Debug.Log($"ï¿½Avisando al SceneLoader para cargar nivel tipo: {nodo.tipoDeNodo}!");
 
         if (SceneLoader.Instance != null)
         {
@@ -266,7 +280,7 @@ public class GeneradorMapa : MonoBehaviour
         }
         else
         {
-            Debug.LogError("¡Ojo! No hay ningún objeto con el script SceneLoader en la escena.");
+            Debug.LogError("ï¿½Ojo! No hay ningï¿½n objeto con el script SceneLoader en la escena.");
         }
     }
 }

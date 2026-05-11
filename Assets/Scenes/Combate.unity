@@ -5282,6 +5282,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  prefabTextoFlotante: {fileID: 7238757768370020830, guid: 13bc1d9b86753d44ea0c9968d4595f85, type: 3}
   panelFinCombate: {fileID: 501330124}
   objetoCartelVictoria: {fileID: 1966942434}
   objetoCartelDerrota: {fileID: 2065479977}

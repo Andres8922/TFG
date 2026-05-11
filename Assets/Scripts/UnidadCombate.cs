@@ -7,22 +7,18 @@ public class UnidadCombate : MonoBehaviour
     public int dañoBase = 10;
 
     [Header("Vida ❤️")]
-    public int vidaMax = 100;
+    public int vidaMaxima = 100;
     public int vidaActual;
 
     [Header("Maná 💧")]
-    public int manaMax = 50;
+    public int manaMaximo = 50;
     public int manaActual;
-    public int manaPorTurno = 10; // Cuánto recupera al empezar su ronda
-
-    public int vidaMaxima = 100; // Pon aquí el número máximo de vida
-    public int manaMaximo = 50;  // Pon aquí el número máximo de maná
+    public int manaPorTurno = 10;
 
     void Awake()
     {
-        // Al empezar, rellenamos vida y maná a tope (o a 0 el maná si prefieres)
-        vidaActual = vidaMax;
-        manaActual = 0; // Normalmente en estos juegos empiezas con poco maná
+        vidaActual = vidaMaxima;
+        manaActual = 0;
     }
 
     // Función para recibir daño
@@ -41,7 +37,7 @@ public class UnidadCombate : MonoBehaviour
     public void Curar(int cantidad)
     {
         vidaActual += cantidad;
-        if (vidaActual > vidaMax) vidaActual = vidaMax;
+        if (vidaActual > vidaMaxima) vidaActual = vidaMaxima;
     }
 
     // Función para gastar maná (retorna true si pudo gastarlo)
@@ -59,6 +55,6 @@ public class UnidadCombate : MonoBehaviour
     public void RegenerarManaTurno()
     {
         manaActual += manaPorTurno;
-        if (manaActual > manaMax) manaActual = manaMax;
+        if (manaActual > manaMaximo) manaActual = manaMaximo;
     }
 }

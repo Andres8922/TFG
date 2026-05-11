@@ -54,6 +54,9 @@ public class CombatManager : MonoBehaviour
     public Habilidad[] mochilaPasivas = new Habilidad[5];
     public Habilidad[] mochilaHabilidades = new Habilidad[3];
 
+    [Header("Texto Flotante de Daño")]
+    public GameObject prefabTextoFlotante;
+
     [Header("UI - Pantalla Fin de Combate")]
     public GameObject panelFinCombate;
     public GameObject objetoCartelVictoria;
@@ -266,6 +269,7 @@ public class CombatManager : MonoBehaviour
         }
 
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(dañoEspecial);
+        MostrarDaño(dañoEspecial, unidadEnemigo.transform.position, Color.red);
         ActualizarUI();
 
         yield return new WaitForSeconds(1f);
@@ -319,6 +323,14 @@ public class CombatManager : MonoBehaviour
         }
 
         if (requiereActualizarUI) ActualizarUI();
+    }
+
+    void MostrarDaño(int cantidad, Vector3 posicion, Color color)
+    {
+        if (prefabTextoFlotante == null) return;
+        Vector3 posOffset = posicion + new Vector3(Random.Range(-0.3f, 0.3f), 0.5f, 0f);
+        GameObject texto = Instantiate(prefabTextoFlotante, posOffset, Quaternion.identity);
+        texto.GetComponent<TextoFlotante>().Inicializar(cantidad, color);
     }
 
     void EmpezarTurnoJugador()
@@ -447,6 +459,7 @@ public class CombatManager : MonoBehaviour
         }
 
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(dañoEspecial);
+        MostrarDaño(dañoEspecial, unidadEnemigo.transform.position, Color.red);
         ActualizarUI();
 
         yield return new WaitForSeconds(1f);
@@ -478,6 +491,7 @@ public class CombatManager : MonoBehaviour
         }
 
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(dañoFinal);
+        MostrarDaño(dañoFinal, unidadEnemigo.transform.position, Color.red);
         ActualizarUI();
         yield return new WaitForSeconds(1f);
 
@@ -501,6 +515,7 @@ public class CombatManager : MonoBehaviour
         }
 
         bool heroeMuerto = unidadHeroe.RecibirDaño(dañoRecibido);
+        MostrarDaño(dañoRecibido, unidadHeroe.transform.position, new Color(1f, 0.5f, 0f));
         ActualizarUI();
 
         if (heroeMuerto) FinalizarCombate(false);
