@@ -12,6 +12,7 @@ public class ConfiguracionHeroe
 {
     public List<GameObject> enemigosPrefabs;
     public GameObject jefePrefab;
+    public List<Sprite> fondosCombate;
 }
 
 public class CombatManager : MonoBehaviour
@@ -26,6 +27,7 @@ public class CombatManager : MonoBehaviour
 
     [Header("Configuración por Héroe")]
     public ConfiguracionHeroe[] configuracionesPorHeroe;
+    public Image fondoCombate;
 
     [Header("Transiciones de Escenas")]
     public string nombreEscenaMapa = "Mapa";
@@ -199,6 +201,13 @@ public class CombatManager : MonoBehaviour
         GameObject enemigoGO = Instantiate(prefabEnemigo, puntoEnemigo.position, Quaternion.identity);
         unidadEnemigo = enemigoGO.GetComponent<UnidadCombate>();
         animatorEnemigo = enemigoGO.GetComponent<Animator>();
+
+        if (DatosGlobales.tipoNodoActual != TipoNodo.Jefe && fondoCombate != null
+            && config.fondosCombate != null && config.fondosCombate.Count > 0)
+        {
+            int fondoIdx = DatosGlobales.combatesRealizados % config.fondosCombate.Count;
+            fondoCombate.sprite = config.fondosCombate[fondoIdx];
+        }
 
         ComprobarPasivasDeInicio();
 

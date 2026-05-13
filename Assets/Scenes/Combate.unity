@@ -5238,21 +5238,33 @@ MonoBehaviour:
     - {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
     - {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
     jefePrefab: {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
+    fondosCombate:
+    - {fileID: 1400574733088237762, guid: 65aab4ce674dc42699b6b42ffb936b55, type: 3}
+    - {fileID: 5597849781710759511, guid: fa607bc98b15c5d469ac978f2f94be40, type: 3}
   - enemigosPrefabs:
     - {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
     - {fileID: 3194714219603237580, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
     - {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
     jefePrefab: {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
+    fondosCombate:
+    - {fileID: -6197040341870502048, guid: 9146ddd1be026ba4fa910e3ff0a68439, type: 3}
+    - {fileID: 8009560168955052372, guid: 3078537e695c2bf458d1c61e59d376a9, type: 3}
+    - {fileID: -4708121331245386750, guid: 2f4694fc28071054596efecc686377bd, type: 3}
   - enemigosPrefabs:
     - {fileID: 3194714219603237580, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
     - {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
     - {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
     jefePrefab: {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
+    fondosCombate:
+    - {fileID: -6197040341870502048, guid: 9146ddd1be026ba4fa910e3ff0a68439, type: 3}
   - enemigosPrefabs:
     - {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
     - {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
     - {fileID: 3194714219603237580, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
     jefePrefab: {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
+    fondosCombate:
+    - {fileID: -6197040341870502048, guid: 9146ddd1be026ba4fa910e3ff0a68439, type: 3}
+  fondoCombate: {fileID: 1412311115}
   nombreEscenaMapa: Mapa
   nombreEscenaMenu: MenuPrincipal
   imagenVidaHeroe: {fileID: 223722410}

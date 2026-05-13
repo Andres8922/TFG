@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 65aab4ce674dc42699b6b42ffb936b55
+guid: fa607bc98b15c5d469ac978f2f94be40
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1400574733088237762
-    second: fondo_castillo-Photoroom_0
+      213: 5597849781710759511
+    second: fondo_caballero_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,19 +84,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -111,6 +98,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fondo_castillo-Photoroom_0
+      name: fondo_caballero_2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1280
-        height: 714
+        width: 1167
+        height: 590
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c8ac179c47df6310800000000000000
-      internalID: 1400574733088237762
+      spriteID: 7562ed0c7be8fad40800000000000000
+      internalID: 5597849781710759511
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fondo_castillo-Photoroom_0: 1400574733088237762
+      fondo_caballero_2_0: 5597849781710759511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
