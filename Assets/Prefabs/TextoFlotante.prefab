@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 3.2221, y: 0.4298}
-  m_SizeDelta: {x: 1.4895, y: 0.6367}
+  m_SizeDelta: {x: 2.5626, y: 0.6367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &2434040604165878655
 MeshRenderer:
@@ -108,7 +108,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9ec2fd259b80c41178ed906aed61396f, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -177,7 +177,7 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_renderer: {fileID: 2434040604165878655}
   m_maskType: 0
 --- !u!114 &2304715459682533940
@@ -192,5 +192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8894e8890013f7499ccfe9f32a42587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextoFlotante
-  velocidadCaida: 1.5
   duracion: 1.2
+  fuerzaDisparo: 3
+  gravedad: 6

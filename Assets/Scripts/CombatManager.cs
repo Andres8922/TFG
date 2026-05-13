@@ -13,6 +13,7 @@ public class ConfiguracionHeroe
     public List<GameObject> enemigosPrefabs;
     public GameObject jefePrefab;
     public List<Sprite> fondosCombate;
+    public Sprite fondoJefe;
 }
 
 public class CombatManager : MonoBehaviour
@@ -202,11 +203,18 @@ public class CombatManager : MonoBehaviour
         unidadEnemigo = enemigoGO.GetComponent<UnidadCombate>();
         animatorEnemigo = enemigoGO.GetComponent<Animator>();
 
-        if (DatosGlobales.tipoNodoActual != TipoNodo.Jefe && fondoCombate != null
-            && config.fondosCombate != null && config.fondosCombate.Count > 0)
+        if (fondoCombate != null)
         {
-            int fondoIdx = DatosGlobales.combatesRealizados % config.fondosCombate.Count;
-            fondoCombate.sprite = config.fondosCombate[fondoIdx];
+            if (DatosGlobales.tipoNodoActual == TipoNodo.Jefe)
+            {
+                if (config.fondoJefe != null)
+                    fondoCombate.sprite = config.fondoJefe;
+            }
+            else if (config.fondosCombate != null && config.fondosCombate.Count > 0)
+            {
+                int fondoIdx = DatosGlobales.combatesRealizados % config.fondosCombate.Count;
+                fondoCombate.sprite = config.fondosCombate[fondoIdx];
+            }
         }
 
         ComprobarPasivasDeInicio();
