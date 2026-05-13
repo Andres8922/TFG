@@ -576,14 +576,20 @@ public class CombatManager : MonoBehaviour
         if (estado == EstadoCombate.VICTORIA)
         {
             Debug.Log("¡Victoria! Cargando el mapa...");
-            SceneManager.LoadScene(nombreEscenaMapa);
+            if (Transicion.Instance != null)
+                Transicion.Instance.CargarEscena(nombreEscenaMapa);
+            else
+                SceneManager.LoadScene(nombreEscenaMapa);
         }
         else if (estado == EstadoCombate.DERROTA)
         {
             Debug.Log("¡Derrota! Volviendo al menú principal...");
             if (GameManager.Instance != null)
                 GameManager.Instance.ResetearPartida();
-            SceneManager.LoadScene(nombreEscenaMenu);
+            if (Transicion.Instance != null)
+                Transicion.Instance.CargarEscena(nombreEscenaMenu);
+            else
+                SceneManager.LoadScene(nombreEscenaMenu);
         }
     }
 }

@@ -5,12 +5,12 @@ using System.Collections; // Necesario para los tiempos de espera
 public class Transicion : MonoBehaviour
 {
     public static Transicion Instance;
-    public CanvasGroup telonNegro; // Aquí conectaremos el Panel negro
+    public CanvasGroup telonNegro; // Aquï¿½ conectaremos el Panel negro
     public float velocidad = 1f;
 
     void Awake()
     {
-        // Esto es para que el Telón sobreviva al cambiar de escena
+        // Esto es para que el Telï¿½n sobreviva al cambiar de escena
         if (Instance == null)
         {
             Instance = this;
@@ -24,20 +24,31 @@ public class Transicion : MonoBehaviour
 
     void Start()
     {
-        // Al empezar el juego, quitamos lo negro (Fade In)
-        StartCoroutine(Fade(0));
+        // Empezamos desde negro y hacemos Fade In al entrar a la primera escena
+        telonNegro.alpha = 1f;
+        telonNegro.blocksRaycasts = true;
+        StartCoroutine(FadeInInicial());
     }
 
-    // Esta función la llamarás desde tus botones
+    IEnumerator FadeInInicial()
+    {
+        yield return StartCoroutine(Fade(0));
+        telonNegro.blocksRaycasts = false;
+    }
+
+    // Esta funciï¿½n la llamarï¿½s desde tus botones
     public void CargarEscena(string nombreEscena)
     {
+        // StopAllCoroutines cancela cualquier Fade que estuviera activo (ej: el FadeIn inicial)
+        // para evitar que dos corrutinas se peleen por el alpha y bloqueen la carga de escena
+        StopAllCoroutines();
         StartCoroutine(ProcesoCarga(nombreEscena));
     }
 
     IEnumerator ProcesoCarga(string escena)
     {
         // 1. Oscurecer (Fade Out)
-        telonNegro.blocksRaycasts = true; // Bloquea el ratón
+        telonNegro.blocksRaycasts = true; // Bloquea el ratï¿½n
         yield return StartCoroutine(Fade(1)); // Espera a que sea negro
 
         // 2. Cargar escena
@@ -48,7 +59,7 @@ public class Transicion : MonoBehaviour
 
         // 4. Aclarar (Fade In)
         yield return StartCoroutine(Fade(0));
-        telonNegro.blocksRaycasts = false; // Desbloquea el ratón
+        telonNegro.blocksRaycasts = false; // Desbloquea el ratï¿½n
     }
 
     IEnumerator Fade(float objetivoAlpha)
