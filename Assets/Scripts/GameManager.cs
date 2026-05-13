@@ -89,6 +89,7 @@ public class GameManager : MonoBehaviour
         DatosGlobales.nodosCompletados.Clear();
         DatosGlobales.oroJugador = 100;
         DatosGlobales.habilidadesJugador.Clear();
+        DatosGlobales.combatesRealizados = 0;
 
         Debug.Log("Run terminada. Inventario y mapa reiniciados. Meta-Progreso intacto.");
     }

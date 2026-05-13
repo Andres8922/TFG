@@ -7,6 +7,12 @@ using UnityEngine.SceneManagement;
 
 public enum EstadoCombate { START, TURNO_JUGADOR, TURNO_ENEMIGO, VICTORIA, DERROTA }
 
+[System.Serializable]
+public class ConfiguracionHeroe
+{
+    public List<GameObject> enemigosPrefabs;
+}
+
 public class CombatManager : MonoBehaviour
 {
     public static CombatManager Instance;
@@ -15,8 +21,10 @@ public class CombatManager : MonoBehaviour
     [Header("Configuración")]
     public GameObject[] listaHeroes;
     public Transform puntoHeroe;
-    public GameObject enemigoPrefab;
     public Transform puntoEnemigo;
+
+    [Header("Configuración por Héroe")]
+    public ConfiguracionHeroe[] configuracionesPorHeroe;
 
     [Header("Transiciones de Escenas")]
     public string nombreEscenaMapa = "Mapa";
@@ -158,7 +166,15 @@ public class CombatManager : MonoBehaviour
         unidadHeroe = heroeGO.GetComponent<UnidadCombate>();
         animatorHeroe = heroeGO.GetComponent<Animator>();
 
-        GameObject enemigoGO = Instantiate(enemigoPrefab, puntoEnemigo.position, Quaternion.identity);
+        if (configuracionesPorHeroe == null || indice >= configuracionesPorHeroe.Length || configuracionesPorHeroe[indice] == null || configuracionesPorHeroe[indice].enemigosPrefabs.Count == 0)
+        {
+            Debug.LogError($"CombatManager: no hay enemigos configurados para el héroe [{indice}]. Asígnalos en el Inspector.");
+            yield break;
+        }
+
+        ConfiguracionHeroe config = configuracionesPorHeroe[indice];
+        int enemigoIdx = DatosGlobales.combatesRealizados % config.enemigosPrefabs.Count;
+        GameObject enemigoGO = Instantiate(config.enemigosPrefabs[enemigoIdx], puntoEnemigo.position, Quaternion.identity);
         unidadEnemigo = enemigoGO.GetComponent<UnidadCombate>();
         animatorEnemigo = enemigoGO.GetComponent<Animator>();
 
@@ -551,6 +567,8 @@ public class CombatManager : MonoBehaviour
                 GameManager.Instance.GanarExperiencia(expGanada);
                 Debug.Log("Oro y XP guardados en el GameManager.");
             }
+
+            DatosGlobales.combatesRealizados++;
         }
         else
         {

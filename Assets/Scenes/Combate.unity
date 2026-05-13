@@ -5231,8 +5231,24 @@ MonoBehaviour:
   - {fileID: 1663477405377775350, guid: 460e6812ed80ff3438e3509264e52116, type: 3}
   - {fileID: 8329517072140756723, guid: 6cd53a01805241c45a72f7c478b73b4c, type: 3}
   puntoHeroe: {fileID: 1654218819}
-  enemigoPrefab: {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
   puntoEnemigo: {fileID: 629385620}
+  configuracionesPorHeroe:
+  - enemigosPrefabs:
+    - {fileID: 3194714219603237580, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
+    - {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
+    - {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
+  - enemigosPrefabs:
+    - {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
+    - {fileID: 3194714219603237580, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
+    - {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
+  - enemigosPrefabs:
+    - {fileID: 3194714219603237580, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
+    - {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
+    - {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
+  - enemigosPrefabs:
+    - {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
+    - {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
+    - {fileID: 3194714219603237580, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
   nombreEscenaMapa: Mapa
   nombreEscenaMenu: MenuPrincipal
   imagenVidaHeroe: {fileID: 223722410}

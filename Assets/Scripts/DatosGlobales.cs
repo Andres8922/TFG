@@ -12,6 +12,9 @@ public static class DatosGlobales
     public static HashSet<string> nodosCompletados = new HashSet<string>();
     public static int oroJugador = 100;
 
-    // ¡NUEVO! La mochila donde guardaremos las cartas/habilidades
+    // ï¿½NUEVO! La mochila donde guardaremos las cartas/habilidades
     public static List<Habilidad> habilidadesJugador = new List<Habilidad>();
+
+    // Contador de combates normales completados (para elegir enemigo secuencial)
+    public static int combatesRealizados = 0;
 }
