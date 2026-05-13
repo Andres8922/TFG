@@ -17,4 +17,7 @@ public static class DatosGlobales
 
     // Contador de combates normales completados (para elegir enemigo secuencial)
     public static int combatesRealizados = 0;
+
+    // Tipo del nodo que ha lanzado la escena de combate
+    public static TipoNodo tipoNodoActual = TipoNodo.CombateFacil;
 }

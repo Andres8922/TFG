@@ -11,6 +11,7 @@ public enum EstadoCombate { START, TURNO_JUGADOR, TURNO_ENEMIGO, VICTORIA, DERRO
 public class ConfiguracionHeroe
 {
     public List<GameObject> enemigosPrefabs;
+    public GameObject jefePrefab;
 }
 
 public class CombatManager : MonoBehaviour
@@ -166,15 +167,36 @@ public class CombatManager : MonoBehaviour
         unidadHeroe = heroeGO.GetComponent<UnidadCombate>();
         animatorHeroe = heroeGO.GetComponent<Animator>();
 
-        if (configuracionesPorHeroe == null || indice >= configuracionesPorHeroe.Length || configuracionesPorHeroe[indice] == null || configuracionesPorHeroe[indice].enemigosPrefabs.Count == 0)
+        if (configuracionesPorHeroe == null || indice >= configuracionesPorHeroe.Length || configuracionesPorHeroe[indice] == null)
         {
-            Debug.LogError($"CombatManager: no hay enemigos configurados para el héroe [{indice}]. Asígnalos en el Inspector.");
+            Debug.LogError($"CombatManager: no hay configuración para el héroe [{indice}]. Asígnalos en el Inspector.");
             yield break;
         }
 
         ConfiguracionHeroe config = configuracionesPorHeroe[indice];
-        int enemigoIdx = DatosGlobales.combatesRealizados % config.enemigosPrefabs.Count;
-        GameObject enemigoGO = Instantiate(config.enemigosPrefabs[enemigoIdx], puntoEnemigo.position, Quaternion.identity);
+        GameObject prefabEnemigo;
+
+        if (DatosGlobales.tipoNodoActual == TipoNodo.Jefe)
+        {
+            if (config.jefePrefab == null)
+            {
+                Debug.LogError($"CombatManager: no hay jefePrefab para el héroe [{indice}]. Asígnalo en el Inspector.");
+                yield break;
+            }
+            prefabEnemigo = config.jefePrefab;
+        }
+        else
+        {
+            if (config.enemigosPrefabs == null || config.enemigosPrefabs.Count == 0)
+            {
+                Debug.LogError($"CombatManager: no hay enemigos en la lista para el héroe [{indice}]. Asígnalos en el Inspector.");
+                yield break;
+            }
+            int enemigoIdx = DatosGlobales.combatesRealizados % config.enemigosPrefabs.Count;
+            prefabEnemigo = config.enemigosPrefabs[enemigoIdx];
+        }
+
+        GameObject enemigoGO = Instantiate(prefabEnemigo, puntoEnemigo.position, Quaternion.identity);
         unidadEnemigo = enemigoGO.GetComponent<UnidadCombate>();
         animatorEnemigo = enemigoGO.GetComponent<Animator>();
 
@@ -568,7 +590,8 @@ public class CombatManager : MonoBehaviour
                 Debug.Log("Oro y XP guardados en el GameManager.");
             }
 
-            DatosGlobales.combatesRealizados++;
+            if (DatosGlobales.tipoNodoActual != TipoNodo.Jefe)
+                DatosGlobales.combatesRealizados++;
         }
         else
         {

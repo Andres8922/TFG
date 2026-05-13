@@ -21,6 +21,7 @@ public class SceneLoader : MonoBehaviour
                 break;
             case TipoNodo.CombateFacil:
             case TipoNodo.CombateDificil:
+                DatosGlobales.tipoNodoActual = tipo;
                 Transicion.Instance.CargarEscena("Combate");
                 break;
             case TipoNodo.Tienda:
@@ -30,6 +31,7 @@ public class SceneLoader : MonoBehaviour
                 Transicion.Instance.CargarEscena("Evento");
                 break;
             case TipoNodo.Jefe:
+                DatosGlobales.tipoNodoActual = tipo;
                 Transicion.Instance.CargarEscena("Combate");
                 break;
             default:
