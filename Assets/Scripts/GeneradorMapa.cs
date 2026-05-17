@@ -31,6 +31,12 @@ public class GeneradorMapa : MonoBehaviour
     public float margenVertical = 0.5f;
 
     [Header("Matem�ticas de Conexiones")]
+    [Header("Probabilidades de Tipos de Nodo (deben sumar 1.0)")]
+    [Range(0f, 1f)] public float probCombateFacil   = 0.45f;
+    [Range(0f, 1f)] public float probCombateDificil = 0.20f;
+    [Range(0f, 1f)] public float probEvento         = 0.20f;
+    // La Tienda ocupa el resto hasta 1.0
+
     [Range(0f, 1f)] public float probabilidadDeRamaExtra = 0.3f;
 
     private List<List<GameObject>> mapaGenerado = new List<List<GameObject>>();
@@ -127,11 +133,14 @@ public class GeneradorMapa : MonoBehaviour
                     else
                     {
                         float probabilidad = Random.value;
+                        float umbralDificil = probCombateFacil;
+                        float umbralEvento  = umbralDificil + probCombateDificil;
+                        float umbralTienda  = umbralEvento  + probEvento;
 
-                        if (probabilidad < 0.45f) scriptNodo.tipoDeNodo = TipoNodo.CombateFacil;
-                        else if (probabilidad < 0.65f) scriptNodo.tipoDeNodo = TipoNodo.CombateDificil;
-                        else if (probabilidad < 0.85f) scriptNodo.tipoDeNodo = TipoNodo.Evento;
-                        else scriptNodo.tipoDeNodo = TipoNodo.Tienda;
+                        if (probabilidad < umbralDificil)      scriptNodo.tipoDeNodo = TipoNodo.CombateFacil;
+                        else if (probabilidad < umbralEvento)  scriptNodo.tipoDeNodo = TipoNodo.CombateDificil;
+                        else if (probabilidad < umbralTienda)  scriptNodo.tipoDeNodo = TipoNodo.Evento;
+                        else                                   scriptNodo.tipoDeNodo = TipoNodo.Tienda;
                     }
 
                     SpriteRenderer sr = nuevoNodo.GetComponent<SpriteRenderer>();

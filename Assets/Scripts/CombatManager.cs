@@ -230,6 +230,13 @@ public class CombatManager : MonoBehaviour
             }
         }
 
+        if (GameManager.Instance != null)
+        {
+            unidadHeroe.dañoBase  += GameManager.Instance.bonusDaño;
+            unidadHeroe.vidaMaxima += GameManager.Instance.bonusVida;
+            unidadHeroe.vidaActual  = unidadHeroe.vidaMaxima;
+        }
+
         ComprobarPasivasDeInicio();
 
         ActualizarUI();

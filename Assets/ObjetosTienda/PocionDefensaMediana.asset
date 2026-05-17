@@ -17,6 +17,6 @@ MonoBehaviour:
   iconoObjeto: {fileID: -2570772848400747754, guid: 5100cdcfad9e2e94496f73780f0d8169, type: 3}
   descripcion: "El siguiente ataque del enemigo se reducir\xE1 el da\xF1o restando
     la defensa obtenida (-50 de da\xF1o)"
-  cantidadEnInventario: 5
+  cantidadEnInventario: 0
   tipoEfecto: 2
   valorEfecto: 50

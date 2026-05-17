@@ -2228,6 +2228,9 @@ MonoBehaviour:
   clipMago: {fileID: 32900000, guid: 9c6e1b90ee9b3f946a7bddcc65eae97b, type: 3}
   clipElfaArquera: {fileID: 32900000, guid: b36c7dc16b8d62c42afbc1e4d550c001, type: 3}
   clipEnano: {fileID: 32900000, guid: ac044ed1643aed84eb42446d32f7d2be, type: 3}
+  imagenBotonEnano: {fileID: 18525722}
+  spriteEnanoDesbloqueado: {fileID: 4492230564634695307, guid: bfddf799ab530b044ba4df1bd82f8091, type: 3}
+  spriteEnanoBloqueado: {fileID: -1503186851340053801, guid: e6d0e316513f98c40afc64dfd407f0ef, type: 3}
   musicaDeFondo: {fileID: 0}
 --- !u!4 &2019609518
 Transform:
@@ -2288,6 +2291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6706586ca5bbc54ea6b321549258bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectorHeroe
+  desbloquearTodosEnPruebas: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

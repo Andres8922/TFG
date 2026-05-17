@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
@@ -33,6 +34,11 @@ public class ControladorVideoHeroe : MonoBehaviour
     public VideoClip clipElfaArquera;
     public VideoClip clipEnano;
 
+    [Header("Botón Enano (Bloqueado / Desbloqueado)")]
+    public Image imagenBotonEnano;
+    public Sprite spriteEnanoDesbloqueado;
+    public Sprite spriteEnanoBloqueado;
+
     [Header("Audio")]
     [Tooltip("Arrastra aquí el objeto que reproduce la música de fondo (AudioSource)")]
     public AudioSource musicaDeFondo;
@@ -58,6 +64,27 @@ public class ControladorVideoHeroe : MonoBehaviour
         if (reproductorVideo != null)
         {
             reproductorVideo.loopPointReached += VideoFinalizado;
+        }
+
+        ActualizarBotonEnano();
+    }
+
+    void ActualizarBotonEnano()
+    {
+        if (imagenBotonEnano == null || GameManager.Instance == null) return;
+
+        bool desbloqueado = GameManager.Instance.heroesDesbloqueados.Length > 3
+                            && GameManager.Instance.heroesDesbloqueados[3];
+
+        imagenBotonEnano.sprite = desbloqueado ? spriteEnanoDesbloqueado : spriteEnanoBloqueado;
+
+        Button boton = imagenBotonEnano.GetComponent<Button>();
+        if (boton != null)
+        {
+            ColorBlock colores = boton.colors;
+            colores.disabledColor = Color.white;
+            boton.colors = colores;
+            boton.interactable = desbloqueado;
         }
     }
 

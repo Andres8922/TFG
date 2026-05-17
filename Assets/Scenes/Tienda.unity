@@ -656,6 +656,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TiendaManager
   catalogoCompleto:
+  - {fileID: 11400000, guid: d7163691b0b1c7d43b2b10bce75f70ae, type: 2}
+  - {fileID: 11400000, guid: b4256d92dd172c64fb75eb3d5f90edd9, type: 2}
+  - {fileID: 11400000, guid: 545b59635f8164e44b9144b1eed4173c, type: 2}
+  - {fileID: 11400000, guid: 138578c8508a9b74ab3b16f29d35c11c, type: 2}
+  - {fileID: 11400000, guid: 774d78b45905e8643b1a8422a655fca4, type: 2}
+  - {fileID: 11400000, guid: 0f590f5c1ca87b044a63e61ff4a149e8, type: 2}
+  - {fileID: 11400000, guid: 6afaf1562e11ce14c9f72e4eacc0ffe6, type: 2}
+  - {fileID: 11400000, guid: 442a8c8aed34c2747a6799a5bab80e73, type: 2}
+  - {fileID: 11400000, guid: 4164cf7f1b5903546b962c32c7d33b16, type: 2}
+  - {fileID: 11400000, guid: 27da6dfed82f97b469aa785a69be58da, type: 2}
+  - {fileID: 11400000, guid: 1d6b113c85d5e9f4bbf307fb8e6ab5c7, type: 2}
   - {fileID: 11400000, guid: fb4f6514264efe04492cdefdd540e02e, type: 2}
   - {fileID: 11400000, guid: 4e15f053532cd4142b6260a3375411d8, type: 2}
   - {fileID: 11400000, guid: 4f6b6618ec0d794479a4d41f073ec9a3, type: 2}

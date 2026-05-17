@@ -1,19 +1,25 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Necesario para cambiar de escena
+using UnityEngine.SceneManagement;
 
 public class SelectorHeroe : MonoBehaviour
 {
-    // Esta funciÛn la llamaremos desde los botones
-    // indice: 0 para Caballero, 1 para Mago
+    [Header("--- DEBUG ---")]
+    [Tooltip("Act√≠valo para desbloquear todos los h√©roes en pruebas. Desact√≠valo antes de presentar.")]
+    public bool desbloquearTodosEnPruebas = false;
+
+    void Start()
+    {
+        if (desbloquearTodosEnPruebas && GameManager.Instance != null)
+        {
+            for (int i = 0; i < GameManager.Instance.heroesDesbloqueados.Length; i++)
+                GameManager.Instance.heroesDesbloqueados[i] = true;
+        }
+    }
+
     public void ElegirHeroe(int indice)
     {
-        // 1. Guardamos la elecciÛn en el Cerebro
         GameManager.Instance.heroeSeleccionado = indice;
-
-        Debug.Log("HÈroe seleccionado: " + indice);
-
-        // 2. Cargamos la escena del Mapa
-        // Aseg˙rate de llamar a tu nueva escena "Mapa"
+        Debug.Log("H√©roe seleccionado: " + indice);
         Transicion.Instance.CargarEscena("Mapa");
     }
 }

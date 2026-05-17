@@ -118,14 +118,21 @@ public class TiendaManager : MonoBehaviour
     {
         Debug.Log("Has comprado: " + objeto.nombreObjeto);
 
-        if (GameManager.Instance != null)
+        if (GameManager.Instance == null) return;
+
+        if (objeto.tipoEfecto == TipoEfectoTienda.MejoraFuerza)
         {
-            // Si ya tenías esta poción en la mochila, solo te sumamos 1 frasco más
+            GameManager.Instance.bonusDaño += objeto.valorEfecto;
+        }
+        else if (objeto.tipoEfecto == TipoEfectoTienda.MejoraDefensa)
+        {
+            GameManager.Instance.bonusVida += objeto.valorEfecto;
+        }
+        else
+        {
+            // Pociones: si ya la tenías, suma un frasco; si no, añádela
             if (GameManager.Instance.pocionesGlobales.Contains(objeto))
-            {
                 objeto.cantidadEnInventario++;
-            }
-            // Si es un objeto nuevo, lo guardamos en la lista y le ponemos cantidad 1
             else
             {
                 objeto.cantidadEnInventario = 1;

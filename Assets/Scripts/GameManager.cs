@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    [Header("Configuraci�n Actual")]
+    [Header("Configuración Actual")]
     public int heroeSeleccionado = 0;
     public int dificultad = 0;
 
@@ -19,10 +19,14 @@ public class GameManager : MonoBehaviour
     public int experienciaActual = 0;
     public int experienciaNecesaria = 100;
 
-    [Tooltip("Marca el primer hueco como TRUE (H�roe inicial). El resto se desbloquear�n solos.")]
-    public bool[] heroesDesbloqueados = new bool[4] { true, false, false, false };
+    [Tooltip("Marca el primer hueco como TRUE (Héroe inicial). El resto se desbloquearán solos.")]
+    public bool[] heroesDesbloqueados = new bool[4] { true, true, true, false };
 
-    [Header("--- ESTAD�STICAS DE LA RUN ---")]
+    [Header("--- MEJORAS DE LA RUN --- (Se borran al acabar)")]
+    public int bonusDaño = 0;
+    public int bonusVida = 0;
+
+    [Header("--- ESTADÍSTICAS DE LA RUN ---")]
     public int dañoTotalPartida = 0;
     public int manaTotalPartida = 0;
     public int turnosTotalesPartida = 0;
@@ -38,6 +42,7 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            CargarMetaProgreso();
         }
         else
         {
@@ -54,6 +59,28 @@ public class GameManager : MonoBehaviour
     public void PararCronometro()   { cronometroActivo = false; }
     public float ObtenerTiempo()    { return tiempoPartida; }
 
+    void CargarMetaProgreso()
+    {
+        nivelCuenta         = PlayerPrefs.GetInt("nivelCuenta", 1);
+        experienciaActual   = PlayerPrefs.GetInt("experienciaActual", 0);
+        experienciaNecesaria = PlayerPrefs.GetInt("experienciaNecesaria", 100);
+
+        for (int i = 0; i < heroesDesbloqueados.Length; i++)
+            heroesDesbloqueados[i] = PlayerPrefs.GetInt("heroe_" + i, i < 3 ? 1 : 0) == 1;
+    }
+
+    void GuardarMetaProgreso()
+    {
+        PlayerPrefs.SetInt("nivelCuenta", nivelCuenta);
+        PlayerPrefs.SetInt("experienciaActual", experienciaActual);
+        PlayerPrefs.SetInt("experienciaNecesaria", experienciaNecesaria);
+
+        for (int i = 0; i < heroesDesbloqueados.Length; i++)
+            PlayerPrefs.SetInt("heroe_" + i, heroesDesbloqueados[i] ? 1 : 0);
+
+        PlayerPrefs.Save();
+    }
+
     public void GanarExperiencia(int cantidadXP)
     {
         xpTotalPartida += cantidadXP;
@@ -64,6 +91,8 @@ public class GameManager : MonoBehaviour
         {
             SubirNivelCuenta();
         }
+
+        GuardarMetaProgreso();
     }
 
     void SubirNivelCuenta()
@@ -75,15 +104,10 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("¡NIVEL DE CUENTA " + nivelCuenta + " ALCANZADO!");
 
-        if (nivelCuenta == 3 && heroesDesbloqueados.Length > 1 && !heroesDesbloqueados[1])
+        if (nivelCuenta == 2 && heroesDesbloqueados.Length > 3 && !heroesDesbloqueados[3])
         {
-            heroesDesbloqueados[1] = true;
-            Debug.Log("¡NUEVO H�ROE DESBLOQUEADO: Arquero!");
-        }
-        else if (nivelCuenta == 5 && heroesDesbloqueados.Length > 2 && !heroesDesbloqueados[2])
-        {
-            heroesDesbloqueados[2] = true;
-            Debug.Log("¡NUEVO H�ROE DESBLOQUEADO: Mago!");
+            heroesDesbloqueados[3] = true;
+            Debug.Log("¡NUEVO HÉROE DESBLOQUEADO: Enano!");
         }
     }
 
@@ -92,6 +116,9 @@ public class GameManager : MonoBehaviour
         oroTotal = 0;
         pocionesGlobales.Clear();
         habilidadesGlobales.Clear();
+
+        bonusDaño = 0;
+        bonusVida = 0;
 
         dañoTotalPartida = 0;
         manaTotalPartida = 0;
@@ -111,5 +138,20 @@ public class GameManager : MonoBehaviour
         DatosGlobales.combatesRealizados = 0;
 
         Debug.Log("Run terminada. Inventario y mapa reiniciados. Meta-Progreso intacto.");
+    }
+
+    [ContextMenu("Borrar datos guardados (Meta-Progreso)")]
+    void BorrarDatosGuardados()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+
+        nivelCuenta = 1;
+        experienciaActual = 0;
+        experienciaNecesaria = 100;
+        for (int i = 0; i < heroesDesbloqueados.Length; i++)
+            heroesDesbloqueados[i] = i < 3;
+
+        Debug.Log("Datos guardados borrados. Meta-progreso reiniciado.");
     }
 }

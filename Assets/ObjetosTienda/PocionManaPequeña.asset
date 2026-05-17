@@ -16,6 +16,6 @@ MonoBehaviour:
   precio: 25
   iconoObjeto: {fileID: 553143953700039959, guid: 81aa737f1cb5ef14396d35ffdbccac05, type: 3}
   descripcion: "Otorga 10 puntos de man\xE1 al h\xE9roe"
-  cantidadEnInventario: 5
+  cantidadEnInventario: 0
   tipoEfecto: 1
   valorEfecto: 10

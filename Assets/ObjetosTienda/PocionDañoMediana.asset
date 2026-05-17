@@ -17,6 +17,6 @@ MonoBehaviour:
   iconoObjeto: {fileID: 5579944404040481351, guid: 5da961912b84f0c458caead00a5493a5, type: 3}
   descripcion: "El siguiente ataque del h\xE9roe contar\xE1 con un da\xF1o extra
     de 50 puntos"
-  cantidadEnInventario: 5
+  cantidadEnInventario: 0
   tipoEfecto: 3
   valorEfecto: 50

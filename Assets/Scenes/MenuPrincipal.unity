@@ -1071,6 +1071,11 @@ MonoBehaviour:
   experienciaActual: 0
   experienciaNecesaria: 100
   heroesDesbloqueados: 01000000
+  "da\xF1oTotalPartida": 0
+  manaTotalPartida: 0
+  turnosTotalesPartida: 0
+  xpTotalPartida: 0
+  victoriaJefe: 0
 --- !u!4 &558648605
 Transform:
   m_ObjectHideFlags: 0
@@ -2174,8 +2179,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -508, y: 474.7}
-  m_SizeDelta: {x: 141.518, y: 22.0356}
+  m_AnchoredPosition: {x: -486.60242, y: 474.7}
+  m_SizeDelta: {x: 184.3132, y: 22.0356}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1901287050
 MonoBehaviour:
