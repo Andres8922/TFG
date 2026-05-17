@@ -16,6 +16,13 @@ public class ConfiguracionHeroe
     public Sprite fondoJefe;
 }
 
+[System.Serializable]
+public class ImagenesFinCombate
+{
+    public Sprite imagenVictoria;
+    public Sprite imagenDerrota;
+}
+
 public class CombatManager : MonoBehaviour
 {
     public static CombatManager Instance;
@@ -76,6 +83,11 @@ public class CombatManager : MonoBehaviour
     public TMP_Text textoResumenTurnos;
     public TMP_Text textoResumenOro;
 
+    [Header("UI - Imagen Final por Héroe")]
+    public ImagenesFinCombate[] imagenesPorHeroe = new ImagenesFinCombate[4];
+    public GameObject panelImagenFinal;
+    public Image imagenFinalCompleta;
+
     private int numeroTurno = 0;
 
     [Header("Estados Alterados (Buffs)")]
@@ -95,6 +107,7 @@ public class CombatManager : MonoBehaviour
         estado = EstadoCombate.START;
 
         if (panelFinCombate != null) panelFinCombate.SetActive(false);
+        if (panelImagenFinal != null) panelImagenFinal.SetActive(false);
         if (iconoBuffFuerza != null) iconoBuffFuerza.SetActive(false);
         if (iconoBuffDefensa != null) iconoBuffDefensa.SetActive(false);
 
@@ -290,6 +303,7 @@ public class CombatManager : MonoBehaviour
         {
             if (unidadHeroe.manaActual >= habElegida.costeMana)
             {
+                if (GameManager.Instance != null) GameManager.Instance.manaTotalPartida += habElegida.costeMana;
                 unidadHeroe.GastarMana(habElegida.costeMana);
                 StartCoroutine(SecuenciaHabilidadMochila(habElegida));
             }
@@ -323,6 +337,7 @@ public class CombatManager : MonoBehaviour
             if (iconoBuffFuerza != null) iconoBuffFuerza.SetActive(false);
         }
 
+        if (GameManager.Instance != null) GameManager.Instance.dañoTotalPartida += dañoEspecial;
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(dañoEspecial);
         MostrarDaño(dañoEspecial, unidadEnemigo.transform.position, Color.red);
         ActualizarUI();
@@ -391,6 +406,7 @@ public class CombatManager : MonoBehaviour
     void EmpezarTurnoJugador()
     {
         numeroTurno++;
+        if (GameManager.Instance != null) GameManager.Instance.turnosTotalesPartida++;
         estado = EstadoCombate.TURNO_JUGADOR;
 
         ComprobarPasivasDeTurno();
@@ -408,6 +424,7 @@ public class CombatManager : MonoBehaviour
         int coste = 10;
         if (unidadHeroe.manaActual >= coste)
         {
+            if (GameManager.Instance != null) GameManager.Instance.manaTotalPartida += coste;
             unidadHeroe.GastarMana(coste);
             StartCoroutine(UsarHabilidadEspecial());
         }
@@ -513,6 +530,7 @@ public class CombatManager : MonoBehaviour
             if (iconoBuffFuerza != null) iconoBuffFuerza.SetActive(false);
         }
 
+        if (GameManager.Instance != null) GameManager.Instance.dañoTotalPartida += dañoEspecial;
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(dañoEspecial);
         MostrarDaño(dañoEspecial, unidadEnemigo.transform.position, Color.red);
         ActualizarUI();
@@ -545,6 +563,7 @@ public class CombatManager : MonoBehaviour
             if (iconoBuffFuerza != null) iconoBuffFuerza.SetActive(false);
         }
 
+        if (GameManager.Instance != null) GameManager.Instance.dañoTotalPartida += dañoFinal;
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(dañoFinal);
         MostrarDaño(dañoFinal, unidadEnemigo.transform.position, Color.red);
         ActualizarUI();
@@ -585,8 +604,6 @@ public class CombatManager : MonoBehaviour
         if (iconoBuffFuerza != null) iconoBuffFuerza.SetActive(false);
         if (iconoBuffDefensa != null) iconoBuffDefensa.SetActive(false);
 
-        if (panelFinCombate != null) panelFinCombate.SetActive(true);
-
         if (victoria)
         {
             estado = EstadoCombate.VICTORIA;
@@ -604,7 +621,8 @@ public class CombatManager : MonoBehaviour
             {
                 GameManager.Instance.oroTotal += oroGanado;
                 GameManager.Instance.GanarExperiencia(expGanada);
-                Debug.Log("Oro y XP guardados en el GameManager.");
+                if (DatosGlobales.tipoNodoActual == TipoNodo.Jefe)
+                    GameManager.Instance.victoriaJefe = true;
             }
 
             if (DatosGlobales.tipoNodoActual != TipoNodo.Jefe)
@@ -619,6 +637,47 @@ public class CombatManager : MonoBehaviour
             if (textoResumenTurnos != null) textoResumenTurnos.text = numeroTurno.ToString("00");
             if (textoResumenOro != null) textoResumenOro.text = "000";
         }
+
+        MostrarImagenFinal(victoria);
+    }
+
+    void MostrarImagenFinal(bool victoria)
+    {
+        if (panelImagenFinal == null || imagenFinalCompleta == null ||
+            DatosGlobales.tipoNodoActual != TipoNodo.Jefe)
+        {
+            if (panelFinCombate != null) panelFinCombate.SetActive(true);
+            return;
+        }
+
+        int indiceHeroe = (GameManager.Instance != null) ? GameManager.Instance.heroeSeleccionado : 0;
+
+        Sprite sprite = null;
+        if (indiceHeroe >= 0 && indiceHeroe < imagenesPorHeroe.Length)
+        {
+            sprite = victoria
+                ? imagenesPorHeroe[indiceHeroe].imagenVictoria
+                : imagenesPorHeroe[indiceHeroe].imagenDerrota;
+        }
+
+        if (sprite != null && Transicion.Instance != null)
+        {
+            imagenFinalCompleta.sprite = sprite;
+            Transicion.Instance.FadeSoloYAccion(() => panelImagenFinal.SetActive(true));
+            return;
+        }
+
+        // Sin imagen asignada o sin Transicion: pasar directamente al panel de resumen
+        if (panelFinCombate != null) panelFinCombate.SetActive(true);
+    }
+
+    public void BotonContinuarImagenFinal()
+    {
+        if (GameManager.Instance != null) GameManager.Instance.PararCronometro();
+        if (Transicion.Instance != null)
+            Transicion.Instance.CargarEscena("Estadisticas");
+        else
+            SceneManager.LoadScene("Estadisticas");
     }
 
     public void BotonHuir()

@@ -48,6 +48,8 @@ public class GeneradorMapa : MonoBehaviour
             AjustarPisosPorDificultad();
             DatosGlobales.semillaMapa = Random.Range(0, 999999);
             DatosGlobales.hayPartidaGuardada = true;
+
+            if (GameManager.Instance != null) GameManager.Instance.IniciarCronometro();
         }
 
         Random.InitState(DatosGlobales.semillaMapa);

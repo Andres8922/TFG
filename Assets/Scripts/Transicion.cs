@@ -36,6 +36,21 @@ public class Transicion : MonoBehaviour
         telonNegro.blocksRaycasts = false;
     }
 
+    public void FadeSoloYAccion(System.Action accionEnNegro)
+    {
+        StopAllCoroutines();
+        StartCoroutine(FadeAccion(accionEnNegro));
+    }
+
+    IEnumerator FadeAccion(System.Action accionEnNegro)
+    {
+        telonNegro.blocksRaycasts = true;
+        yield return StartCoroutine(Fade(1));
+        accionEnNegro?.Invoke();
+        yield return StartCoroutine(Fade(0));
+        telonNegro.blocksRaycasts = false;
+    }
+
     // Esta funci�n la llamar�s desde tus botones
     public void CargarEscena(string nombreEscena)
     {
