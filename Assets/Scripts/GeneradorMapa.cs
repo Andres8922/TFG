@@ -49,9 +49,10 @@ public class GeneradorMapa : MonoBehaviour
 
     void Start()
     {
+        AjustarPisosPorDificultad();
+
         if (!DatosGlobales.hayPartidaGuardada)
         {
-            AjustarPisosPorDificultad();
             DatosGlobales.semillaMapa = Random.Range(0, 999999);
             DatosGlobales.hayPartidaGuardada = true;
 

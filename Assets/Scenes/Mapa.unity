@@ -422,8 +422,14 @@ MonoBehaviour:
   iconoTienda: {fileID: 0}
   iconoJefe: {fileID: 0}
   totalPisos: 6
-  distanciaHorizontal: 2
   distanciaVertical: 2
+  anchoMaximoMapa: 13.8
+  margenHorizontal: 0.6
+  altoMaximoMapa: 6.44
+  margenVertical: 0.5
+  probCombateFacil: 0.4
+  probCombateDificil: 0
+  probEvento: 0
   probabilidadDeRamaExtra: 0.3
 --- !u!1 &343619083
 GameObject:

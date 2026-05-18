@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
@@ -22,52 +22,55 @@ public class TiendaManager : MonoBehaviour
     public HuecoTienda[] huecosTienda;
     public TextMeshProUGUI textoOro;
 
-    // --- NUEVAS VARIABLES PARA EL HÉROE ---
     [Header("Visualización del Héroe")]
-    [Tooltip("El punto vacío donde aparecerá el héroe")]
     public Transform posicionHeroe;
-    [Tooltip("Arrastra aquí tus prefabs animados (0=Caballero, 1=Mago...) en el mismo orden que en la selección")]
     public GameObject[] listaHeroesPrefab;
-    // --------------------------------------
+
+    [Header("Panel de Intercambio")]
+    public GameObject panelIntercambio;
+    public SlotIntercambio[] slotsIntercambio = new SlotIntercambio[5];
+
+    [Header("Límites de Inventario")]
+    public int maxTiposPociones = 5;
+
+    private int pendingHueco = -1;
 
     void Start()
     {
+        if (panelIntercambio != null) panelIntercambio.SetActive(false);
         ActualizarUIOro();
         RellenarEscaparate();
-        InvocarHeroeEnTienda(); // Llamamos a la nueva función al entrar a la tienda
+        InvocarHeroeEnTienda();
     }
 
-    // --- NUEVA FUNCIÓN AÑADIDA ---
     void InvocarHeroeEnTienda()
     {
-        // Comprobamos que el GameManager existe y que has rellenado los huecos en el Inspector
         if (GameManager.Instance != null && listaHeroesPrefab != null && listaHeroesPrefab.Length > 0 && posicionHeroe != null)
         {
             int indiceElegido = GameManager.Instance.heroeSeleccionado;
-
-            // Nos aseguramos de que el índice coincide con los prefabs que has puesto
             if (indiceElegido >= 0 && indiceElegido < listaHeroesPrefab.Length)
-            {
-                // Invocamos al prefab animado en la posición de la tienda
                 Instantiate(listaHeroesPrefab[indiceElegido], posicionHeroe.position, Quaternion.identity);
-            }
         }
         else
         {
             Debug.LogWarning("Falta asignar los Prefabs de los héroes o la Posición en el TiendaManager.");
         }
     }
-    // -----------------------------
 
     void RellenarEscaparate()
     {
+        int semilla = DatosGlobales.semillaMapa
+            + DatosGlobales.pisoActualJugador * 1000
+            + DatosGlobales.nodoActualJugador * 100;
+        System.Random rng = new System.Random(semilla);
+
         List<ObjetoTienda> objetosDisponibles = new List<ObjetoTienda>(catalogoCompleto);
 
         for (int i = 0; i < huecosTienda.Length; i++)
         {
             if (objetosDisponibles.Count == 0) break;
 
-            int indiceRandom = Random.Range(0, objetosDisponibles.Count);
+            int indiceRandom = rng.Next(0, objetosDisponibles.Count);
             ObjetoTienda objetoElegido = objetosDisponibles[indiceRandom];
             objetosDisponibles.RemoveAt(indiceRandom);
 
@@ -84,34 +87,108 @@ public class TiendaManager : MonoBehaviour
 
     public void IntentarComprar(int indiceHueco)
     {
+        if (pendingHueco >= 0) return;
+
         ObjetoTienda objeto = huecosTienda[indiceHueco].objetoAsignado;
 
-        // 1. Evitamos errores si pruebas la escena sin pasar por el Menú Principal
         if (GameManager.Instance == null)
         {
             Debug.LogWarning("¡Falta el GameManager! Dale al Play desde la escena del Menú Principal.");
             return;
         }
 
-        // 2. Comprobamos si tienes suficiente oro en tu "Cerebro Global"
-        if (GameManager.Instance.oroTotal >= objeto.precio)
-        {
-            // Cobramos
-            GameManager.Instance.oroTotal -= objeto.precio;
-            ActualizarUIOro();
-
-            // Entregamos el objeto en la mochila global
-            AplicarEfecto(objeto);
-
-            // Efecto visual de "Agotado" en la tienda
-            huecosTienda[indiceHueco].botonComprar.interactable = false;
-            huecosTienda[indiceHueco].textoNombre.text = "AGOTADO";
-            huecosTienda[indiceHueco].icono.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
-        }
-        else
+        if (GameManager.Instance.oroTotal < objeto.precio)
         {
             Debug.Log("¡No tienes suficiente oro para comprar " + objeto.nombreObjeto + "!");
+            return;
         }
+
+        bool esMejoraPermanente = objeto.tipoEfecto == TipoEfectoTienda.MejoraFuerza ||
+                                   objeto.tipoEfecto == TipoEfectoTienda.MejoraDefensa;
+
+        bool esNuevoTipo = !esMejoraPermanente && !GameManager.Instance.pocionesGlobales.Contains(objeto);
+        bool mochilasLlena = GameManager.Instance.pocionesGlobales.Count >= maxTiposPociones;
+
+        if (esNuevoTipo && mochilasLlena)
+        {
+            pendingHueco = indiceHueco;
+            AbrirPanelIntercambio();
+            return;
+        }
+
+        EjecutarCompra(indiceHueco);
+    }
+
+    void ReactivarHuecosNoVendidos()
+    {
+        foreach (var h in huecosTienda)
+            if (h.botonComprar != null && h.textoNombre != null && h.textoNombre.text != "AGOTADO")
+                h.botonComprar.interactable = true;
+    }
+
+    void AbrirPanelIntercambio()
+    {
+        if (panelIntercambio == null) return;
+
+        foreach (var h in huecosTienda)
+            if (h.botonComprar != null) h.botonComprar.interactable = false;
+
+        for (int i = 0; i < slotsIntercambio.Length; i++)
+        {
+            if (slotsIntercambio[i].boton == null) continue;
+
+            if (i < GameManager.Instance.pocionesGlobales.Count)
+            {
+                ObjetoTienda pocionActual = GameManager.Instance.pocionesGlobales[i];
+                slotsIntercambio[i].boton.gameObject.SetActive(true);
+                if (slotsIntercambio[i].icono != null) slotsIntercambio[i].icono.sprite = pocionActual.iconoObjeto;
+
+                int idx = i;
+                slotsIntercambio[i].boton.onClick.RemoveAllListeners();
+                slotsIntercambio[i].boton.onClick.AddListener(() => ConfirmarIntercambio(idx));
+            }
+            else
+            {
+                slotsIntercambio[i].boton.gameObject.SetActive(false);
+            }
+        }
+
+        panelIntercambio.SetActive(true);
+    }
+
+    public void ConfirmarIntercambio(int indiceEnLista)
+    {
+        if (pendingHueco < 0) return;
+
+        ObjetoTienda pocionAEliminar = GameManager.Instance.pocionesGlobales[indiceEnLista];
+        pocionAEliminar.cantidadEnInventario = 0;
+        GameManager.Instance.pocionesGlobales.RemoveAt(indiceEnLista);
+
+        if (panelIntercambio != null) panelIntercambio.SetActive(false);
+
+        EjecutarCompra(pendingHueco);
+        pendingHueco = -1;
+        ReactivarHuecosNoVendidos();
+    }
+
+    public void CancelarIntercambio()
+    {
+        pendingHueco = -1;
+        if (panelIntercambio != null) panelIntercambio.SetActive(false);
+        ReactivarHuecosNoVendidos();
+    }
+
+    void EjecutarCompra(int indiceHueco)
+    {
+        ObjetoTienda objeto = huecosTienda[indiceHueco].objetoAsignado;
+
+        GameManager.Instance.oroTotal -= objeto.precio;
+        ActualizarUIOro();
+        AplicarEfecto(objeto);
+
+        huecosTienda[indiceHueco].botonComprar.interactable = false;
+        huecosTienda[indiceHueco].textoNombre.text = "AGOTADO";
+        huecosTienda[indiceHueco].icono.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
     }
 
     void AplicarEfecto(ObjetoTienda objeto)
@@ -130,7 +207,6 @@ public class TiendaManager : MonoBehaviour
         }
         else
         {
-            // Pociones: si ya la tenías, suma un frasco; si no, añádela
             if (GameManager.Instance.pocionesGlobales.Contains(objeto))
                 objeto.cantidadEnInventario++;
             else
@@ -145,7 +221,6 @@ public class TiendaManager : MonoBehaviour
     {
         if (textoOro != null)
         {
-            // Mostramos el oro real, o 0 si estás probando la escena suelta
             int oroActual = (GameManager.Instance != null) ? GameManager.Instance.oroTotal : 0;
             textoOro.text = "" + oroActual;
         }
