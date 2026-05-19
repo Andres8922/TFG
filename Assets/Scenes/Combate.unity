@@ -5443,37 +5443,37 @@ MonoBehaviour:
   puntoEnemigo: {fileID: 629385620}
   configuracionesPorHeroe:
   - enemigosPrefabs:
-    - {fileID: 3194714219603237580, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
-    - {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
-    - {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
-    jefePrefab: {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
+    - {fileID: 762373130587563952, guid: 2a1156efe894e584eb9856ccc9816138, type: 3}
+    - {fileID: 2855669100134862259, guid: 39a621988a673e34298a4c19e64c481f, type: 3}
+    - {fileID: 665207034307815342, guid: 2e0627e31b0a62c4dacaea62ed94169b, type: 3}
+    jefePrefab: {fileID: 4536950133996291661, guid: 4c65355ebd9cecc449cbe92bf11ff778, type: 3}
     fondosCombate:
     - {fileID: 1400574733088237762, guid: 65aab4ce674dc42699b6b42ffb936b55, type: 3}
     - {fileID: 5597849781710759511, guid: fa607bc98b15c5d469ac978f2f94be40, type: 3}
     fondoJefe: {fileID: -1422196952004061318, guid: 37869300220acf7499596e15b8f0b413, type: 3}
   - enemigosPrefabs:
-    - {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
-    - {fileID: 3194714219603237580, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
-    - {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
-    jefePrefab: {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
+    - {fileID: 5592622292370235747, guid: 0c9aef259639aa04d8a728a8325cd888, type: 3}
+    - {fileID: 9195763628356743827, guid: 47c90dcc8720ffa4eb2a4eeb3500a050, type: 3}
+    - {fileID: 256157812336546395, guid: 73a115bd001323545bdac711a3e1ea40, type: 3}
+    jefePrefab: {fileID: 2282211593380804649, guid: 4a424094c7406144db2b527fd9cdfce5, type: 3}
     fondosCombate:
     - {fileID: -6197040341870502048, guid: 9146ddd1be026ba4fa910e3ff0a68439, type: 3}
     - {fileID: 8009560168955052372, guid: 3078537e695c2bf458d1c61e59d376a9, type: 3}
     - {fileID: -4708121331245386750, guid: 2f4694fc28071054596efecc686377bd, type: 3}
     fondoJefe: {fileID: -1422196952004061318, guid: 37869300220acf7499596e15b8f0b413, type: 3}
   - enemigosPrefabs:
-    - {fileID: 3194714219603237580, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
-    - {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
-    - {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
-    jefePrefab: {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
+    - {fileID: 1303564857618840589, guid: 7bb1e360ba78ce347ba782e555b48470, type: 3}
+    - {fileID: 3926991555658821511, guid: 28b77dd9193a27b4a9b2df6dd103da6f, type: 3}
+    - {fileID: 1418784504007897916, guid: 19d26580fad37cf4db7cd9ff64d6255e, type: 3}
+    jefePrefab: {fileID: 4015541645411903904, guid: 3c898469f012b0b4e958e8e08850f3f8, type: 3}
     fondosCombate:
     - {fileID: -6197040341870502048, guid: 9146ddd1be026ba4fa910e3ff0a68439, type: 3}
     fondoJefe: {fileID: -1422196952004061318, guid: 37869300220acf7499596e15b8f0b413, type: 3}
   - enemigosPrefabs:
-    - {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
-    - {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
-    - {fileID: 3194714219603237580, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
-    jefePrefab: {fileID: 4536950133996291661, guid: a3011c1b7f9dc9e48947b2654ecccce8, type: 3}
+    - {fileID: 2568591983726969920, guid: 9fb86793a2e459d4793b8e3e5dd03b20, type: 3}
+    - {fileID: 6049050017056505647, guid: 4de43ed3748edb84b862040fdff159a6, type: 3}
+    - {fileID: 261723145458769545, guid: e45e7d12654bd8d45bed90aab521dae8, type: 3}
+    jefePrefab: {fileID: 3106982020875226540, guid: df7d4e6d433335a42815a7b8aeea8a83, type: 3}
     fondosCombate:
     - {fileID: -6197040341870502048, guid: 9146ddd1be026ba4fa910e3ff0a68439, type: 3}
     fondoJefe: {fileID: -1422196952004061318, guid: 37869300220acf7499596e15b8f0b413, type: 3}
