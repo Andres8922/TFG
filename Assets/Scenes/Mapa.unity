@@ -427,9 +427,9 @@ MonoBehaviour:
   margenHorizontal: 0.6
   altoMaximoMapa: 6.44
   margenVertical: 0.5
-  probCombateFacil: 0
+  probCombateFacil: 0.65
   probCombateDificil: 0
-  probEvento: 0.5
+  probEvento: 0.2
   probabilidadDeRamaExtra: 0.3
 --- !u!1 &343619083
 GameObject:

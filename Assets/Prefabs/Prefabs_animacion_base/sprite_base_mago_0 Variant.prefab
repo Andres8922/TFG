@@ -1105,6 +1105,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5594424139828980668, guid: 4d099be34795c4c4e90f7d72c3ffc6f5, type: 3}
+      propertyPath: "da\xF1oBase"
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: -2834112784111759025, guid: 4d099be34795c4c4e90f7d72c3ffc6f5, type: 3}
       propertyPath: m_Controller
       value: 

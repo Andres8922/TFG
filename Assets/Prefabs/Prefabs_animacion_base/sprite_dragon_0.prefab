@@ -309,8 +309,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnidadCombate
   nombreUnidad: "Jefe Drag\xF3n"
-  "da\xF1oBase": 10
-  vidaMaxima: 100
+  "da\xF1oBase": 17
+  vidaMaxima: 200
   vidaActual: 10
   manaMaximo: 50
   manaActual: 0

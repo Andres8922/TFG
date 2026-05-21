@@ -114,11 +114,7 @@ public class EventoManager : MonoBehaviour
 
         Habilidad hab = huecosHabilidad[indice].habilidadAsignada;
 
-        if (GameManager.Instance == null)
-        {
-            Debug.LogWarning("¡Falta el GameManager! Dale al Play desde el Menú Principal para guardar la habilidad.");
-            return;
-        }
+        if (GameManager.Instance == null) return;
 
         int countActivas = 0, countPasivas = 0;
         foreach (var h in GameManager.Instance.habilidadesGlobales)
@@ -215,7 +211,6 @@ public class EventoManager : MonoBehaviour
     void ConfirmarSeleccion(Habilidad hab, int indice)
     {
         GameManager.Instance.habilidadesGlobales.Add(hab);
-        Debug.Log("¡Has aprendido la habilidad: " + hab.nombreHabilidad + "!");
 
         habilidadElegida = true;
         OcultarTooltip();

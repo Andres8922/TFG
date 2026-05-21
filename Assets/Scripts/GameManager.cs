@@ -85,7 +85,6 @@ public class GameManager : MonoBehaviour
     {
         xpTotalPartida += cantidadXP;
         experienciaActual += cantidadXP;
-        Debug.Log("Has ganado " + cantidadXP + " XP. Total: " + experienciaActual + "/" + experienciaNecesaria);
 
         while (experienciaActual >= experienciaNecesaria)
         {
@@ -99,21 +98,18 @@ public class GameManager : MonoBehaviour
     {
         experienciaActual -= experienciaNecesaria;
         nivelCuenta++;
-
         experienciaNecesaria = Mathf.RoundToInt(experienciaNecesaria * 1.5f);
 
-        Debug.Log("¡NIVEL DE CUENTA " + nivelCuenta + " ALCANZADO!");
-
+        // El nivel 2 desbloquea al Enano
         if (nivelCuenta == 2 && heroesDesbloqueados.Length > 3 && !heroesDesbloqueados[3])
-        {
             heroesDesbloqueados[3] = true;
-            Debug.Log("¡NUEVO HÉROE DESBLOQUEADO: Enano!");
-        }
     }
 
     public void ResetearPartida()
     {
         oroTotal = 0;
+        foreach (ObjetoTienda pocion in pocionesGlobales)
+            if (pocion != null) pocion.cantidadEnInventario = 0;
         pocionesGlobales.Clear();
         habilidadesGlobales.Clear();
 
@@ -137,7 +133,6 @@ public class GameManager : MonoBehaviour
         DatosGlobales.habilidadesJugador.Clear();
         DatosGlobales.combatesRealizados = 0;
 
-        Debug.Log("Run terminada. Inventario y mapa reiniciados. Meta-Progreso intacto.");
     }
 
     [ContextMenu("Borrar datos guardados (Meta-Progreso)")]
@@ -152,6 +147,5 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < heroesDesbloqueados.Length; i++)
             heroesDesbloqueados[i] = i < 3;
 
-        Debug.Log("Datos guardados borrados. Meta-progreso reiniciado.");
     }
 }

@@ -363,6 +363,10 @@ PrefabInstance:
       propertyPath: offsetSpawn.y
       value: -0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 928661030000557867, guid: e1ffaa640b02fa5419e5146404d1c4df, type: 3}
+      propertyPath: vidaMaxima
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3468611014729871289, guid: e1ffaa640b02fa5419e5146404d1c4df, type: 3}
       propertyPath: m_Name
       value: Goblin_0 Variant

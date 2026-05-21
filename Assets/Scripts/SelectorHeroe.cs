@@ -19,7 +19,6 @@ public class SelectorHeroe : MonoBehaviour
     public void ElegirHeroe(int indice)
     {
         GameManager.Instance.heroeSeleccionado = indice;
-        Debug.Log("Héroe seleccionado: " + indice);
         Transicion.Instance.CargarEscena("Mapa");
     }
 }

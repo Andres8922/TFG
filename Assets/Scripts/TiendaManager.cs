@@ -104,17 +104,10 @@ public class TiendaManager : MonoBehaviour
 
         ObjetoTienda objeto = huecosTienda[indiceHueco].objetoAsignado;
 
-        if (GameManager.Instance == null)
-        {
-            Debug.LogWarning("¡Falta el GameManager! Dale al Play desde la escena del Menú Principal.");
-            return;
-        }
+        if (GameManager.Instance == null) return;
 
         if (GameManager.Instance.oroTotal < objeto.precio)
-        {
-            Debug.Log("¡No tienes suficiente oro para comprar " + objeto.nombreObjeto + "!");
             return;
-        }
 
         bool esMejoraPermanente = objeto.tipoEfecto == TipoEfectoTienda.MejoraFuerza ||
                                    objeto.tipoEfecto == TipoEfectoTienda.MejoraDefensa;
@@ -206,8 +199,6 @@ public class TiendaManager : MonoBehaviour
 
     void AplicarEfecto(ObjetoTienda objeto)
     {
-        Debug.Log("Has comprado: " + objeto.nombreObjeto);
-
         if (GameManager.Instance == null) return;
 
         if (objeto.tipoEfecto == TipoEfectoTienda.MejoraFuerza)

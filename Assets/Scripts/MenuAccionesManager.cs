@@ -7,41 +7,36 @@ public class MenuAccionesManager : MonoBehaviour
     public GameObject textoEstado;
     public GameObject menuAtacar;
     public GameObject menuPociones;
-    public GameObject menuPasivas; // Nuevo panel
+    public GameObject menuPasivas;
 
     [Header("Botones Principales")]
     public Button btnLuchar;
     public Button btnPociones;
-    public Button btnPasivas; // Nuevo botón principal
+    public Button btnPasivas;
 
-    [Header("Botones de Navegación Lateral")]
+    [Header("Botones de NavegaciÃ³n Lateral")]
     public GameObject btnHuir;
     public GameObject btnVolver;
 
     void Start()
     {
-        // Configuración de botones principales
         btnLuchar.onClick.AddListener(MostrarMenuAtacar);
         btnPociones.onClick.AddListener(MostrarMenuPociones);
         btnPasivas.onClick.AddListener(MostrarMenuPasivas);
-
         btnVolver.GetComponent<Button>().onClick.AddListener(VolverAlInicio);
-
         VolverAlInicio();
     }
 
-    public void MostrarMenuAtacar() => ConfigurarInterfaz(menuAtacar);
+    public void MostrarMenuAtacar()  => ConfigurarInterfaz(menuAtacar);
     public void MostrarMenuPociones() => ConfigurarInterfaz(menuPociones);
     public void MostrarMenuPasivas() => ConfigurarInterfaz(menuPasivas);
 
-    // Método optimizado para no repetir código
     private void ConfigurarInterfaz(GameObject menuActivo)
     {
         textoEstado.SetActive(false);
         menuAtacar.SetActive(false);
         menuPociones.SetActive(false);
         menuPasivas.SetActive(false);
-
         menuActivo.SetActive(true);
         AlternarBotonesNavegacion(true);
     }
@@ -51,7 +46,6 @@ public class MenuAccionesManager : MonoBehaviour
         menuAtacar.SetActive(false);
         menuPociones.SetActive(false);
         menuPasivas.SetActive(false);
-
         textoEstado.SetActive(true);
         AlternarBotonesNavegacion(false);
     }

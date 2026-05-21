@@ -100,7 +100,7 @@ public class GeneradorMapa : MonoBehaviour
         float inicioX = -anchoUtil / 2f;
 
         float altoUtil = altoMaximoMapa - (margenVertical * 2f);
-        float distanciaVertical = altoUtil / 2f; // máximo 3 nodos → 2 espacios entre ellos
+        float distanciaVertical = altoUtil / 2f; // max 3 nodos por piso → 2 espacios
 
         for (int p = 0; p < totalPisos; p++)
         {
@@ -194,7 +194,6 @@ public class GeneradorMapa : MonoBehaviour
     {
         if (playerIconPrefab != null && mapaGenerado.Count > 0)
         {
-            // Colocamos al jugador donde diga la Tarjeta de Memoria
             int p = DatosGlobales.pisoActualJugador;
             int i = DatosGlobales.nodoActualJugador;
 
@@ -219,7 +218,7 @@ public class GeneradorMapa : MonoBehaviour
 
                 if (p == 0) sr.color = Color.white;
                 else if (p == totalPisos - 1) sr.color = Color.red;
-                else if (DatosGlobales.nodosCompletados.Contains(idNodo)) // Lee la memoria global
+                else if (DatosGlobales.nodosCompletados.Contains(idNodo))
                 {
                     sr.color = new Color(0f, 0.7f, 1f);
                 }
@@ -247,7 +246,7 @@ public class GeneradorMapa : MonoBehaviour
     {
         string idNodoDestino = $"{nodoDestino.pisoIndex}_{nodoDestino.nodoIndex}";
 
-        // Comprobamos en la memoria global si ya completamos esto
+        // Nodos ya visitados o nodo inicial actúan como zona segura sin cargar escena
         if (DatosGlobales.nodosCompletados.Contains(idNodoDestino) || (nodoDestino.pisoIndex == 0 && nodoDestino.nodoIndex == 0))
         {
             DatosGlobales.pisoActualJugador = nodoDestino.pisoIndex;
@@ -255,7 +254,6 @@ public class GeneradorMapa : MonoBehaviour
             nodoActualJugador = nodoDestino.gameObject;
             playerIcon.transform.position = nodoActualJugador.transform.position;
 
-            Debug.Log("Has vuelto a una zona segura. No se carga ninguna escena.");
             return;
         }
 
@@ -263,7 +261,6 @@ public class GeneradorMapa : MonoBehaviour
 
         if (scriptNodoActual.nodosConectados.Contains(nodoDestino))
         {
-            // Guardamos el progreso en la memoria global antes de irnos
             string idNodoActual = $"{DatosGlobales.pisoActualJugador}_{scriptNodoActual.nodoIndex}";
             DatosGlobales.nodosCompletados.Add(idNodoActual);
 
@@ -276,23 +273,17 @@ public class GeneradorMapa : MonoBehaviour
             ActualizarVisibilidadMapa();
             EjecutarEscenaDelNodo(nodoDestino);
         }
-        else
-        {
-            Debug.Log("Movimiento inv�lido: No hay un camino directo hacia ese punto.");
-        }
     }
 
     void EjecutarEscenaDelNodo(NodoMapa nodo)
     {
-        Debug.Log($"�Avisando al SceneLoader para cargar nivel tipo: {nodo.tipoDeNodo}!");
-
         if (SceneLoader.Instance != null)
         {
             SceneLoader.Instance.CargarNivel(nodo.tipoDeNodo);
         }
         else
         {
-            Debug.LogError("�Ojo! No hay ning�n objeto con el script SceneLoader en la escena.");
+            Debug.LogError("No hay SceneLoader en la escena.");
         }
     }
 }

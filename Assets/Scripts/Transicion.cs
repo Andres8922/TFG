@@ -1,16 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections; // Necesario para los tiempos de espera
+using System.Collections;
 
 public class Transicion : MonoBehaviour
 {
     public static Transicion Instance;
-    public CanvasGroup telonNegro; // Aqu� conectaremos el Panel negro
+    public CanvasGroup telonNegro;
     public float velocidad = 1f;
 
     void Awake()
     {
-        // Esto es para que el Tel�n sobreviva al cambiar de escena
         if (Instance == null)
         {
             Instance = this;
@@ -18,13 +17,12 @@ public class Transicion : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject); // Si ya hay uno, borramos el nuevo
+            Destroy(gameObject);
         }
     }
 
     void Start()
     {
-        // Empezamos desde negro y hacemos Fade In al entrar a la primera escena
         telonNegro.alpha = 1f;
         telonNegro.blocksRaycasts = true;
         StartCoroutine(FadeInInicial());
@@ -51,41 +49,30 @@ public class Transicion : MonoBehaviour
         telonNegro.blocksRaycasts = false;
     }
 
-    // Esta funci�n la llamar�s desde tus botones
     public void CargarEscena(string nombreEscena)
     {
-        // StopAllCoroutines cancela cualquier Fade que estuviera activo (ej: el FadeIn inicial)
-        // para evitar que dos corrutinas se peleen por el alpha y bloqueen la carga de escena
+        // StopAllCoroutines evita que un FadeIn previo compita con la carga
         StopAllCoroutines();
         StartCoroutine(ProcesoCarga(nombreEscena));
     }
 
     IEnumerator ProcesoCarga(string escena)
     {
-        // 1. Oscurecer (Fade Out)
-        telonNegro.blocksRaycasts = true; // Bloquea el rat�n
-        yield return StartCoroutine(Fade(1)); // Espera a que sea negro
-
-        // 2. Cargar escena
+        telonNegro.blocksRaycasts = true;
+        yield return StartCoroutine(Fade(1));
         SceneManager.LoadScene(escena);
-
-        // 3. Esperar un poco (opcional)
         yield return new WaitForSeconds(0.5f);
-
-        // 4. Aclarar (Fade In)
         yield return StartCoroutine(Fade(0));
-        telonNegro.blocksRaycasts = false; // Desbloquea el rat�n
+        telonNegro.blocksRaycasts = false;
     }
 
     IEnumerator Fade(float objetivoAlpha)
     {
-        // Mientras no lleguemos al objetivo (0 o 1)...
         while (Mathf.Abs(telonNegro.alpha - objetivoAlpha) > 0.01f)
         {
-            // Cambiamos el alpha poco a poco
             telonNegro.alpha = Mathf.MoveTowards(telonNegro.alpha, objetivoAlpha, velocidad * Time.deltaTime);
-            yield return null; // Esperar al siguiente frame
+            yield return null;
         }
-        telonNegro.alpha = objetivoAlpha; // Asegurar que llega exacto
+        telonNegro.alpha = objetivoAlpha;
     }
 }

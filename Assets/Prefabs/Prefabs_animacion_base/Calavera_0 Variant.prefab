@@ -115,6 +115,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8988883174396909704, guid: 35c1085f6ced6134dbb118602ee4229c, type: 3}
+      propertyPath: vidaMaxima
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

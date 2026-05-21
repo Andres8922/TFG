@@ -1,18 +1,15 @@
 using UnityEngine;
 
-// Usaremos un Singleton para que este manager viva siempre
 public class SceneLoader : MonoBehaviour
 {
-    public static SceneLoader Instance { get; private set; } // El Singleton
+    public static SceneLoader Instance { get; private set; }
 
     void Awake()
     {
-        // Si ya hay un SceneLoader, destruimos este. Si no, lo guardamos y no lo destruimos al cambiar de escena.
         if (Instance != null && Instance != this) { Destroy(this.gameObject); }
         else { Instance = this; DontDestroyOnLoad(gameObject); }
     }
 
-    // Esta es la funci�n central que llama cada nodo
     public void CargarNivel(TipoNodo tipo)
     {
         switch (tipo)

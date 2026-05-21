@@ -367,6 +367,14 @@ PrefabInstance:
       propertyPath: offsetSpawn.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: -541610053537953750, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
+      propertyPath: "da\xF1oBase"
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: -541610053537953750, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
+      propertyPath: vidaMaxima
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
       propertyPath: m_Name
       value: golem_0 Variant

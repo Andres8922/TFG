@@ -751,6 +751,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4079250178130356242, guid: 106ec2346990bab4595c2f60fbeabf16, type: 3}
+      propertyPath: "da\xF1oBase"
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: -4079250178130356242, guid: 106ec2346990bab4595c2f60fbeabf16, type: 3}
+      propertyPath: vidaMaxima
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1311506456784289300, guid: 106ec2346990bab4595c2f60fbeabf16, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.448126

@@ -327,6 +327,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5877041747070203295, guid: d0fc7196f8354cb40a9a70cbec2d2057, type: 3}
+      propertyPath: "da\xF1oBase"
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: -5877041747070203295, guid: d0fc7196f8354cb40a9a70cbec2d2057, type: 3}
+      propertyPath: vidaMaxima
+      value: 65
+      objectReference: {fileID: 0}
     - target: {fileID: 8089606092816731061, guid: d0fc7196f8354cb40a9a70cbec2d2057, type: 3}
       propertyPath: m_Name
       value: Lobo_0 Variant

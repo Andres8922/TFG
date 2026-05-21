@@ -7,7 +7,7 @@ public class MostrarInformacion : MonoBehaviour
 
     void Buscar()
     {
-        // No encuentro el objeto si no es con código, solucionar más tarde
+        // GameObject.Find no funciona con objetos inactivos, por eso se busca por cÃ³digo
         imagenControles = GameObject.Find("Imagen_Controles");
     }
 

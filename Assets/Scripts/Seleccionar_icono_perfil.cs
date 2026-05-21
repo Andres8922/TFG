@@ -1,24 +1,21 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class ControlIconosFuncional : MonoBehaviour
 {
-    
     private Image imagenIcono;
 
     void Start()
     {
-        
         imagenIcono = GameObject.Find("Icono_Actual")?.GetComponent<Image>();
     }
 
-    // ----------------- Funciones Botones -----------
+    // Secciones de botones
 
     public void MostrarLista()
     {
-        // Busco objeto oculto
+        // Resources.FindObjectsOfTypeAll para encontrar objetos inactivos
         GameObject[] todos = Resources.FindObjectsOfTypeAll<GameObject>();
-
         foreach (GameObject obj in todos)
         {
             if (obj.name == "Lista_iconos")
@@ -29,11 +26,9 @@ public class ControlIconosFuncional : MonoBehaviour
         }
     }
 
-    // Cierro lista
     public void OcultarLista()
     {
         GameObject[] todos = Resources.FindObjectsOfTypeAll<GameObject>();
-
         foreach (GameObject obj in todos)
         {
             if (obj.name == "Lista_iconos")
@@ -44,25 +39,16 @@ public class ControlIconosFuncional : MonoBehaviour
         }
     }
 
-    // SELECCIONAR Icono 1
     public void SeleccionarIcono1()
     {
-        
         if (imagenIcono != null)
         {
-            
             Sprite sprite = Resources.Load<Sprite>("Iconos/Icon_1");
-            if (sprite != null)
-            {
-                imagenIcono.sprite = sprite;
-            }
+            if (sprite != null) imagenIcono.sprite = sprite;
         }
-
-        
         OcultarLista();
     }
 
-    // SELECCIONAR Icono 2
     public void SeleccionarIcono2()
     {
         if (imagenIcono != null)
@@ -73,7 +59,6 @@ public class ControlIconosFuncional : MonoBehaviour
         OcultarLista();
     }
 
-    // SELECCIONAR Icono 3
     public void SeleccionarIcono3()
     {
         if (imagenIcono != null)
@@ -84,7 +69,6 @@ public class ControlIconosFuncional : MonoBehaviour
         OcultarLista();
     }
 
-    // SELECCIONAR Icono A
     public void SeleccionarIconoA()
     {
         if (imagenIcono != null)
@@ -95,7 +79,6 @@ public class ControlIconosFuncional : MonoBehaviour
         OcultarLista();
     }
 
-    // SELECCIONAR Icono 5
     public void SeleccionarIcono5()
     {
         if (imagenIcono != null)
@@ -106,7 +89,6 @@ public class ControlIconosFuncional : MonoBehaviour
         OcultarLista();
     }
 
-    // SELECCIONAR Icono 6
     public void SeleccionarIcono6()
     {
         if (imagenIcono != null)

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class UnidadCombate : MonoBehaviour
 {
@@ -21,37 +21,34 @@ public class UnidadCombate : MonoBehaviour
         manaActual = 0;
     }
 
-    // Función para recibir daño
+    // Devuelve true si la unidad muere
     public bool RecibirDaño(int daño)
     {
         vidaActual -= daño;
         if (vidaActual <= 0)
         {
             vidaActual = 0;
-            return true; // Devuelve TRUE si ha muerto
+            return true;
         }
-        return false; // Devuelve FALSE si sigue vivo
+        return false;
     }
 
-    // Función para curar vida
     public void Curar(int cantidad)
     {
         vidaActual += cantidad;
         if (vidaActual > vidaMaxima) vidaActual = vidaMaxima;
     }
 
-    // Función para gastar maná (retorna true si pudo gastarlo)
     public bool GastarMana(int coste)
     {
         if (manaActual >= coste)
         {
             manaActual -= coste;
-            return true; // ¡Éxito!
+            return true;
         }
-        return false; // ¡No hay suficiente maná!
+        return false;
     }
 
-    // Función para recargar maná al inicio del turno
     public void RegenerarManaTurno()
     {
         manaActual += manaPorTurno;

@@ -215,6 +215,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cofre_0 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7701502129167166566, guid: 21a3ea19d563eef42a9ffaf3bafd52da, type: 3}
+      propertyPath: "da\xF1oBase"
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701502129167166566, guid: 21a3ea19d563eef42a9ffaf3bafd52da, type: 3}
+      propertyPath: vidaMaxima
+      value: 75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

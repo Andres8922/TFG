@@ -491,6 +491,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toro_0 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4094963706815474243, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
+      propertyPath: "da\xF1oBase"
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094963706815474243, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
+      propertyPath: vidaMaxima
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 5114796237566266425, guid: da8b646f38c332e4e8c816e17151e1d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5784817

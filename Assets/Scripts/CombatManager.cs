@@ -126,7 +126,6 @@ public class CombatManager : MonoBehaviour
     {
         if (GameManager.Instance == null) return;
 
-        // 1. Cargar Pociones
         int indexPociones = 0;
         for (int i = 0; i < mochilaPociones.Length; i++)
         {
@@ -137,7 +136,6 @@ public class CombatManager : MonoBehaviour
             }
         }
 
-        // Filtro de Habilidades
         List<Habilidad> activas = new List<Habilidad>();
         List<Habilidad> pasivas = new List<Habilidad>();
 
@@ -147,7 +145,6 @@ public class CombatManager : MonoBehaviour
             else activas.Add(hab);
         }
 
-        // 2. Cargar Pasivas
         int indexPasivas = 0;
         for (int i = 0; i < mochilaPasivas.Length; i++)
         {
@@ -158,7 +155,6 @@ public class CombatManager : MonoBehaviour
             }
         }
 
-        // 3. Cargar Habilidades Activas
         int indexActivas = 0;
         for (int i = 0; i < mochilaHabilidades.Length; i++)
         {
@@ -241,6 +237,13 @@ public class CombatManager : MonoBehaviour
             unidadHeroe.dañoBase  += GameManager.Instance.bonusDaño;
             unidadHeroe.vidaMaxima += GameManager.Instance.bonusVida;
             unidadHeroe.vidaActual  = unidadHeroe.vidaMaxima;
+
+            float[] multiplicadoresDificultad = { 1f, 1.25f, 1.5f };
+            int dif = Mathf.Clamp(GameManager.Instance.dificultad, 0, multiplicadoresDificultad.Length - 1);
+            float mult = multiplicadoresDificultad[dif];
+            unidadEnemigo.dañoBase    = Mathf.RoundToInt(unidadEnemigo.dañoBase    * mult);
+            unidadEnemigo.vidaMaxima  = Mathf.RoundToInt(unidadEnemigo.vidaMaxima  * mult);
+            unidadEnemigo.vidaActual  = unidadEnemigo.vidaMaxima;
         }
 
         ComprobarPasivasDeInicio();
@@ -319,10 +322,6 @@ public class CombatManager : MonoBehaviour
                 if (GameManager.Instance != null) GameManager.Instance.manaTotalPartida += habElegida.costeMana;
                 unidadHeroe.GastarMana(habElegida.costeMana);
                 StartCoroutine(SecuenciaHabilidadMochila(habElegida));
-            }
-            else
-            {
-                Debug.Log("¡No tienes suficiente maná para " + habElegida.nombreHabilidad + "!");
             }
         }
     }
@@ -432,14 +431,12 @@ public class CombatManager : MonoBehaviour
                     unidadHeroe.vidaActual += pasiva.valorPasiva;
                     if (unidadHeroe.vidaActual > unidadHeroe.vidaMaxima) unidadHeroe.vidaActual = unidadHeroe.vidaMaxima;
                     requiereActualizarUI = true;
-                    Debug.Log("¡Pasiva Regeneración de Vida activada!");
                 }
                 else if (pasiva.tipoPasiva == TipoPasiva.RegeneracionManaTurno)
                 {
                     unidadHeroe.manaActual += pasiva.valorPasiva;
                     if (unidadHeroe.manaActual > unidadHeroe.manaMaximo) unidadHeroe.manaActual = unidadHeroe.manaMaximo;
                     requiereActualizarUI = true;
-                    Debug.Log("¡Pasiva Regeneración de Maná activada!");
                 }
             }
         }
@@ -492,10 +489,6 @@ public class CombatManager : MonoBehaviour
             if (GameManager.Instance != null) GameManager.Instance.manaTotalPartida += coste;
             unidadHeroe.GastarMana(coste);
             StartCoroutine(UsarHabilidadEspecial());
-        }
-        else
-        {
-            Debug.Log("¡No tienes suficiente maná!");
         }
     }
 
@@ -582,7 +575,6 @@ public class CombatManager : MonoBehaviour
         estado = EstadoCombate.START;
         ActualizarUI();
 
-        // --- CAMBIO: Dispara el gatillo del Ataque Fuerte ---
         if (animatorHeroe != null) animatorHeroe.SetTrigger("AtqFuerte");
 
         yield return new WaitForSeconds(1f);
@@ -618,7 +610,6 @@ public class CombatManager : MonoBehaviour
     {
         estado = EstadoCombate.START;
 
-        // --- CAMBIO: Dispara el gatillo del Ataque Básico ---
         if (animatorHeroe != null) animatorHeroe.SetTrigger("AtqBasico");
 
         yield return new WaitForSeconds(0.8f);
@@ -771,8 +762,6 @@ public class CombatManager : MonoBehaviour
     public void BotonHuir()
     {
         if (estado != EstadoCombate.TURNO_JUGADOR) return;
-
-        Debug.Log("El jugador se ha rendido. Fin del combate.");
         FinalizarCombate(false);
     }
 
@@ -780,7 +769,6 @@ public class CombatManager : MonoBehaviour
     {
         if (estado == EstadoCombate.VICTORIA)
         {
-            Debug.Log("¡Victoria! Cargando el mapa...");
             if (Transicion.Instance != null)
                 Transicion.Instance.CargarEscena(nombreEscenaMapa);
             else
@@ -788,7 +776,6 @@ public class CombatManager : MonoBehaviour
         }
         else if (estado == EstadoCombate.DERROTA)
         {
-            Debug.Log("¡Derrota! Volviendo al menú principal...");
             if (GameManager.Instance != null)
                 GameManager.Instance.ResetearPartida();
             if (Transicion.Instance != null)
