@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 0c3c7d725f08cf34b9dfdf928afb3949
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3250486969644625043
+    second: Atc1Lobo_0006_0
+  - first:
+      213: 3249679311992467634
+    second: Atc1Lobo_0006_1
+  - first:
+      213: 5910703733830854719
+    second: Atc1Lobo_0006_2
+  - first:
+      213: 1288850751798207778
+    second: Atc1Lobo_0006_3
+  - first:
+      213: -6506832505073751853
+    second: Atc1Lobo_0006_4
+  - first:
+      213: 4261489566905425979
+    second: Atc1Lobo_0006_5
+  - first:
+      213: -7461661831048690006
+    second: Atc1Lobo_0006_6
+  - first:
+      213: -3882603006966910493
+    second: Atc1Lobo_0006_7
+  - first:
+      213: 626651503628008375
+    second: Atc1Lobo_0006_8
+  - first:
+      213: 8591031973014082266
+    second: Atc1Lobo_0006_9
+  - first:
+      213: 8772737384409960957
+    second: Atc1Lobo_0006_10
+  - first:
+      213: -7276714773189472052
+    second: Atc1Lobo_0006_11
+  - first:
+      213: -679147848993981734
+    second: Atc1Lobo_0006_12
+  - first:
+      213: 9195065682976403390
+    second: Atc1Lobo_0006_13
+  - first:
+      213: -53455331173556520
+    second: Atc1Lobo_0006_14
+  - first:
+      213: 2003555440285448137
+    second: Atc1Lobo_0006_15
+  - first:
+      213: 5910697950263804674
+    second: Atc1Lobo_0006_16
+  - first:
+      213: 1316995798154828408
+    second: Atc1Lobo_0006_17
+  - first:
+      213: 2504417934890904119
+    second: Atc1Lobo_0006_18
+  - first:
+      213: 6065726030276720337
+    second: Atc1Lobo_0006_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.65, y: 0.2}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 63
+        width: 30
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c24b45dac0c1d20800000000000000
+      internalID: 3250486969644625043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 201
+        width: 13
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b03f31ed1e291d20800000000000000
+      internalID: 3249679311992467634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_2
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 225
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38209bcab9070250800000000000000
+      internalID: 5910703733830854719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 233
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2256d6d1eeae2e110800000000000000
+      internalID: 1288850751798207778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 189
+        width: 13
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d82d12bf4613b5a0800000000000000
+      internalID: -6506832505073751853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_5
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 203
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b306e69ce2ad32b30800000000000000
+      internalID: 4261489566905425979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_6
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 211
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa68046291ad27890800000000000000
+      internalID: -7461661831048690006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_7
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 175
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1bfd5d2293e1ac0800000000000000
+      internalID: -3882603006966910493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_8
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 177
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb36bfe83052b800800000000000000
+      internalID: 626651503628008375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_9
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 168
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2178def0a793770800000000000000
+      internalID: 8591031973014082266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 93
+        width: 24
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df19b81db260fb970800000000000000
+      internalID: 8772737384409960957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 143
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0543ca77ae30b90800000000000000
+      internalID: -7276714773189472052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_12
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 141
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada3ebe21ae2396f0800000000000000
+      internalID: -679147848993981734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_13
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 134
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf6138658f6b9f70800000000000000
+      internalID: 9195065682976403390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_14
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 134
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de9c06d8a6124ff0800000000000000
+      internalID: -53455331173556520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 135
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7f302ce0f0ecb10800000000000000
+      internalID: 2003555440285448137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 116
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2038a143874070250800000000000000
+      internalID: 5910697950263804674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_17
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 109
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a53bf53b8e64210800000000000000
+      internalID: 1316995798154828408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_18
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 10
+        width: 157
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a2a42c7da71c220800000000000000
+      internalID: 2504417934890904119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Lobo_0006_19
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 37
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6fb7bdfa9cd2450800000000000000
+      internalID: 6065726030276720337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Atc1Lobo_0006_0: 3250486969644625043
+      Atc1Lobo_0006_1: 3249679311992467634
+      Atc1Lobo_0006_10: 8772737384409960957
+      Atc1Lobo_0006_11: -7276714773189472052
+      Atc1Lobo_0006_12: -679147848993981734
+      Atc1Lobo_0006_13: 9195065682976403390
+      Atc1Lobo_0006_14: -53455331173556520
+      Atc1Lobo_0006_15: 2003555440285448137
+      Atc1Lobo_0006_16: 5910697950263804674
+      Atc1Lobo_0006_17: 1316995798154828408
+      Atc1Lobo_0006_18: 2504417934890904119
+      Atc1Lobo_0006_19: 6065726030276720337
+      Atc1Lobo_0006_2: 5910703733830854719
+      Atc1Lobo_0006_3: 1288850751798207778
+      Atc1Lobo_0006_4: -6506832505073751853
+      Atc1Lobo_0006_5: 4261489566905425979
+      Atc1Lobo_0006_6: -7461661831048690006
+      Atc1Lobo_0006_7: -3882603006966910493
+      Atc1Lobo_0006_8: 626651503628008375
+      Atc1Lobo_0006_9: 8591031973014082266
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

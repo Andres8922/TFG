@@ -35,6 +35,10 @@ public class EventoManager : MonoBehaviour
     public int maxActivasAdquiribles = 3;
     public int maxPasivas = 5;
 
+    [Header("Fondo por Héroe")]
+    public Image fondoPantalla;
+    public Sprite[] fondosPorHeroe;
+
     private bool habilidadElegida = false;
     private Habilidad habPendiente = null;
     private int indicePendiente = -1;
@@ -44,18 +48,34 @@ public class EventoManager : MonoBehaviour
         if (panelTooltip != null) panelTooltip.SetActive(false);
         if (panelIntercambio != null) panelIntercambio.SetActive(false);
 
+        AplicarFondoHeroe();
         RellenarCartas();
+    }
+
+    void AplicarFondoHeroe()
+    {
+        if (fondoPantalla == null || fondosPorHeroe == null) return;
+        int indice = (GameManager.Instance != null) ? GameManager.Instance.heroeSeleccionado : 0;
+        if (indice >= 0 && indice < fondosPorHeroe.Length && fondosPorHeroe[indice] != null)
+            fondoPantalla.sprite = fondosPorHeroe[indice];
     }
 
     void RellenarCartas()
     {
-        List<Habilidad> disponibles = new List<Habilidad>(catalogoCompleto);
+        int heroeActual = (GameManager.Instance != null) ? GameManager.Instance.heroeSeleccionado : -1;
+        List<Habilidad> disponibles = new List<Habilidad>();
+        foreach (Habilidad h in catalogoCompleto)
+        {
+            if (h.esPasiva || h.heroeRequerido == -1 || h.heroeRequerido == heroeActual)
+                disponibles.Add(h);
+        }
 
+        System.Random rng = new System.Random();
         for (int i = 0; i < huecosHabilidad.Length; i++)
         {
             if (disponibles.Count == 0) break;
 
-            int rand = Random.Range(0, disponibles.Count);
+            int rand = rng.Next(0, disponibles.Count);
             Habilidad habElegida = disponibles[rand];
             disponibles.RemoveAt(rand);
 

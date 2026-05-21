@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1311506456784289300}
   - component: {fileID: 1285440995077339699}
   - component: {fileID: -4079250178130356242}
+  - component: {fileID: -4912131462989810153}
   m_Layer: 0
   m_Name: Demonio_0
   m_TagString: Untagged
@@ -110,3 +111,16 @@ MonoBehaviour:
   manaMaximo: 50
   manaActual: 0
   manaPorTurno: 10
+--- !u!114 &-4912131462989810153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720222217343116897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d78fee0eda4af014c81833f82db67312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfiguracionEnemigo
+  offsetSpawn: {x: 0, y: 0}

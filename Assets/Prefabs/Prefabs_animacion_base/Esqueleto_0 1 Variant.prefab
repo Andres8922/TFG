@@ -359,6 +359,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2638783264495578713, guid: d41d684441ade184291930129f685986, type: 3}
+      propertyPath: offsetSpawn.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 105038906605506795, guid: d41d684441ade184291930129f685986, type: 3}
       propertyPath: m_Name
       value: Esqueleto_0 1 Variant

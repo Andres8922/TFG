@@ -93,6 +93,8 @@ public class CombatManager : MonoBehaviour
     [Header("Estados Alterados (Buffs)")]
     public bool buffFuerzaActivo = false;
     public bool buffDefensaActivo = false;
+    private int valorBuffFuerza = 2;
+    private int valorBuffDefensa = 2;
 
     [HideInInspector] public UnidadCombate unidadHeroe;
     [HideInInspector] public UnidadCombate unidadEnemigo;
@@ -212,7 +214,11 @@ public class CombatManager : MonoBehaviour
             prefabEnemigo = config.enemigosPrefabs[enemigoIdx];
         }
 
-        GameObject enemigoGO = Instantiate(prefabEnemigo, puntoEnemigo.position, Quaternion.identity);
+        Vector3 offset = Vector3.zero;
+        ConfiguracionEnemigo cfgEnemigo = prefabEnemigo.GetComponent<ConfiguracionEnemigo>();
+        if (cfgEnemigo != null) offset = cfgEnemigo.offsetSpawn;
+
+        GameObject enemigoGO = Instantiate(prefabEnemigo, puntoEnemigo.position + offset, Quaternion.identity);
         unidadEnemigo = enemigoGO.GetComponent<UnidadCombate>();
         animatorEnemigo = enemigoGO.GetComponent<Animator>();
 
@@ -330,32 +336,68 @@ public class CombatManager : MonoBehaviour
 
         ActualizarUI();
 
-        // --- CAMBIO: Dispara el gatillo del Ataque Fuerte ---
-        if (animatorHeroe != null) animatorHeroe.SetTrigger("AtqFuerte");
+        string trigger = (!string.IsNullOrEmpty(hab.triggerAnimacion)) ? hab.triggerAnimacion : "AtqFuerte";
+        if (animatorHeroe != null) animatorHeroe.SetTrigger(trigger);
 
         yield return new WaitForSeconds(1f);
 
-        int dañoEspecial = unidadHeroe.dañoBase * hab.multiplicadorDaño;
-
-        if (buffFuerzaActivo)
+        if (hab.esDefensa)
         {
-            dañoEspecial *= 2;
-            buffFuerzaActivo = false;
-            if (iconoBuffFuerza != null) iconoBuffFuerza.SetActive(false);
-        }
-
-        if (GameManager.Instance != null) GameManager.Instance.dañoTotalPartida += dañoEspecial;
-        bool enemigoMuerto = unidadEnemigo.RecibirDaño(dañoEspecial);
-        MostrarDaño(dañoEspecial, unidadEnemigo.transform.position, Color.red);
-        ActualizarUI();
-
-        yield return new WaitForSeconds(1f);
-
-        if (enemigoMuerto) FinalizarCombate(true);
-        else
-        {
+            valorBuffDefensa = hab.multiplicadorDanio;
+            buffDefensaActivo = true;
+            if (iconoBuffDefensa != null) iconoBuffDefensa.SetActive(true);
+            ActualizarUI();
+            yield return new WaitForSeconds(0.5f);
             estado = EstadoCombate.TURNO_ENEMIGO;
             StartCoroutine(TurnoEnemigo());
+        }
+        else if (hab.esBuff)
+        {
+            valorBuffFuerza = hab.multiplicadorDanio;
+            buffFuerzaActivo = true;
+            if (iconoBuffFuerza != null) iconoBuffFuerza.SetActive(true);
+            ActualizarUI();
+            yield return new WaitForSeconds(0.5f);
+            estado = EstadoCombate.TURNO_ENEMIGO;
+            StartCoroutine(TurnoEnemigo());
+        }
+        else if (hab.esCuracion)
+        {
+            int vidaRecuperada = unidadHeroe.dañoBase * hab.multiplicadorDanio;
+            unidadHeroe.vidaActual = Mathf.Min(unidadHeroe.vidaActual + vidaRecuperada, unidadHeroe.vidaMaxima);
+            MostrarDaño(vidaRecuperada, unidadHeroe.transform.position, Color.green);
+            ActualizarUI();
+            yield return new WaitForSeconds(0.5f);
+            estado = EstadoCombate.TURNO_ENEMIGO;
+            StartCoroutine(TurnoEnemigo());
+        }
+        else
+        {
+            int dañoEspecial = unidadHeroe.dañoBase * hab.multiplicadorDanio;
+
+            if (buffFuerzaActivo)
+            {
+                dañoEspecial *= valorBuffFuerza;
+                buffFuerzaActivo = false;
+                valorBuffFuerza = 2;
+                if (iconoBuffFuerza != null) iconoBuffFuerza.SetActive(false);
+            }
+
+            if (GameManager.Instance != null) GameManager.Instance.dañoTotalPartida += dañoEspecial;
+            bool enemigoMuerto = unidadEnemigo.RecibirDaño(dañoEspecial);
+            MostrarDaño(dañoEspecial, unidadEnemigo.transform.position, Color.red);
+            if (animatorEnemigo != null) animatorEnemigo.SetTrigger(enemigoMuerto ? "Muerte" : "Dañado");
+            ActualizarUI();
+            ComprobarPasivasDeAtaque();
+
+            yield return new WaitForSeconds(1f);
+
+            if (enemigoMuerto) FinalizarCombate(true);
+            else
+            {
+                estado = EstadoCombate.TURNO_ENEMIGO;
+                StartCoroutine(TurnoEnemigo());
+            }
         }
     }
 
@@ -368,7 +410,10 @@ public class CombatManager : MonoBehaviour
                 if (pasiva.tipoPasiva == TipoPasiva.MenteClara)
                 {
                     unidadHeroe.manaActual = unidadHeroe.manaMaximo;
-                    Debug.Log("¡Pasiva Mente Clara activada!");
+                }
+                else if (pasiva.tipoPasiva == TipoPasiva.IncrementoFuerza)
+                {
+                    unidadHeroe.dañoBase += pasiva.valorPasiva;
                 }
             }
         }
@@ -400,6 +445,19 @@ public class CombatManager : MonoBehaviour
         }
 
         if (requiereActualizarUI) ActualizarUI();
+    }
+
+    void ComprobarPasivasDeAtaque()
+    {
+        foreach (Habilidad pasiva in mochilaPasivas)
+        {
+            if (pasiva != null && pasiva.tipoPasiva == TipoPasiva.RegeneracionVidaAtaque)
+            {
+                unidadHeroe.vidaActual = Mathf.Min(unidadHeroe.vidaActual + pasiva.valorPasiva, unidadHeroe.vidaMaxima);
+                MostrarDaño(pasiva.valorPasiva, unidadHeroe.transform.position, Color.green);
+            }
+        }
+        ActualizarUI();
     }
 
     void MostrarDaño(int cantidad, Vector3 posicion, Color color)
@@ -491,6 +549,7 @@ public class CombatManager : MonoBehaviour
 
     void AplicarEfectoPocion(ObjetoTienda pocion)
     {
+        if (animatorHeroe != null) animatorHeroe.SetTrigger("BeberPocion");
         switch (pocion.tipoEfecto)
         {
             case TipoEfectoTienda.Curacion:
@@ -532,15 +591,18 @@ public class CombatManager : MonoBehaviour
 
         if (buffFuerzaActivo)
         {
-            dañoEspecial *= 2;
+            dañoEspecial *= valorBuffFuerza;
             buffFuerzaActivo = false;
+            valorBuffFuerza = 2;
             if (iconoBuffFuerza != null) iconoBuffFuerza.SetActive(false);
         }
 
         if (GameManager.Instance != null) GameManager.Instance.dañoTotalPartida += dañoEspecial;
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(dañoEspecial);
         MostrarDaño(dañoEspecial, unidadEnemigo.transform.position, Color.red);
+        if (animatorEnemigo != null) animatorEnemigo.SetTrigger(enemigoMuerto ? "Muerte" : "Dañado");
         ActualizarUI();
+        ComprobarPasivasDeAtaque();
 
         yield return new WaitForSeconds(1f);
 
@@ -565,15 +627,18 @@ public class CombatManager : MonoBehaviour
 
         if (buffFuerzaActivo)
         {
-            dañoFinal *= 2;
+            dañoFinal *= valorBuffFuerza;
             buffFuerzaActivo = false;
+            valorBuffFuerza = 2;
             if (iconoBuffFuerza != null) iconoBuffFuerza.SetActive(false);
         }
 
         if (GameManager.Instance != null) GameManager.Instance.dañoTotalPartida += dañoFinal;
         bool enemigoMuerto = unidadEnemigo.RecibirDaño(dañoFinal);
         MostrarDaño(dañoFinal, unidadEnemigo.transform.position, Color.red);
+        if (animatorEnemigo != null) animatorEnemigo.SetTrigger(enemigoMuerto ? "Muerte" : "Dañado");
         ActualizarUI();
+        ComprobarPasivasDeAtaque();
         yield return new WaitForSeconds(1f);
 
         if (enemigoMuerto) FinalizarCombate(true);
@@ -583,20 +648,29 @@ public class CombatManager : MonoBehaviour
     IEnumerator TurnoEnemigo()
     {
         yield return new WaitForSeconds(1f);
-        if (animatorEnemigo != null) animatorEnemigo.SetTrigger("AtacarEnemigo");
+        string triggerAtaque = (Random.value < 0.5f) ? "AtacarEnemigo1" : "AtacarEnemigo2";
+        if (animatorEnemigo != null) animatorEnemigo.SetTrigger(triggerAtaque);
         yield return new WaitForSeconds(0.5f);
 
         int dañoRecibido = unidadEnemigo.dañoBase;
 
+        foreach (Habilidad pasiva in mochilaPasivas)
+        {
+            if (pasiva != null && pasiva.tipoPasiva == TipoPasiva.IncrementoDefensa)
+                dañoRecibido = Mathf.Max(1, dañoRecibido - pasiva.valorPasiva);
+        }
+
         if (buffDefensaActivo)
         {
-            dañoRecibido /= 2;
+            dañoRecibido /= valorBuffDefensa;
             buffDefensaActivo = false;
+            valorBuffDefensa = 2;
             if (iconoBuffDefensa != null) iconoBuffDefensa.SetActive(false);
         }
 
         bool heroeMuerto = unidadHeroe.RecibirDaño(dañoRecibido);
         MostrarDaño(dañoRecibido, unidadHeroe.transform.position, new Color(1f, 0.5f, 0f));
+        if (animatorHeroe != null) animatorHeroe.SetTrigger(heroeMuerto ? "Muerte" : "Dañado");
         ActualizarUI();
 
         if (heroeMuerto) FinalizarCombate(false);
@@ -620,9 +694,16 @@ public class CombatManager : MonoBehaviour
             if (textoResumenTurnos != null) textoResumenTurnos.text = numeroTurno.ToString("00");
 
             int oroGanado = Mathf.Max(100, 500 - (numeroTurno * 20));
-            if (textoResumenOro != null) textoResumenOro.text = oroGanado.ToString("000");
-
             int expGanada = Mathf.Max(20, 100 - (numeroTurno * 5));
+
+            foreach (Habilidad pasiva in mochilaPasivas)
+            {
+                if (pasiva == null) continue;
+                if (pasiva.tipoPasiva == TipoPasiva.MultiplicacionOro) oroGanado *= pasiva.valorPasiva;
+                if (pasiva.tipoPasiva == TipoPasiva.MultiplicacionExperiencia) expGanada *= pasiva.valorPasiva;
+            }
+
+            if (textoResumenOro != null) textoResumenOro.text = oroGanado.ToString("000");
 
             if (GameManager.Instance != null)
             {

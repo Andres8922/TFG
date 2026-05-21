@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7b113a0d742634cb0225195d098ae5, type: 3}
   m_Name: PocionDefensaGrande
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoTienda
-  nombreObjeto: 80
+  nombreObjeto: + 80 def.
   precio: 50
   iconoObjeto: {fileID: 8405933094642721011, guid: 5100cdcfad9e2e94496f73780f0d8169, type: 3}
   descripcion: "El siguiente ataque del enemigo se reducir\xE1 el da\xF1o restando

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281bf151db29e774a9c3815c17451131, type: 3}
+  m_Name: FlechaOscura
+  m_EditorClassIdentifier: Assembly-CSharp::Habilidad
+  nombreHabilidad: Flecha Oscura
+  iconoHabilidad: {fileID: -1598632602331056045, guid: 6944a2ff7e1aa9043bcd302852bd8650, type: 3}
+  descripcion: "Lanza una flecha invuida en un poder oscuro, que causa un enorme
+    da\xF1o en el enemigo"
+  esPasiva: 0
+  costeMana: 30
+  multiplicadorDanio: 4
+  esDefensa: 0
+  esBuff: 0
+  esCuracion: 0
+  heroeRequerido: 2
+  triggerAnimacion: FlechaOscura
+  tipoPasiva: 0
+  valorPasiva: 0

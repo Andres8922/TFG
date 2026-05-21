@@ -4347,9 +4347,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventoManager
   catalogoCompleto:
-  - {fileID: 11400000, guid: deeba99e739baa5408087abd82537876, type: 2}
-  - {fileID: 11400000, guid: 0dd71a9bfa7bee6469c65a7c90f22dcf, type: 2}
-  - {fileID: 11400000, guid: 8e35a6321ca99cf49b5bc2a5109c18c5, type: 2}
+  - {fileID: 11400000, guid: 704cf000fc99aff43a568e17d995887b, type: 2}
+  - {fileID: 11400000, guid: 141051b566bceab4da1f729b3d4d8c05, type: 2}
+  - {fileID: 11400000, guid: 84557ff86202ccd41959a994fa3ea319, type: 2}
+  - {fileID: 11400000, guid: 1041e9235358fdc419dcbb89a1b06b65, type: 2}
+  - {fileID: 11400000, guid: 05e86952cf3be934385df191af6d3008, type: 2}
+  - {fileID: 11400000, guid: e72f8181cdcc8a446ba008da0eb753d6, type: 2}
+  - {fileID: 11400000, guid: 45413aa5b76504642990012e28f6896e, type: 2}
+  - {fileID: 11400000, guid: ee458193e6cbe354481e82185d6c200e, type: 2}
+  - {fileID: 11400000, guid: 830e28e7fd99cc242aa53d61925d2a41, type: 2}
+  - {fileID: 11400000, guid: 043a9705c1b56514588e3ad05f80e54e, type: 2}
+  - {fileID: 11400000, guid: a1de40445316da046b53e509762d636b, type: 2}
+  - {fileID: 11400000, guid: 5e5eb51e17b48f743b5ddf4aacc1334e, type: 2}
+  - {fileID: 11400000, guid: 4158ae5cc9a6e8a4d9cb4ffd8f7d576b, type: 2}
+  - {fileID: 11400000, guid: 752fcbf77268e0c4a8916db57e2318ff, type: 2}
+  - {fileID: 11400000, guid: 0c0f7e7dcf19ac34ba02b7099511e810, type: 2}
+  - {fileID: 11400000, guid: 46f27e83f44b68b43aa8661dc597efd8, type: 2}
+  - {fileID: 11400000, guid: 9f1df8ba6bad7494687435e3b146b704, type: 2}
+  - {fileID: 11400000, guid: 9f21de9db9dd0d24d869907862148679, type: 2}
+  - {fileID: 11400000, guid: a9a0b325d56f5a64996b803e5a22d922, type: 2}
+  - {fileID: 11400000, guid: 64a9c02c64bddee4e8ffe4844243681b, type: 2}
+  - {fileID: 11400000, guid: 11553519a5033484db8b0d5575715ded, type: 2}
   huecosHabilidad:
   - botonElegir: {fileID: 1347608632}
     textoMana: {fileID: 1379301116}
@@ -4381,6 +4399,12 @@ MonoBehaviour:
     icono: {fileID: 2072885052}
   maxActivasAdquiribles: 3
   maxPasivas: 5
+  fondoPantalla: {fileID: 1412311115}
+  fondosPorHeroe:
+  - {fileID: 0}
+  - {fileID: 5107978032143257345, guid: beb43f77919cc2f48a38c777503ad3b8, type: 3}
+  - {fileID: -8386483082655885807, guid: 7f7dc23669940164daab74e5c5bb7874, type: 3}
+  - {fileID: -6086967908562370817, guid: 16bef236a17a874448f4877947af2320, type: 3}
 --- !u!4 &1754022786
 Transform:
   m_ObjectHideFlags: 0

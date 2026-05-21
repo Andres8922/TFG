@@ -5449,8 +5449,9 @@ MonoBehaviour:
     jefePrefab: {fileID: 4536950133996291661, guid: 4c65355ebd9cecc449cbe92bf11ff778, type: 3}
     fondosCombate:
     - {fileID: 1400574733088237762, guid: 65aab4ce674dc42699b6b42ffb936b55, type: 3}
-    - {fileID: 5597849781710759511, guid: fa607bc98b15c5d469ac978f2f94be40, type: 3}
-    fondoJefe: {fileID: -1422196952004061318, guid: 37869300220acf7499596e15b8f0b413, type: 3}
+    - {fileID: 5968854319844112430, guid: 3f84e31e0db5c6247840af14197b5b91, type: 3}
+    - {fileID: 1844617992097409967, guid: 80bb911b9e79e4b4fa3e50caaae19a90, type: 3}
+    fondoJefe: {fileID: -3716606773168931135, guid: b8b6b840d58414c4f81e80f21f674d76, type: 3}
   - enemigosPrefabs:
     - {fileID: 5592622292370235747, guid: 0c9aef259639aa04d8a728a8325cd888, type: 3}
     - {fileID: 9195763628356743827, guid: 47c90dcc8720ffa4eb2a4eeb3500a050, type: 3}
@@ -5467,16 +5468,20 @@ MonoBehaviour:
     - {fileID: 1418784504007897916, guid: 19d26580fad37cf4db7cd9ff64d6255e, type: 3}
     jefePrefab: {fileID: 4015541645411903904, guid: 3c898469f012b0b4e958e8e08850f3f8, type: 3}
     fondosCombate:
-    - {fileID: -6197040341870502048, guid: 9146ddd1be026ba4fa910e3ff0a68439, type: 3}
-    fondoJefe: {fileID: -1422196952004061318, guid: 37869300220acf7499596e15b8f0b413, type: 3}
+    - {fileID: 492993860713591378, guid: d7eeb9488752b5d4ebdcf58b671163b6, type: 3}
+    - {fileID: 4088524832998247260, guid: a9d360be6354be94fbe7fe07a00f3466, type: 3}
+    - {fileID: -4087672433882797999, guid: a92f9f20047c37c468e6da62372aa2f6, type: 3}
+    fondoJefe: {fileID: 5531542716839122235, guid: d28e0e25b743bb843b5e5d59565ede3a, type: 3}
   - enemigosPrefabs:
     - {fileID: 2568591983726969920, guid: 9fb86793a2e459d4793b8e3e5dd03b20, type: 3}
     - {fileID: 6049050017056505647, guid: 4de43ed3748edb84b862040fdff159a6, type: 3}
     - {fileID: 261723145458769545, guid: e45e7d12654bd8d45bed90aab521dae8, type: 3}
     jefePrefab: {fileID: 3106982020875226540, guid: df7d4e6d433335a42815a7b8aeea8a83, type: 3}
     fondosCombate:
-    - {fileID: -6197040341870502048, guid: 9146ddd1be026ba4fa910e3ff0a68439, type: 3}
-    fondoJefe: {fileID: -1422196952004061318, guid: 37869300220acf7499596e15b8f0b413, type: 3}
+    - {fileID: -2203449436546741157, guid: b771754584c09e5448f0bd1871949d23, type: 3}
+    - {fileID: 964442725838315674, guid: bcd5b9741af197943973948ec6b03686, type: 3}
+    - {fileID: -6549918967053400434, guid: 22c0f36ee79814e409d062c9b8c5f7f8, type: 3}
+    fondoJefe: {fileID: -8898288291372946914, guid: 90240190a04337148a33952c9abd450a, type: 3}
   fondoCombate: {fileID: 1412311115}
   nombreEscenaMapa: Mapa
   nombreEscenaMenu: MenuPrincipal

@@ -2224,9 +2224,9 @@ MonoBehaviour:
   - {fileID: 1750056013}
   - {fileID: 1022872369}
   reproductorVideo: {fileID: 92502523}
-  clipCaballero: {fileID: 32900000, guid: bacf9530a807144378c0460bf41585b0, type: 3}
+  clipCaballero: {fileID: 32900000, guid: b36c7dc16b8d62c42afbc1e4d550c001, type: 3}
   clipMago: {fileID: 32900000, guid: 9c6e1b90ee9b3f946a7bddcc65eae97b, type: 3}
-  clipElfaArquera: {fileID: 32900000, guid: b36c7dc16b8d62c42afbc1e4d550c001, type: 3}
+  clipElfaArquera: {fileID: 32900000, guid: b27fd77b02f04e14693a50d83f6871b7, type: 3}
   clipEnano: {fileID: 32900000, guid: ac044ed1643aed84eb42446d32f7d2be, type: 3}
   imagenBotonEnano: {fileID: 18525722}
   spriteEnanoDesbloqueado: {fileID: 4492230564634695307, guid: bfddf799ab530b044ba4df1bd82f8091, type: 3}

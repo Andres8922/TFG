@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7b113a0d742634cb0225195d098ae5, type: 3}
   m_Name: MejoraDefensa
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoTienda
-  nombreObjeto: + 15 de defensa
+  nombreObjeto: + 15 def.
   precio: 90
   iconoObjeto: {fileID: -4743811310163214718, guid: d64743510318d5d43b4ff69336e5184e, type: 3}
   descripcion: Mejora de defensa

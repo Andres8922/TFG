@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 49f42c05bcaf8ab40826a64e2c558f3b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3107025550307031930
+    second: BombaCegadora_0006_0
+  - first:
+      213: 4834431074847701678
+    second: BombaCegadora_0006_1
+  - first:
+      213: 9039537360737833531
+    second: BombaCegadora_0006_2
+  - first:
+      213: 5175519229652671080
+    second: BombaCegadora_0006_3
+  - first:
+      213: -3589936779710625682
+    second: BombaCegadora_0006_4
+  - first:
+      213: -3852856390793141340
+    second: BombaCegadora_0006_5
+  - first:
+      213: -1055844297805194143
+    second: BombaCegadora_0006_6
+  - first:
+      213: -6573392614738582715
+    second: BombaCegadora_0006_7
+  - first:
+      213: 225531572765112198
+    second: BombaCegadora_0006_8
+  - first:
+      213: 5322200591274326492
+    second: BombaCegadora_0006_9
+  - first:
+      213: -6901902586602080735
+    second: BombaCegadora_0006_10
+  - first:
+      213: -8687493138158717566
+    second: BombaCegadora_0006_11
+  - first:
+      213: 7545513627929192567
+    second: BombaCegadora_0006_12
+  - first:
+      213: -3571051305506126485
+    second: BombaCegadora_0006_13
+  - first:
+      213: -2092598223991280384
+    second: BombaCegadora_0006_14
+  - first:
+      213: -6887726710020921221
+    second: BombaCegadora_0006_15
+  - first:
+      213: -8635507698364274815
+    second: BombaCegadora_0006_16
+  - first:
+      213: 2438127426044012990
+    second: BombaCegadora_0006_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.28, y: 0.27}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BombaCegadora_0006_0
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 233
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7bfc1ab64f5e1b20800000000000000
+      internalID: 3107025550307031930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 240
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaa386bd279571340800000000000000
+      internalID: 4834431074847701678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_2
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 231
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3296a80653e27d70800000000000000
+      internalID: 9039537360737833531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_3
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 214
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a96ab715323d740800000000000000
+      internalID: 5175519229652671080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_4
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 214
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e680d37e48bfd2ec0800000000000000
+      internalID: -3589936779710625682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_5
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 216
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a36e20a687e78ac0800000000000000
+      internalID: -3852856390793141340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 203
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c133b8433e851f0800000000000000
+      internalID: -1055844297805194143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_7
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 198
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543a4558e3e96c4a0800000000000000
+      internalID: -6573392614738582715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_8
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 188
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687bc4045cf312300800000000000000
+      internalID: 225531572765112198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_9
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 189
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9b7425d314cd940800000000000000
+      internalID: 5322200591274326492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 170
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126bb335a248730a0800000000000000
+      internalID: -6901902586602080735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_11
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 173
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285f767e403df6780800000000000000
+      internalID: -8687493138158717566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_12
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 162
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778a690baac07b860800000000000000
+      internalID: 7545513627929192567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_13
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 139
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65cc9402c3117ec0800000000000000
+      internalID: -3571051305506126485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_14
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 144
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00de269900995f2e0800000000000000
+      internalID: -2092598223991280384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_15
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 137
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78ab3bcc01e960a0800000000000000
+      internalID: -6887726710020921221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_16
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187a8df4083882880800000000000000
+      internalID: -8635507698364274815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaCegadora_0006_17
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 126
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9ad7ae9f7f5d120800000000000000
+      internalID: 2438127426044012990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BombaCegadora_0006_0: 3107025550307031930
+      BombaCegadora_0006_1: 4834431074847701678
+      BombaCegadora_0006_10: -6901902586602080735
+      BombaCegadora_0006_11: -8687493138158717566
+      BombaCegadora_0006_12: 7545513627929192567
+      BombaCegadora_0006_13: -3571051305506126485
+      BombaCegadora_0006_14: -2092598223991280384
+      BombaCegadora_0006_15: -6887726710020921221
+      BombaCegadora_0006_16: -8635507698364274815
+      BombaCegadora_0006_17: 2438127426044012990
+      BombaCegadora_0006_2: 9039537360737833531
+      BombaCegadora_0006_3: 5175519229652671080
+      BombaCegadora_0006_4: -3589936779710625682
+      BombaCegadora_0006_5: -3852856390793141340
+      BombaCegadora_0006_6: -1055844297805194143
+      BombaCegadora_0006_7: -6573392614738582715
+      BombaCegadora_0006_8: 225531572765112198
+      BombaCegadora_0006_9: 5322200591274326492
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

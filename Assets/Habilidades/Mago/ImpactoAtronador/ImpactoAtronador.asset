@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281bf151db29e774a9c3815c17451131, type: 3}
+  m_Name: ImpactoAtronador
+  m_EditorClassIdentifier: Assembly-CSharp::Habilidad
+  nombreHabilidad: Impacto Atronador
+  iconoHabilidad: {fileID: 1312027555694895566, guid: c9398edbd29ef384fac9cf4ce74b5d24, type: 3}
+  descripcion: "Lanza un trueno que perfora al enemigo, causando un gran da\xF1o"
+  esPasiva: 0
+  costeMana: 50
+  multiplicadorDanio: 3
+  esDefensa: 0
+  esBuff: 0
+  heroeRequerido: 1
+  triggerAnimacion: ImpactoAtronador
+  tipoPasiva: 0
+  valorPasiva: 0

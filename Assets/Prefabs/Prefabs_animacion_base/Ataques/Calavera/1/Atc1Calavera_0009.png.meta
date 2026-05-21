@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: f5997b20214eb1441a315ed89f2153ee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8913262638486034878
+    second: Atc1Calavera_0009_0
+  - first:
+      213: -8370080543545705563
+    second: Atc1Calavera_0009_1
+  - first:
+      213: -3372954859637453390
+    second: Atc1Calavera_0009_2
+  - first:
+      213: -725648771950698463
+    second: Atc1Calavera_0009_3
+  - first:
+      213: -4016843920673798151
+    second: Atc1Calavera_0009_4
+  - first:
+      213: 7023036449007373826
+    second: Atc1Calavera_0009_5
+  - first:
+      213: 6605506788731446153
+    second: Atc1Calavera_0009_6
+  - first:
+      213: 227086492916900122
+    second: Atc1Calavera_0009_7
+  - first:
+      213: -2270818213246654504
+    second: Atc1Calavera_0009_8
+  - first:
+      213: -1325431807211501470
+    second: Atc1Calavera_0009_9
+  - first:
+      213: 7424106909593033763
+    second: Atc1Calavera_0009_10
+  - first:
+      213: -8652567536581501655
+    second: Atc1Calavera_0009_11
+  - first:
+      213: 4302971745375946411
+    second: Atc1Calavera_0009_12
+  - first:
+      213: 4676207211640030100
+    second: Atc1Calavera_0009_13
+  - first:
+      213: -6002074767877315409
+    second: Atc1Calavera_0009_14
+  - first:
+      213: -2706393422173334058
+    second: Atc1Calavera_0009_15
+  - first:
+      213: 2158923630214653464
+    second: Atc1Calavera_0009_16
+  - first:
+      213: -7446703409656598920
+    second: Atc1Calavera_0009_17
+  - first:
+      213: 3302394971261415483
+    second: Atc1Calavera_0009_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.7, y: 0.2}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 221
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb998bc252542bb70800000000000000
+      internalID: 8913262638486034878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 234
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5abbc8c971087db80800000000000000
+      internalID: -8370080543545705563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 226
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bdc1e30d6bd031d0800000000000000
+      internalID: -3372954859637453390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_3
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 179
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1202e2c594afde5f0800000000000000
+      internalID: -725648771950698463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 202
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f70d0e7cbd4148c0800000000000000
+      internalID: -4016843920673798151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_5
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 194
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e84b3d076d67160800000000000000
+      internalID: 7023036449007373826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 196
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983e4c74d697bab50800000000000000
+      internalID: 6605506788731446153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_7
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 176
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11e99f46f5c62300800000000000000
+      internalID: 227086492916900122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_8
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 166
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d722f9cdde6c70e0800000000000000
+      internalID: -2270818213246654504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_9
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 169
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26887253bce1b9de0800000000000000
+      internalID: -1325431807211501470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 166
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cd0d056e9b70760800000000000000
+      internalID: 7424106909593033763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_11
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 123
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d9bf23ba7ebe780800000000000000
+      internalID: -8652567536581501655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 160
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba60da9110a37bb30800000000000000
+      internalID: 4302971745375946411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 133
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4938ce1fea935e040800000000000000
+      internalID: 4676207211640030100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 84
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa466598cc854bca0800000000000000
+      internalID: -6002074767877315409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_15
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 16
+        width: 123
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d597e88585f07ad0800000000000000
+      internalID: -2706393422173334058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_16
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 107
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816242c6a9906fd10800000000000000
+      internalID: 2158923630214653464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_17
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 112
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e6ab704bef7a890800000000000000
+      internalID: -7446703409656598920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Calavera_0009_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 94
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30b212cab674dd20800000000000000
+      internalID: 3302394971261415483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Atc1Calavera_0009_0: 8913262638486034878
+      Atc1Calavera_0009_1: -8370080543545705563
+      Atc1Calavera_0009_10: 7424106909593033763
+      Atc1Calavera_0009_11: -8652567536581501655
+      Atc1Calavera_0009_12: 4302971745375946411
+      Atc1Calavera_0009_13: 4676207211640030100
+      Atc1Calavera_0009_14: -6002074767877315409
+      Atc1Calavera_0009_15: -2706393422173334058
+      Atc1Calavera_0009_16: 2158923630214653464
+      Atc1Calavera_0009_17: -7446703409656598920
+      Atc1Calavera_0009_18: 3302394971261415483
+      Atc1Calavera_0009_2: -3372954859637453390
+      Atc1Calavera_0009_3: -725648771950698463
+      Atc1Calavera_0009_4: -4016843920673798151
+      Atc1Calavera_0009_5: 7023036449007373826
+      Atc1Calavera_0009_6: 6605506788731446153
+      Atc1Calavera_0009_7: 227086492916900122
+      Atc1Calavera_0009_8: -2270818213246654504
+      Atc1Calavera_0009_9: -1325431807211501470
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

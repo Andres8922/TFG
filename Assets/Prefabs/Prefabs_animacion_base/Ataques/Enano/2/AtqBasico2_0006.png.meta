@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 7dcdd7ab1b41613499e1a33d3bae8a99
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6296411157747380956
+    second: AtqBasico2_0006_0
+  - first:
+      213: 3919698981187984649
+    second: AtqBasico2_0006_1
+  - first:
+      213: 665016372186857264
+    second: AtqBasico2_0006_2
+  - first:
+      213: 1724323056255431455
+    second: AtqBasico2_0006_3
+  - first:
+      213: -8957953982950598531
+    second: AtqBasico2_0006_4
+  - first:
+      213: 3402718903343321975
+    second: AtqBasico2_0006_5
+  - first:
+      213: 7193916739502947786
+    second: AtqBasico2_0006_6
+  - first:
+      213: 6016506033395784361
+    second: AtqBasico2_0006_7
+  - first:
+      213: -5378285611942643657
+    second: AtqBasico2_0006_8
+  - first:
+      213: 1583108177808633103
+    second: AtqBasico2_0006_9
+  - first:
+      213: -1092795731675223008
+    second: AtqBasico2_0006_10
+  - first:
+      213: -4195506533886956100
+    second: AtqBasico2_0006_11
+  - first:
+      213: 8257959287744434492
+    second: AtqBasico2_0006_12
+  - first:
+      213: -8679791275443715011
+    second: AtqBasico2_0006_13
+  - first:
+      213: 5077629032934564339
+    second: AtqBasico2_0006_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.28, y: 0.27}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AtqBasico2_0006_0
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 217
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d49ae6967ae98a0800000000000000
+      internalID: -6296411157747380956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 205
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d9b28b471956630800000000000000
+      internalID: 3919698981187984649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 231
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f340afddc9a3900800000000000000
+      internalID: 665016372186857264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 205
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13fe1e0fa60ee710800000000000000
+      internalID: 1724323056255431455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 181
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d781fe35054fea380800000000000000
+      internalID: -8957953982950598531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_5
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 133
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773194070d2e83f20800000000000000
+      internalID: 3402718903343321975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 120
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd3fc9d82de5d360800000000000000
+      internalID: 7193916739502947786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 3
+        width: 150
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aadc8d4c5cee7350800000000000000
+      internalID: 6016506033395784361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_8
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 111
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73870973bbd7c55b0800000000000000
+      internalID: -5378285611942643657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_9
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 92
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0dac43008458f510800000000000000
+      internalID: 1583108177808633103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_10
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 69
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02c6f69621c95d0f0800000000000000
+      internalID: -1092795731675223008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 53
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd66d2490196c5c0800000000000000
+      internalID: -4195506533886956100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_12
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 21
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3115ab383a2a9270800000000000000
+      internalID: 8257959287744434492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_13
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 25
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3484ae82df2b8780800000000000000
+      internalID: -8679791275443715011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtqBasico2_0006_14
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 5
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f16649f3bc577640800000000000000
+      internalID: 5077629032934564339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AtqBasico2_0006_0: -6296411157747380956
+      AtqBasico2_0006_1: 3919698981187984649
+      AtqBasico2_0006_10: -1092795731675223008
+      AtqBasico2_0006_11: -4195506533886956100
+      AtqBasico2_0006_12: 8257959287744434492
+      AtqBasico2_0006_13: -8679791275443715011
+      AtqBasico2_0006_14: 5077629032934564339
+      AtqBasico2_0006_2: 665016372186857264
+      AtqBasico2_0006_3: 1724323056255431455
+      AtqBasico2_0006_4: -8957953982950598531
+      AtqBasico2_0006_5: 3402718903343321975
+      AtqBasico2_0006_6: 7193916739502947786
+      AtqBasico2_0006_7: 6016506033395784361
+      AtqBasico2_0006_8: -5378285611942643657
+      AtqBasico2_0006_9: 1583108177808633103
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

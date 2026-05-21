@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7b113a0d742634cb0225195d098ae5, type: 3}
   m_Name: MejoraFuerza
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoTienda
-  nombreObjeto: + 20 de fuerza
+  nombreObjeto: + 20 atq.
   precio: 90
   iconoObjeto: {fileID: 1258130913577157180, guid: d99ec709ccbf788439833cc532a0b189, type: 3}
   descripcion: Mejora Fuerza

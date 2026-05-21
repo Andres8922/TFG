@@ -1071,6 +1071,8 @@ MonoBehaviour:
   experienciaActual: 0
   experienciaNecesaria: 100
   heroesDesbloqueados: 01000000
+  "bonusDa\xF1o": 0
+  bonusVida: 0
   "da\xF1oTotalPartida": 0
   manaTotalPartida: 0
   turnosTotalesPartida: 0

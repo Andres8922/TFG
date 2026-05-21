@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6002973224302590065}
   - component: {fileID: 1009711758952507421}
   - component: {fileID: 8030577936732744858}
+  - component: {fileID: -2638783264495578713}
   m_Layer: 0
   m_Name: Esqueleto_0 1
   m_TagString: Untagged
@@ -110,3 +111,16 @@ MonoBehaviour:
   manaMaximo: 50
   manaActual: 0
   manaPorTurno: 10
+--- !u!114 &-2638783264495578713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105038906605506795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d78fee0eda4af014c81833f82db67312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfiguracionEnemigo
+  offsetSpawn: {x: 0, y: 0}

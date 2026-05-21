@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7b113a0d742634cb0225195d098ae5, type: 3}
   m_Name: "PocionDa\xF1oPeque\xF1a"
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoTienda
-  nombreObjeto: + 20 de ataque
+  nombreObjeto: + 20 ataque
   precio: 30
   iconoObjeto: {fileID: 3843327296510949207, guid: 5da961912b84f0c458caead00a5493a5, type: 3}
   descripcion: "El siguiente ataque del h\xE9roe contar\xE1 con un da\xF1o extra

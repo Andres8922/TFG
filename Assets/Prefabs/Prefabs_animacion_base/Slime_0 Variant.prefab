@@ -234,6 +234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime_0 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3750701795629299450, guid: 5884d9a2133e6634aa4118a7bb802b07, type: 3}
+      propertyPath: offsetSpawn.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6685337520590862191, guid: 5884d9a2133e6634aa4118a7bb802b07, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.4355073

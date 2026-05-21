@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 154801db0e809524fb0d1e66e711c980
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5767936185023223868
+    second: "Da\xF1adoSlime_0006_0"
+  - first:
+      213: -3210394187505233613
+    second: "Da\xF1adoSlime_0006_1"
+  - first:
+      213: 2964903493019110085
+    second: "Da\xF1adoSlime_0006_2"
+  - first:
+      213: 3065288452780223252
+    second: "Da\xF1adoSlime_0006_3"
+  - first:
+      213: -1001604971325235710
+    second: "Da\xF1adoSlime_0006_4"
+  - first:
+      213: 223299542826976509
+    second: "Da\xF1adoSlime_0006_5"
+  - first:
+      213: 5064813914284456808
+    second: "Da\xF1adoSlime_0006_6"
+  - first:
+      213: -389221869907905394
+    second: "Da\xF1adoSlime_0006_7"
+  - first:
+      213: 8880608906423233782
+    second: "Da\xF1adoSlime_0006_8"
+  - first:
+      213: -4505405015928062572
+    second: "Da\xF1adoSlime_0006_9"
+  - first:
+      213: -833682360297351094
+    second: "Da\xF1adoSlime_0006_10"
+  - first:
+      213: 4845068884407631512
+    second: "Da\xF1adoSlime_0006_11"
+  - first:
+      213: 7861287939258392662
+    second: "Da\xF1adoSlime_0006_12"
+  - first:
+      213: -993032537819323993
+    second: "Da\xF1adoSlime_0006_13"
+  - first:
+      213: 4372468409796652570
+    second: "Da\xF1adoSlime_0006_14"
+  - first:
+      213: 678924877212069465
+    second: "Da\xF1adoSlime_0006_15"
+  - first:
+      213: 8992072261621034604
+    second: "Da\xF1adoSlime_0006_16"
+  - first:
+      213: 8995595833026243604
+    second: "Da\xF1adoSlime_0006_17"
+  - first:
+      213: 5909144006238207913
+    second: "Da\xF1adoSlime_0006_18"
+  - first:
+      213: -1661039438040235601
+    second: "Da\xF1adoSlime_0006_19"
+  - first:
+      213: 1088032480175369030
+    second: "Da\xF1adoSlime_0006_20"
+  - first:
+      213: -5640803203582343934
+    second: "Da\xF1adoSlime_0006_21"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.6, y: 0.3}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_0"
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 219
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7a19c799c24ffa0800000000000000
+      internalID: -5767936185023223868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_1"
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 209
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33195c0fe736273d0800000000000000
+      internalID: -3210394187505233613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_2"
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 189
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca08b6a404752920800000000000000
+      internalID: 2964903493019110085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_3"
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 174
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b62127b971a8a20800000000000000
+      internalID: 3065288452780223252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_4"
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 179
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ed4e6d5959912f0800000000000000
+      internalID: -1001604971325235710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_5"
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 164
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df485b840c1591300800000000000000
+      internalID: 223299542826976509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_6"
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 167
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b7166ab65d94640800000000000000
+      internalID: 5064813914284456808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_7"
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 145
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84735185c4399af0800000000000000
+      internalID: -389221869907905394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_8"
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 158
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fce688bfb24e3b70800000000000000
+      internalID: 8880608906423233782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_9"
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 9
+        width: 165
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d385832069971c0800000000000000
+      internalID: -4505405015928062572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_10"
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 145
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4897f27f4a2e64f0800000000000000
+      internalID: -833682360297351094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_11"
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 134
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e3a67ea742d3340800000000000000
+      internalID: 4845068884407631512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_12"
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 126
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6502f88dab7e81d60800000000000000
+      internalID: 7861287939258392662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_13"
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 112
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1efdc0b2a0832f0800000000000000
+      internalID: -993032537819323993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_14"
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 97
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1eeb853ad02eac30800000000000000
+      internalID: 4372468409796652570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_15"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 97
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ea66724960c6900800000000000000
+      internalID: 678924877212069465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_16"
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 81
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ea09474124acc70800000000000000
+      internalID: 8992072261621034604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_17"
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 69
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c638adfb6c6dc70800000000000000
+      internalID: 8995595833026243604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_18"
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 61
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aff47a6a2f710250800000000000000
+      internalID: 5909144006238207913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_19"
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 51
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa182b18e6dc2f8e0800000000000000
+      internalID: -1661039438040235601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_20"
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ba0fca6c7791f00800000000000000
+      internalID: 1088032480175369030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Da\xF1adoSlime_0006_21"
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 24
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205c6926f57d7b1b0800000000000000
+      internalID: -5640803203582343934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Da\xF1adoSlime_0006_0": -5767936185023223868
+      "Da\xF1adoSlime_0006_1": -3210394187505233613
+      "Da\xF1adoSlime_0006_10": -833682360297351094
+      "Da\xF1adoSlime_0006_11": 4845068884407631512
+      "Da\xF1adoSlime_0006_12": 7861287939258392662
+      "Da\xF1adoSlime_0006_13": -993032537819323993
+      "Da\xF1adoSlime_0006_14": 4372468409796652570
+      "Da\xF1adoSlime_0006_15": 678924877212069465
+      "Da\xF1adoSlime_0006_16": 8992072261621034604
+      "Da\xF1adoSlime_0006_17": 8995595833026243604
+      "Da\xF1adoSlime_0006_18": 5909144006238207913
+      "Da\xF1adoSlime_0006_19": -1661039438040235601
+      "Da\xF1adoSlime_0006_2": 2964903493019110085
+      "Da\xF1adoSlime_0006_20": 1088032480175369030
+      "Da\xF1adoSlime_0006_21": -5640803203582343934
+      "Da\xF1adoSlime_0006_3": 3065288452780223252
+      "Da\xF1adoSlime_0006_4": -1001604971325235710
+      "Da\xF1adoSlime_0006_5": 223299542826976509
+      "Da\xF1adoSlime_0006_6": 5064813914284456808
+      "Da\xF1adoSlime_0006_7": -389221869907905394
+      "Da\xF1adoSlime_0006_8": 8880608906423233782
+      "Da\xF1adoSlime_0006_9": -4505405015928062572
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

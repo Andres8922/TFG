@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 7f7c60d97ef703041b040292904c4041
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2342428301241196126
+    second: Atc2Fantasma_0008_0
+  - first:
+      213: -1983641154002355468
+    second: Atc2Fantasma_0008_1
+  - first:
+      213: -2736103386256025849
+    second: Atc2Fantasma_0008_2
+  - first:
+      213: -6074281223294875537
+    second: Atc2Fantasma_0008_3
+  - first:
+      213: -2378956315483978732
+    second: Atc2Fantasma_0008_4
+  - first:
+      213: 5373133375739452795
+    second: Atc2Fantasma_0008_5
+  - first:
+      213: -498682512861043365
+    second: Atc2Fantasma_0008_6
+  - first:
+      213: 9105650639220157428
+    second: Atc2Fantasma_0008_7
+  - first:
+      213: 6998200448144508540
+    second: Atc2Fantasma_0008_8
+  - first:
+      213: -2016066625780404104
+    second: Atc2Fantasma_0008_9
+  - first:
+      213: 7476247605767650649
+    second: Atc2Fantasma_0008_10
+  - first:
+      213: -1299828375063196997
+    second: Atc2Fantasma_0008_11
+  - first:
+      213: 2586293770407259459
+    second: Atc2Fantasma_0008_12
+  - first:
+      213: 2141439015399209068
+    second: Atc2Fantasma_0008_13
+  - first:
+      213: -6720054119915256915
+    second: Atc2Fantasma_0008_14
+  - first:
+      213: 840008922362500473
+    second: Atc2Fantasma_0008_15
+  - first:
+      213: 968195048220909861
+    second: Atc2Fantasma_0008_16
+  - first:
+      213: -6817214635237550871
+    second: Atc2Fantasma_0008_17
+  - first:
+      213: 7930450117560782471
+    second: Atc2Fantasma_0008_18
+  - first:
+      213: 1924979658739305675
+    second: Atc2Fantasma_0008_19
+  - first:
+      213: -4835247201244357244
+    second: Atc2Fantasma_0008_20
+  - first:
+      213: 2857493298289941514
+    second: Atc2Fantasma_0008_21
+  - first:
+      213: -3058740750650951930
+    second: Atc2Fantasma_0008_22
+  - first:
+      213: -4400122014189877917
+    second: Atc2Fantasma_0008_23
+  - first:
+      213: -8682639410443630894
+    second: Atc2Fantasma_0008_24
+  - first:
+      213: 400725609196223938
+    second: Atc2Fantasma_0008_25
+  - first:
+      213: 3953609215161029228
+    second: Atc2Fantasma_0008_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.7, y: 0.2}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 234
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a162b8eed50e7fd0800000000000000
+      internalID: -2342428301241196126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 240
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4faf7d551e0b874e0800000000000000
+      internalID: -1983641154002355468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 238
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70757797778670ad0800000000000000
+      internalID: -2736103386256025849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 204
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f680fab0961d3bba0800000000000000
+      internalID: -6074281223294875537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 226
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 414c767d5df3cfed0800000000000000
+      internalID: -2378956315483978732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_5
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 208
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ddebf4654319a40800000000000000
+      internalID: 5373133375739452795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_6
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 214
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55e73d85e25419f0800000000000000
+      internalID: -498682512861043365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_7
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 186
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fba6873305cd5e70800000000000000
+      internalID: 9105650639220157428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 198
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7602a2ca3a9e1160800000000000000
+      internalID: 6998200448144508540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_9
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 184
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870b6ded51e7504e0800000000000000
+      internalID: -2016066625780404104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_10
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 168
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d35aa2697f0c760800000000000000
+      internalID: 7476247605767650649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 172
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba826bcaf416fde0800000000000000
+      internalID: -1299828375063196997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 158
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d2eed3b7c54e320800000000000000
+      internalID: 2586293770407259459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_13
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 118
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68380d407be7bd10800000000000000
+      internalID: 2141439015399209068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_14
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 146
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da30d0fd1629db2a0800000000000000
+      internalID: -6720054119915256915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_15
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 137
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97553911aaf48ab00800000000000000
+      internalID: 840008922362500473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_16
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 107
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521ef724448bf6d00800000000000000
+      internalID: 968195048220909861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_17
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 114
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4521d88636461a0800000000000000
+      internalID: -6817214635237550871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 88
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e4a265d5e9e0e60800000000000000
+      internalID: 7930450117560782471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_19
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 82
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc4207fcc6e6ba10800000000000000
+      internalID: 1924979658739305675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_20
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 7
+        width: 138
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48dd0a8e940c5ecb0800000000000000
+      internalID: -4835247201244357244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_21
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 75
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c91a0e30bd7a720800000000000000
+      internalID: 2857493298289941514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_22
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 80
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60730714e7b2d85d0800000000000000
+      internalID: -3058740750650951930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_23
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 67
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36506d74750afe2c0800000000000000
+      internalID: -4400122014189877917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_24
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 58
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d643b37571118780800000000000000
+      internalID: -8682639410443630894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_25
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 19
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cdfa8481d9af8500800000000000000
+      internalID: 400725609196223938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc2Fantasma_0008_26
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 14
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62526252aa0ed630800000000000000
+      internalID: 3953609215161029228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Atc2Fantasma_0008_0: -2342428301241196126
+      Atc2Fantasma_0008_1: -1983641154002355468
+      Atc2Fantasma_0008_10: 7476247605767650649
+      Atc2Fantasma_0008_11: -1299828375063196997
+      Atc2Fantasma_0008_12: 2586293770407259459
+      Atc2Fantasma_0008_13: 2141439015399209068
+      Atc2Fantasma_0008_14: -6720054119915256915
+      Atc2Fantasma_0008_15: 840008922362500473
+      Atc2Fantasma_0008_16: 968195048220909861
+      Atc2Fantasma_0008_17: -6817214635237550871
+      Atc2Fantasma_0008_18: 7930450117560782471
+      Atc2Fantasma_0008_19: 1924979658739305675
+      Atc2Fantasma_0008_2: -2736103386256025849
+      Atc2Fantasma_0008_20: -4835247201244357244
+      Atc2Fantasma_0008_21: 2857493298289941514
+      Atc2Fantasma_0008_22: -3058740750650951930
+      Atc2Fantasma_0008_23: -4400122014189877917
+      Atc2Fantasma_0008_24: -8682639410443630894
+      Atc2Fantasma_0008_25: 400725609196223938
+      Atc2Fantasma_0008_26: 3953609215161029228
+      Atc2Fantasma_0008_3: -6074281223294875537
+      Atc2Fantasma_0008_4: -2378956315483978732
+      Atc2Fantasma_0008_5: 5373133375739452795
+      Atc2Fantasma_0008_6: -498682512861043365
+      Atc2Fantasma_0008_7: 9105650639220157428
+      Atc2Fantasma_0008_8: 6998200448144508540
+      Atc2Fantasma_0008_9: -2016066625780404104
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

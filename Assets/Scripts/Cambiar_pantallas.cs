@@ -21,11 +21,6 @@ public class Cambiar_pantallas : MonoBehaviour
         Transicion.Instance.CargarEscena("Ajustes");
     }
 
-    public void Pantalla_Perfil()
-    {
-        Transicion.Instance.CargarEscena("Perfil");
-    }
-    
     public void Pantalla_Info()
     {
         Transicion.Instance.CargarEscena("Info");

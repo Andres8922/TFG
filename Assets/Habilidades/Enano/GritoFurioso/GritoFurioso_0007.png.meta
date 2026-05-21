@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: dd13333e7ea802c4a80172ec6e39f7d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4317176080707801838
+    second: GritoFurioso_0007_0
+  - first:
+      213: 4472812451069281965
+    second: GritoFurioso_0007_1
+  - first:
+      213: -7745779319604383845
+    second: GritoFurioso_0007_2
+  - first:
+      213: -8099766652139453827
+    second: GritoFurioso_0007_3
+  - first:
+      213: 1406686822449578073
+    second: GritoFurioso_0007_4
+  - first:
+      213: -1075892635236165807
+    second: GritoFurioso_0007_5
+  - first:
+      213: 8122984726583603008
+    second: GritoFurioso_0007_6
+  - first:
+      213: 6471225506376798400
+    second: GritoFurioso_0007_7
+  - first:
+      213: -8877576865909316296
+    second: GritoFurioso_0007_8
+  - first:
+      213: 5411201508540489664
+    second: GritoFurioso_0007_9
+  - first:
+      213: -3769227086098856996
+    second: GritoFurioso_0007_10
+  - first:
+      213: 4062456557063935642
+    second: GritoFurioso_0007_11
+  - first:
+      213: -3674878741398120513
+    second: GritoFurioso_0007_12
+  - first:
+      213: -2723901513263148337
+    second: GritoFurioso_0007_13
+  - first:
+      213: -603178880342402703
+    second: GritoFurioso_0007_14
+  - first:
+      213: -1265233543038758374
+    second: GritoFurioso_0007_15
+  - first:
+      213: 1733464300188575035
+    second: GritoFurioso_0007_16
+  - first:
+      213: -7465750780854723353
+    second: GritoFurioso_0007_17
+  - first:
+      213: -1516280774475072416
+    second: GritoFurioso_0007_18
+  - first:
+      213: 801517589964441877
+    second: GritoFurioso_0007_19
+  - first:
+      213: 8952634600534897760
+    second: GritoFurioso_0007_20
+  - first:
+      213: -5537384754012387499
+    second: GritoFurioso_0007_21
+  - first:
+      213: -1191051129781348260
+    second: GritoFurioso_0007_22
+  - first:
+      213: 4605026352162064335
+    second: GritoFurioso_0007_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.28, y: 0.27}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GritoFurioso_0007_0
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 233
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2d663a5c0b9eb30800000000000000
+      internalID: 4317176080707801838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 231
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6cdece93f921e30800000000000000
+      internalID: 4472812451069281965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_2
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 233
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9fe96a6fb6718490800000000000000
+      internalID: -7745779319604383845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_3
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 205
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d724cafe429d79f80800000000000000
+      internalID: -8099766652139453827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950845a463e858310800000000000000
+      internalID: 1406686822449578073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_5
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 199
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1571a4c3959a111f0800000000000000
+      internalID: -1075892635236165807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_6
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 210
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f60f74293aab070800000000000000
+      internalID: 8122984726583603008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_7
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 191
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c05901ef496ec950800000000000000
+      internalID: 6471225506376798400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 195
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 835ef3930e28cc480800000000000000
+      internalID: -8877576865909316296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_9
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 184
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf1d9c2a13781b40800000000000000
+      internalID: 5411201508540489664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_10
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 194
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd30c477fe301bbc0800000000000000
+      internalID: -3769227086098856996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 171
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96904ff6beb06830800000000000000
+      internalID: 4062456557063935642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_12
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 172
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7945a4145300dc0800000000000000
+      internalID: -3674878741398120513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_13
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 169
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc21dca6102c23ad0800000000000000
+      internalID: -2723901513263148337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 154
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1795c2d010411a7f0800000000000000
+      internalID: -603178880342402703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 158
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12144dcbccf07ee0800000000000000
+      internalID: -1265233543038758374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_16
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 145
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35af83c8908e0810800000000000000
+      internalID: 1733464300188575035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_17
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 137
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec1f855833546890800000000000000
+      internalID: -7465750780854723353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_18
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 128
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06cb8a15ba615fae0800000000000000
+      internalID: -1516280774475072416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_19
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 3
+        width: 125
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519ce0f50009f1b00800000000000000
+      internalID: 801517589964441877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 108
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064f0c07cb52e3c70800000000000000
+      internalID: 8952634600534897760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_21
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 101
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5578d6097e14723b0800000000000000
+      internalID: -5537384754012387499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_22
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 74
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c581e04de49887fe0800000000000000
+      internalID: -1191051129781348260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GritoFurioso_0007_23
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 51
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7ceed911758ef30800000000000000
+      internalID: 4605026352162064335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GritoFurioso_0007_0: 4317176080707801838
+      GritoFurioso_0007_1: 4472812451069281965
+      GritoFurioso_0007_10: -3769227086098856996
+      GritoFurioso_0007_11: 4062456557063935642
+      GritoFurioso_0007_12: -3674878741398120513
+      GritoFurioso_0007_13: -2723901513263148337
+      GritoFurioso_0007_14: -603178880342402703
+      GritoFurioso_0007_15: -1265233543038758374
+      GritoFurioso_0007_16: 1733464300188575035
+      GritoFurioso_0007_17: -7465750780854723353
+      GritoFurioso_0007_18: -1516280774475072416
+      GritoFurioso_0007_19: 801517589964441877
+      GritoFurioso_0007_2: -7745779319604383845
+      GritoFurioso_0007_20: 8952634600534897760
+      GritoFurioso_0007_21: -5537384754012387499
+      GritoFurioso_0007_22: -1191051129781348260
+      GritoFurioso_0007_23: 4605026352162064335
+      GritoFurioso_0007_3: -8099766652139453827
+      GritoFurioso_0007_4: 1406686822449578073
+      GritoFurioso_0007_5: -1075892635236165807
+      GritoFurioso_0007_6: 8122984726583603008
+      GritoFurioso_0007_7: 6471225506376798400
+      GritoFurioso_0007_8: -8877576865909316296
+      GritoFurioso_0007_9: 5411201508540489664
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

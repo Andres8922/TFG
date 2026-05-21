@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1659211547455260209}
   - component: {fileID: 4930434409252777747}
   - component: {fileID: 7701502129167166566}
+  - component: {fileID: -8724019747542698942}
   m_Layer: 0
   m_Name: Cofre_0
   m_TagString: Untagged
@@ -110,3 +111,16 @@ MonoBehaviour:
   manaMaximo: 50
   manaActual: 0
   manaPorTurno: 10
+--- !u!114 &-8724019747542698942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6666098710409872498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d78fee0eda4af014c81833f82db67312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfiguracionEnemigo
+  offsetSpawn: {x: 0, y: -0.2}

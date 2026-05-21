@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: f5c02f6b55553a145b039a18274f1509
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2846011535739400791
+    second: EspirituBosque_0005_0
+  - first:
+      213: 7501303766713751413
+    second: EspirituBosque_0005_1
+  - first:
+      213: 7916799415133879550
+    second: EspirituBosque_0005_2
+  - first:
+      213: 2818833223477758333
+    second: EspirituBosque_0005_3
+  - first:
+      213: 7273333810534807933
+    second: EspirituBosque_0005_4
+  - first:
+      213: 6407701746952332776
+    second: EspirituBosque_0005_5
+  - first:
+      213: -5697764513345442017
+    second: EspirituBosque_0005_6
+  - first:
+      213: 31789517711435217
+    second: EspirituBosque_0005_7
+  - first:
+      213: 4983437614499798242
+    second: EspirituBosque_0005_8
+  - first:
+      213: -9206835776386369665
+    second: EspirituBosque_0005_9
+  - first:
+      213: -8605695762640367475
+    second: EspirituBosque_0005_10
+  - first:
+      213: -2037201080370660595
+    second: EspirituBosque_0005_11
+  - first:
+      213: 449564281559297574
+    second: EspirituBosque_0005_12
+  - first:
+      213: 7865907739929455778
+    second: EspirituBosque_0005_13
+  - first:
+      213: -1190921127347934729
+    second: EspirituBosque_0005_14
+  - first:
+      213: 7263253690859445229
+    second: EspirituBosque_0005_15
+  - first:
+      213: 261568079873795762
+    second: EspirituBosque_0005_16
+  - first:
+      213: 5625904178873545137
+    second: EspirituBosque_0005_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.37, y: 0.37}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EspirituBosque_0005_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 16
+        width: 156
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9adc699469fe088d0800000000000000
+      internalID: -2846011535739400791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 183
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577d54f380cf91860800000000000000
+      internalID: 7501303766713751413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 145
+        width: 71
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc33118f1f1edd60800000000000000
+      internalID: 7916799415133879550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 155
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d790676c1e18e1720800000000000000
+      internalID: 2818833223477758333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_4
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 113
+        width: 20
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79f3cd909210f460800000000000000
+      internalID: 7273333810534807933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_5
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 130
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e56eb51acabce850800000000000000
+      internalID: 6407701746952332776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_6
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 127
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fe738fc597de0b0800000000000000
+      internalID: -5697764513345442017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_7
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 113
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d565ced560f07000800000000000000
+      internalID: 31789517711435217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_8
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 113
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec94946b1ab82540800000000000000
+      internalID: 4983437614499798242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_9
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 87
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77f12b24afba3080800000000000000
+      internalID: -9206835776386369665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 86
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d809cbe7c4d629880800000000000000
+      internalID: -8605695762640367475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_11
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 78
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0bf67439686ab3e0800000000000000
+      internalID: -2037201080370660595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_12
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 112
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62eab0a055c2d3600800000000000000
+      internalID: 449564281559297574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_13
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 61
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acad720a61592d60800000000000000
+      internalID: 7865907739929455778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_14
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 70
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f92be06b8ff87fe0800000000000000
+      internalID: -1190921127347934729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_15
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 68
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: debd83ddfb24cc460800000000000000
+      internalID: 7263253690859445229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_16
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 30
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6657568c641a300800000000000000
+      internalID: 261568079873795762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspirituBosque_0005_17
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 32
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1b42a1b0a331e40800000000000000
+      internalID: 5625904178873545137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EspirituBosque_0005_0: -2846011535739400791
+      EspirituBosque_0005_1: 7501303766713751413
+      EspirituBosque_0005_10: -8605695762640367475
+      EspirituBosque_0005_11: -2037201080370660595
+      EspirituBosque_0005_12: 449564281559297574
+      EspirituBosque_0005_13: 7865907739929455778
+      EspirituBosque_0005_14: -1190921127347934729
+      EspirituBosque_0005_15: 7263253690859445229
+      EspirituBosque_0005_16: 261568079873795762
+      EspirituBosque_0005_17: 5625904178873545137
+      EspirituBosque_0005_2: 7916799415133879550
+      EspirituBosque_0005_3: 2818833223477758333
+      EspirituBosque_0005_4: 7273333810534807933
+      EspirituBosque_0005_5: 6407701746952332776
+      EspirituBosque_0005_6: -5697764513345442017
+      EspirituBosque_0005_7: 31789517711435217
+      EspirituBosque_0005_8: 4983437614499798242
+      EspirituBosque_0005_9: -9206835776386369665
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

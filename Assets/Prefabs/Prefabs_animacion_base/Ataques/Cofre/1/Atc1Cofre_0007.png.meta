@@ -1,0 +1,1573 @@
+fileFormatVersion: 2
+guid: 82bc514ddc9b4154eb7f0ddfe28c90c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2739785488851695254
+    second: Atc1Cofre_0007_0
+  - first:
+      213: 7908950798555869306
+    second: Atc1Cofre_0007_1
+  - first:
+      213: 3556560351212736728
+    second: Atc1Cofre_0007_2
+  - first:
+      213: 2650027956234076571
+    second: Atc1Cofre_0007_3
+  - first:
+      213: -4377512523549909689
+    second: Atc1Cofre_0007_4
+  - first:
+      213: 393953822735186080
+    second: Atc1Cofre_0007_5
+  - first:
+      213: 4187295324671024028
+    second: Atc1Cofre_0007_6
+  - first:
+      213: -3747219957841999924
+    second: Atc1Cofre_0007_7
+  - first:
+      213: -8835235230889884521
+    second: Atc1Cofre_0007_8
+  - first:
+      213: 6978209737876518318
+    second: Atc1Cofre_0007_9
+  - first:
+      213: -2917179713627250325
+    second: Atc1Cofre_0007_10
+  - first:
+      213: -1899046990585055363
+    second: Atc1Cofre_0007_11
+  - first:
+      213: 6216919907864261756
+    second: Atc1Cofre_0007_12
+  - first:
+      213: 4329234652819510884
+    second: Atc1Cofre_0007_13
+  - first:
+      213: -5717704963124202245
+    second: Atc1Cofre_0007_14
+  - first:
+      213: 5764397574464563289
+    second: Atc1Cofre_0007_15
+  - first:
+      213: -8020268149066697048
+    second: Atc1Cofre_0007_16
+  - first:
+      213: 5330159168933422451
+    second: Atc1Cofre_0007_17
+  - first:
+      213: 1554554528441414391
+    second: Atc1Cofre_0007_18
+  - first:
+      213: 7989394932583008576
+    second: Atc1Cofre_0007_19
+  - first:
+      213: -3539889179388221826
+    second: Atc1Cofre_0007_20
+  - first:
+      213: -5363669303710357056
+    second: Atc1Cofre_0007_21
+  - first:
+      213: -4578630303010253208
+    second: Atc1Cofre_0007_22
+  - first:
+      213: 6577715504019564871
+    second: Atc1Cofre_0007_23
+  - first:
+      213: -2674311083325392247
+    second: Atc1Cofre_0007_24
+  - first:
+      213: -3418435561709184571
+    second: Atc1Cofre_0007_25
+  - first:
+      213: 6067392732737821700
+    second: Atc1Cofre_0007_26
+  - first:
+      213: -4532850077447522698
+    second: Atc1Cofre_0007_27
+  - first:
+      213: -5916174334765684787
+    second: Atc1Cofre_0007_28
+  - first:
+      213: -3144475293270265850
+    second: Atc1Cofre_0007_29
+  - first:
+      213: -4828272271062938579
+    second: Atc1Cofre_0007_30
+  - first:
+      213: 2768642790821593140
+    second: Atc1Cofre_0007_31
+  - first:
+      213: -5475652383710791026
+    second: Atc1Cofre_0007_32
+  - first:
+      213: 1937012121193786315
+    second: Atc1Cofre_0007_33
+  - first:
+      213: -949868700094419364
+    second: Atc1Cofre_0007_34
+  - first:
+      213: 910079350981905305
+    second: Atc1Cofre_0007_35
+  - first:
+      213: -8505019189068535743
+    second: Atc1Cofre_0007_36
+  - first:
+      213: 6276158472930323244
+    second: Atc1Cofre_0007_37
+  - first:
+      213: -7338655618689950010
+    second: Atc1Cofre_0007_38
+  - first:
+      213: 7463694267977880994
+    second: Atc1Cofre_0007_39
+  - first:
+      213: -6937245011292274474
+    second: Atc1Cofre_0007_40
+  - first:
+      213: 9082166169892763681
+    second: Atc1Cofre_0007_41
+  - first:
+      213: -1367728490430116433
+    second: Atc1Cofre_0007_42
+  - first:
+      213: 7247598925388924345
+    second: Atc1Cofre_0007_43
+  - first:
+      213: -928159565451279844
+    second: Atc1Cofre_0007_44
+  - first:
+      213: 6149301571881668485
+    second: Atc1Cofre_0007_45
+  - first:
+      213: 841190305042492255
+    second: Atc1Cofre_0007_46
+  - first:
+      213: 4976037403871612525
+    second: Atc1Cofre_0007_47
+  - first:
+      213: -6943339792534472571
+    second: Atc1Cofre_0007_48
+  - first:
+      213: 4086266330180728198
+    second: Atc1Cofre_0007_49
+  - first:
+      213: 609375002220110039
+    second: Atc1Cofre_0007_50
+  - first:
+      213: -801879142463097131
+    second: Atc1Cofre_0007_51
+  - first:
+      213: 8831873369218682198
+    second: Atc1Cofre_0007_52
+  - first:
+      213: 1227009477357284052
+    second: Atc1Cofre_0007_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.65, y: 0.25}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 236
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6989382d935af9d0800000000000000
+      internalID: -2739785488851695254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 234
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70f6fd09dc32cd60800000000000000
+      internalID: 7908950798555869306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 219
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d01644cbc07b5130800000000000000
+      internalID: 3556560351212736728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 226
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91cf20c26ac6c420800000000000000
+      internalID: 2650027956234076571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 198
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ddbf98d83ff33c0800000000000000
+      internalID: -4377512523549909689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8b90e1aea977500800000000000000
+      internalID: 393953822735186080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_6
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 177
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b9bac99e24c1a30800000000000000
+      internalID: 4187295324671024028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_7
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 191
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7c29d4d433ffbc0800000000000000
+      internalID: -3747219957841999924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_8
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 208
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794cacb5e50f26580800000000000000
+      internalID: -8835235230889884521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_9
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 184
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea53d42d8c497d060800000000000000
+      internalID: 6978209737876518318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61a54f91881487d0800000000000000
+      internalID: -2917179713627250325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_11
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 170
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77376ad2da35a5e0800000000000000
+      internalID: -1899046990585055363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 174
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74bd41b7bfe64650800000000000000
+      internalID: 6216919907864261756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_13
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 173
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4665e9ebaf7841c30800000000000000
+      internalID: 4329234652819510884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_14
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf47e7631a1a6a0b0800000000000000
+      internalID: -5717704963124202245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_15
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 164
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958651a8d014fff40800000000000000
+      internalID: 5764397574464563289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_16
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 156
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6ff739c9842b090800000000000000
+      internalID: -8020268149066697048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3756194168788f940800000000000000
+      internalID: 5330159168933422451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_18
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 148
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2b9b37b13e29510800000000000000
+      internalID: 1554554528441414391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_19
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 143
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0498aee8c5800ee60800000000000000
+      internalID: 7989394932583008576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_20
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 144
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76e056eb89cfdec0800000000000000
+      internalID: -3539889179388221826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_21
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 139
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c96dabaf2b6095b0800000000000000
+      internalID: -5363669303710357056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 130
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8661c3f7fff6570c0800000000000000
+      internalID: -4578630303010253208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_23
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 132
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7496aa2966db84b50800000000000000
+      internalID: 6577715504019564871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_24
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 115
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98aff732d30f2ead0800000000000000
+      internalID: -2674311083325392247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_25
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 129
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9d2c0e7f64f80d0800000000000000
+      internalID: -3418435561709184571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_26
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 130
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40cdf934b85b33450800000000000000
+      internalID: 6067392732737821700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_27
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 130
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67673a1eed41811c0800000000000000
+      internalID: -4532850077447522698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_28
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 123
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7220ba9c685eda0800000000000000
+      internalID: -5916174334765684787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_29
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 116
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60032a381649c54d0800000000000000
+      internalID: -3144475293270265850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_30
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 14
+        width: 138
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ccc6463f78efcb0800000000000000
+      internalID: -4828272271062938579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_31
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 107
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4300ed803f13c6620800000000000000
+      internalID: 2768642790821593140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_32
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 114
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ab5631b239204b0800000000000000
+      internalID: -5475652383710791026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_33
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 95
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcba161f246a1ea10800000000000000
+      internalID: 1937012121193786315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_34
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 100
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e2c9b237361d2f0800000000000000
+      internalID: -949868700094419364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_35
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 82
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99bc1b0195041ac00800000000000000
+      internalID: 910079350981905305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_36
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 78
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14860bbeb1a18f980800000000000000
+      internalID: -8505019189068535743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_37
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 86
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2be11de0e4691750800000000000000
+      internalID: 6276158472930323244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_38
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 73
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce9f0fb89bd72a90800000000000000
+      internalID: -7338655618689950010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_39
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 73
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5d0f2746e549760800000000000000
+      internalID: 7463694267977880994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_40
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 68
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0c216da64f9bf90800000000000000
+      internalID: -6937245011292274474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_41
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 63
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128378b13065a0e70800000000000000
+      internalID: 9082166169892763681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_42
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 46
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad4bba3f2ad40de0800000000000000
+      internalID: -1367728490430116433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_43
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 46
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b54f4eb2d4a49460800000000000000
+      internalID: 7247598925388924345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_44
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 48
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c124566fac38e13f0800000000000000
+      internalID: -928159565451279844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_45
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 26
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f02c00335b65550800000000000000
+      internalID: 6149301571881668485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_46
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 27
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b6f8820228cab00800000000000000
+      internalID: 841190305042492255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_47
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 30
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e03d697af6e0540800000000000000
+      internalID: 4976037403871612525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_48
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 33
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588f52ffe3d44af90800000000000000
+      internalID: -6943339792534472571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_49
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 21
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685bf0cc39555b830800000000000000
+      internalID: 4086266330180728198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_50
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 17
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0255ef55fe47800800000000000000
+      internalID: 609375002220110039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_51
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 23
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d631b02b272fd4f0800000000000000
+      internalID: -801879142463097131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_52
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 15
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d0389390e119a70800000000000000
+      internalID: 8831873369218682198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atc1Cofre_0007_53
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 15
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da2be16e96370110800000000000000
+      internalID: 1227009477357284052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Atc1Cofre_0007_0: -2739785488851695254
+      Atc1Cofre_0007_1: 7908950798555869306
+      Atc1Cofre_0007_10: -2917179713627250325
+      Atc1Cofre_0007_11: -1899046990585055363
+      Atc1Cofre_0007_12: 6216919907864261756
+      Atc1Cofre_0007_13: 4329234652819510884
+      Atc1Cofre_0007_14: -5717704963124202245
+      Atc1Cofre_0007_15: 5764397574464563289
+      Atc1Cofre_0007_16: -8020268149066697048
+      Atc1Cofre_0007_17: 5330159168933422451
+      Atc1Cofre_0007_18: 1554554528441414391
+      Atc1Cofre_0007_19: 7989394932583008576
+      Atc1Cofre_0007_2: 3556560351212736728
+      Atc1Cofre_0007_20: -3539889179388221826
+      Atc1Cofre_0007_21: -5363669303710357056
+      Atc1Cofre_0007_22: -4578630303010253208
+      Atc1Cofre_0007_23: 6577715504019564871
+      Atc1Cofre_0007_24: -2674311083325392247
+      Atc1Cofre_0007_25: -3418435561709184571
+      Atc1Cofre_0007_26: 6067392732737821700
+      Atc1Cofre_0007_27: -4532850077447522698
+      Atc1Cofre_0007_28: -5916174334765684787
+      Atc1Cofre_0007_29: -3144475293270265850
+      Atc1Cofre_0007_3: 2650027956234076571
+      Atc1Cofre_0007_30: -4828272271062938579
+      Atc1Cofre_0007_31: 2768642790821593140
+      Atc1Cofre_0007_32: -5475652383710791026
+      Atc1Cofre_0007_33: 1937012121193786315
+      Atc1Cofre_0007_34: -949868700094419364
+      Atc1Cofre_0007_35: 910079350981905305
+      Atc1Cofre_0007_36: -8505019189068535743
+      Atc1Cofre_0007_37: 6276158472930323244
+      Atc1Cofre_0007_38: -7338655618689950010
+      Atc1Cofre_0007_39: 7463694267977880994
+      Atc1Cofre_0007_4: -4377512523549909689
+      Atc1Cofre_0007_40: -6937245011292274474
+      Atc1Cofre_0007_41: 9082166169892763681
+      Atc1Cofre_0007_42: -1367728490430116433
+      Atc1Cofre_0007_43: 7247598925388924345
+      Atc1Cofre_0007_44: -928159565451279844
+      Atc1Cofre_0007_45: 6149301571881668485
+      Atc1Cofre_0007_46: 841190305042492255
+      Atc1Cofre_0007_47: 4976037403871612525
+      Atc1Cofre_0007_48: -6943339792534472571
+      Atc1Cofre_0007_49: 4086266330180728198
+      Atc1Cofre_0007_5: 393953822735186080
+      Atc1Cofre_0007_50: 609375002220110039
+      Atc1Cofre_0007_51: -801879142463097131
+      Atc1Cofre_0007_52: 8831873369218682198
+      Atc1Cofre_0007_53: 1227009477357284052
+      Atc1Cofre_0007_6: 4187295324671024028
+      Atc1Cofre_0007_7: -3747219957841999924
+      Atc1Cofre_0007_8: -8835235230889884521
+      Atc1Cofre_0007_9: 6978209737876518318
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

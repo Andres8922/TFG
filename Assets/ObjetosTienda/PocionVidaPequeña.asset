@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7b113a0d742634cb0225195d098ae5, type: 3}
   m_Name: "PocionVidaPeque\xF1a"
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoTienda
-  nombreObjeto: + 20 de salud
+  nombreObjeto: + 20 salud
   precio: 10
   iconoObjeto: {fileID: -2598142897621501522, guid: 889ac7370d3b73844bd86a99ea4561cf, type: 3}
   descripcion: "Pocion de vida peque\xF1a"

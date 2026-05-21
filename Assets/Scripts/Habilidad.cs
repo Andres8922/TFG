@@ -11,23 +11,35 @@ public class Habilidad : ScriptableObject
     public string descripcion;
 
     [Header("Tipo de Habilidad")]
-    [Tooltip("Marca esto si la habilidad es una Pasiva (efecto automático). Déjalo desmarcado si es un Ataque Activo.")]
+    [Tooltip("Marca esto si la habilidad es una Pasiva (efecto automatico). Dejalo desmarcado si es un Ataque Activo.")]
     public bool esPasiva;
 
     [Header("Si es Ataque Activo...")]
     public int costeMana;
-    public int multiplicadorDaño = 2; // Por si quieres que unas peguen más fuerte que otras
+    [Tooltip("Ataque: multiplica el danio base. Defensa: divide el danio recibido el siguiente turno. Buff: multiplica el danio del siguiente ataque.")]
+    public int multiplicadorDanio = 2;
+    public bool esDefensa;
+    public bool esBuff;
+    public bool esCuracion;
+    [Tooltip("-1 = Cualquier heroe | 0 = Caballero | 1 = Mago | 2 = Elfa | 3 = Enano")]
+    public int heroeRequerido = -1;
+    [Tooltip("Trigger del Animator del heroe para esta habilidad. Si esta vacio usa AtqFuerte por defecto.")]
+    public string triggerAnimacion;
 
     [Header("Si es Pasiva...")]
     public TipoPasiva tipoPasiva;
-    public int valorPasiva; // Ej: Cuánta vida regenera por turno
+    public int valorPasiva;
 }
 
 public enum TipoPasiva
 {
-    Ninguna, // Para los ataques activos
+    Ninguna,
     RegeneracionVidaTurno,
     RegeneracionManaTurno,
-    MenteClara // Ej: Empieza con maná al máximo
+    MenteClara,
+    RegeneracionVidaAtaque,
+    IncrementoFuerza,
+    IncrementoDefensa,
+    MultiplicacionOro,
+    MultiplicacionExperiencia
 }
-

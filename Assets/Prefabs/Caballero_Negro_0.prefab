@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7038238033469912655}
   - component: {fileID: 4286830496415189406}
   - component: {fileID: -5740855439756111104}
+  - component: {fileID: -2676624685190333744}
   m_Layer: 0
   m_Name: Caballero_Negro_0
   m_TagString: Untagged
@@ -110,3 +111,16 @@ MonoBehaviour:
   manaMaximo: 50
   manaActual: 0
   manaPorTurno: 10
+--- !u!114 &-2676624685190333744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839169332637345235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d78fee0eda4af014c81833f82db67312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfiguracionEnemigo
+  offsetSpawn: {x: 0, y: -0.25}

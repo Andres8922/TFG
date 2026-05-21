@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7b113a0d742634cb0225195d098ae5, type: 3}
   m_Name: "PocionDefensaPeque\xF1a"
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoTienda
-  nombreObjeto: + 20 de defensa
+  nombreObjeto: + 20 def.
   precio: 20
   iconoObjeto: {fileID: 7955939776846434505, guid: 5100cdcfad9e2e94496f73780f0d8169, type: 3}
   descripcion: "El siguiente ataque del enemigo se reducir\xE1 el da\xF1o restando

@@ -26,6 +26,10 @@ public class TiendaManager : MonoBehaviour
     public Transform posicionHeroe;
     public GameObject[] listaHeroesPrefab;
 
+    [Header("Fondo por Héroe")]
+    public Image fondoPantalla;
+    public Sprite[] fondosPorHeroe;
+
     [Header("Panel de Intercambio")]
     public GameObject panelIntercambio;
     public SlotIntercambio[] slotsIntercambio = new SlotIntercambio[5];
@@ -41,6 +45,15 @@ public class TiendaManager : MonoBehaviour
         ActualizarUIOro();
         RellenarEscaparate();
         InvocarHeroeEnTienda();
+        AplicarFondoHeroe();
+    }
+
+    void AplicarFondoHeroe()
+    {
+        if (fondoPantalla == null || fondosPorHeroe == null) return;
+        int indice = (GameManager.Instance != null) ? GameManager.Instance.heroeSeleccionado : 0;
+        if (indice >= 0 && indice < fondosPorHeroe.Length && fondosPorHeroe[indice] != null)
+            fondoPantalla.sprite = fondosPorHeroe[indice];
     }
 
     void InvocarHeroeEnTienda()

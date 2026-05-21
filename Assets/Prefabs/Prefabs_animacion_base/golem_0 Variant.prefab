@@ -359,6 +359,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5671018544810199411, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
+      propertyPath: offsetSpawn.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5671018544810199411, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
+      propertyPath: offsetSpawn.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2174738428935923342, guid: d1fe7a8eacb1d464daf9600166b6f3ed, type: 3}
       propertyPath: m_Name
       value: golem_0 Variant

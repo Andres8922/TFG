@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 1947117351654622621}
   - component: {fileID: 5442061380306382256}
   - component: {fileID: -3446882946824118136}
+  - component: {fileID: -5630212276870332538}
   m_Layer: 0
   m_Name: sprite_dragon_0
   m_TagString: Untagged
@@ -217,13 +218,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UnidadCombate
   nombreUnidad: "Jefe Drag\xF3n"
   "da\xF1oBase": 10
-  vidaMax: 100
+  vidaMaxima: 100
   vidaActual: 10
-  manaMax: 50
+  manaMaximo: 50
   manaActual: 0
   manaPorTurno: 10
-  vidaMaxima: 100
-  manaMaximo: 50
+--- !u!114 &-5630212276870332538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4536950133996291661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d78fee0eda4af014c81833f82db67312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConfiguracionEnemigo
+  offsetSpawn: {x: 0, y: 0}
 --- !u!1 &5502568507899055004
 GameObject:
   m_ObjectHideFlags: 0

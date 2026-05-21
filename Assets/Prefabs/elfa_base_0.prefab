@@ -105,10 +105,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UnidadCombate
   nombreUnidad: Elfa
   "da\xF1oBase": 15
-  vidaMax: 120
+  vidaMaxima: 120
   vidaActual: 0
-  manaMax: 70
+  manaMaximo: 70
   manaActual: 0
   manaPorTurno: 25
-  vidaMaxima: 120
-  manaMaximo: 70

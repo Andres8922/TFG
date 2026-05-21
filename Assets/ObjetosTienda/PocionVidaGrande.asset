@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7b113a0d742634cb0225195d098ae5, type: 3}
   m_Name: PocionVidaGrande
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoTienda
-  nombreObjeto: + 100 de salud
+  nombreObjeto: + 100 salud
   precio: 30
   iconoObjeto: {fileID: 969439523629653586, guid: 889ac7370d3b73844bd86a99ea4561cf, type: 3}
   descripcion: Pocion de vida grande
